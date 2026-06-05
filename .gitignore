@@ -10,9 +10,8 @@ tmp/
 /brian-erickson.ghost.*.json
 /*.tar.gz
 
-# Raw imports/archives that may contain private metadata
-/brian-erickson.ghost.*.json
-/*.tar.gz
+# Generated migration report
+specs/refs/link-audit.json
 
 # Local env
 .env

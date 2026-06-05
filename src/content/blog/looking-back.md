@@ -1,0 +1,28 @@
+---
+title: Looking Back
+date: "2009-05-24"
+tags: []
+description: "So it seems appropriate to start off this new blog with a look back at where I've been and a look forward to where I'm headed. I recently graduated (May 2009)…"
+draft: false
+ghost_id: 4
+---
+
+![Leeds School of Business](/images/blog/leeds-colorado.jpg)
+
+So it seems appropriate to start off this new blog with a look back at where I've been and a look forward to where I'm headed. I recently graduated (May 2009) from the University of Colorado at Boulder - [Leeds School of Business](http://leeds.colorado.edu/) with my MBA and have had several people approach me wondering what led me to the decision and would I do it over again.My undergrad degree was in Computer Science from the [South Dakota School of Mines and Technology](http://sdmines.sdsmt.edu/sdsmt) and I had been working for about five years doing software development, mostly front end web development with a bit of Java thrown in from time to time before I decided to go back to school. The decision came about after a series of setbacks in work and my life that forced me to think hard about what my next steps would be and where I wanted my career to go. Around this time I started listening one of the [Tony Robbins](http://www.tonyrobbins.com/) programs, something I wouldn't normally do but it seemed right at the time and helped me to dig into my motivations and goals. Through this I identified three goals that I wanted to complete over the next year (June 2005):
+
+1.  **Finish a Marathon in under 4 hours** - I ran the [Twin Cities Marathon](http://www.mtcmarathon.org/) in the Fall of 2005 and finished with a time of 3 hours, 54 minutes.
+2.  **Read one Book a Month** - I admittedly didn't complete this goal fully but it did reignite my passion for reading and I still have a large backlog of books I am making my way through.
+3.  **Get my Masters of Business Administration** - I worked over the subsequent year on taking the GMAT and applying to MBA programs and was accepted to the Leeds school in June 2006.
+
+There were several reasons I chose to pursue an MBA as opposed to a Computer Science Masters degree, it started with an assessment I took on [Career Leader](http://www.careerleader.com/) (which I still refer to on occasion) and from a realization that I wasn't truly happy just writing code and felt I had more to offer beyond my career in Software Engineering. Along with that I never could shake the incredible entrepreneurial feeling I got starting an event promotions business ([Zoop Productions](http://zoop.org/)) with some classmates during college and I wanted to get a better sense for what it takes to run a business full time.
+
+I began the Evening MBA program at Leeds in the Fall of 2006 while I was working at [iFactor Consulting](http://ifactorconsulting.com/) as an Applictions Architect (developing products intended for power companies using the Smallworld GIS). My expectations going into it were to broaden my business knowledge particularly around Marketing and Entrepreneurship and get a better understanding for what it takes to lead a software product from inception to launch. I also though that in order to be taken seriously outside of software development, I needed to show that this was a career change I was committed to.
+
+The [CU Leeds Evening MBA](http://leeds.colorado.edu/MBA_Evening/index.aspx?id=1428) program I chose is a three year degree which had me taking two three-hour classes a week during the fall, spring and summer semesters (no breaks!). Of the electives I took during the program two of them stood out, specifically New Product Development and Start-up Execution. It happens that these were the last two classes I took but I get the feeling I'll be referring to them many times in the years to come.
+
+New Product Development was taught by Page Moreau and focused on how a company (or anyone for that matter) can go from concept to product launch by setting measurable toll gates in order to minimize 'group think' and systematically test for viable products. I feel like this user-focused process is one too few companies really embrace and instead they wind up developing products either solely based on what they think they can sell to existing customers or based on an internal idea which may or may not be a viable foundation for a product.
+
+[Frank Moyes](http://leeds-faculty.colorado.edu/moyes/html/bio.htm) taught my Start-Up Execution course which was a detailed look not at testing a concept or writing a business plan but what tactical steps one needs to take in order to start a business. This ranged from formation of the business to raising capital, hiring employees and many steps in between. Another part of the course I really enjoyed was the segment on selling which is something I didn't really consider a strength of mine but I came to the realization that whether you are starting a new business or building a product you are constantly selling. Both of these courses wrapped up my prior entrepreneurship and marketing experiences with applicable frameworks and tools I will take with me in the future.
+
+In the end although I can't predict whether the cost and the time will fully justify themselves, I don't think I would be where I'm at right now as a Web Producer at [Local Matters](http://localmatters.com/) without the skills and confidence I gained through the MBA program. Like one of the speakers said during our commencement, "Getting this degree is only the first step. What will really set you apart in the years ahead is whether or not you use it as a foundation for expanding your knowledge and driving change".
