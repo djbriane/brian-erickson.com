@@ -1,0 +1,40 @@
+---
+description: Branch names, commit messages, PR format, and spec workflow for brian-erickson.com
+alwaysApply: true
+---
+
+# Git & PR Workflow
+
+Read [CONTRIBUTING.md](../../CONTRIBUTING.md) and [AGENTS.md](../../AGENTS.md) for full detail.
+
+## Branches
+
+`feature/<short-kebab-description>` — for example `feature/v1-static-site`.
+
+## Commits
+
+Conventional Commits, GPG-signed when committing locally:
+
+```text
+type(scope): imperative summary
+```
+
+Examples:
+
+- `feat(blog): migrate Ghost archive to content collection`
+- `feat(projects): add GPXplore case study`
+- `fix(seo): omit analytics script when token is absent`
+- `docs(spec): add RSS feed spec`
+
+## PRs
+
+- Title: conventional commit style for the main outcome.
+- Body: `## Summary` bullets + `## Test plan` checkboxes.
+- Verification: `npm test` and `npm run build` once the project exists.
+
+## Spec-Driven Work
+
+Check `specs/`, `specs/backlog--ongoing.md`, and `CONTEXT.md` before feature work. Move shipped specs to `specs/built/` and update `specs/spec-status--ongoing.md`.
+
+Do not create commits or PRs unless the user explicitly asks.
+
