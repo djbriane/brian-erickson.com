@@ -1,0 +1,25 @@
+---
+import { getCollection } from "astro:content";
+import ProjectCard from "../../components/ProjectCard.astro";
+import Page from "../../layouts/Page.astro";
+import { sortByDateDesc } from "../../lib/content";
+
+const projects = sortByDateDesc(await getCollection("projects"));
+---
+
+<Page title="Projects" description="Product and technical projects by Brian Erickson.">
+  <header class="page-header">
+    <p class="eyebrow">Projects</p>
+    <h1>Featured Work</h1>
+    <p class="lede">Product work, technical exploration, and shipped systems worth standing behind.</p>
+  </header>
+
+  {projects.length > 0 ? (
+    <div class="project-grid">
+      {projects.map((project) => <ProjectCard project={project} />)}
+    </div>
+  ) : (
+    <p class="muted">Projects will appear here as they are added.</p>
+  )}
+</Page>
+

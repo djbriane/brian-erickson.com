@@ -1,0 +1,32 @@
+{
+  "name": "brian-erickson-com",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "test": "vitest run --passWithNoTests",
+    "format": "prettier --write .",
+    "migrate:ghost": "node scripts/migrate-ghost.js",
+    "audit:links": "node scripts/audit-links.js"
+  },
+  "dependencies": {
+    "@astrojs/check": "0.9.4",
+    "@astrojs/sitemap": "3.2.1",
+    "@fontsource/ibm-plex-mono": "^5.0.21",
+    "@fontsource/inter": "^5.0.18",
+    "@fontsource/lora": "^5.0.20",
+    "astro": "4.16.18",
+    "typescript": "^5.6.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "prettier": "^3.3.3",
+    "vitest": "^2.1.5"
+  }
+}

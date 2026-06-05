@@ -1,0 +1,39 @@
+{
+  "basics": {
+    "name": "Brian Erickson",
+    "title": "Product Manager building technically ambitious products for real-world users.",
+    "summary": "Product manager with a technical background, focused on thoughtful software for people doing real work. This summary is ready to replace with Brian's final resume bio.",
+    "location": "Denver, CO",
+    "email": "contact@brian-erickson.com",
+    "linkedin": "",
+    "github": ""
+  },
+  "experience": [
+    {
+      "company": "TBD",
+      "title": "Product Manager",
+      "start": "YYYY-MM",
+      "end": "present",
+      "description": "Replace this placeholder with Brian's current role and scope.",
+      "highlights": ["Replace with a concrete product, team, or outcome highlight."]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Colorado Boulder - Leeds School of Business",
+      "degree": "MBA",
+      "year": 2009
+    },
+    {
+      "institution": "South Dakota School of Mines and Technology",
+      "degree": "BS, Computer Science",
+      "year": ""
+    }
+  ],
+  "skills": {
+    "Product": ["Product strategy", "Discovery", "Roadmapping"],
+    "Technical": ["Software architecture", "Web applications", "Data-informed product development"],
+    "Tools": ["Git", "Markdown", "Cloudflare"]
+  }
+}
+

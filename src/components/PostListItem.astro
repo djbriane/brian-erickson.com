@@ -1,0 +1,23 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { formatDate } from "../lib/content";
+import TagChip from "./TagChip.astro";
+
+interface Props {
+  post: CollectionEntry<"blog">;
+}
+
+const { post } = Astro.props;
+---
+
+<article class="post-list-item">
+  <p class="eyebrow">{post.data.ghost_id ? "Originally published" : "Published"} {formatDate(post.data.date)}</p>
+  <h2><a href={`/blog/${post.slug}/`}>{post.data.title}</a></h2>
+  <p>{post.data.description}</p>
+  {post.data.tags.length > 0 && (
+    <div class="tag-list" aria-label="Tags">
+      {post.data.tags.map((tag) => <TagChip tag={tag} />)}
+    </div>
+  )}
+</article>
+

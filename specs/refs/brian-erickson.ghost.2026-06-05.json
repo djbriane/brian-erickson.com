@@ -1,0 +1,729 @@
+{
+  "db": [
+    {
+      "meta": {
+        "exported_on": 1780630891067,
+        "version": "004",
+        "sanitized": true,
+        "sanitized_note": "Admin/user secrets removed for public repository reference use."
+      },
+      "data": {
+        "posts": [
+          {
+            "id": 2,
+            "title": "About Me",
+            "slug": "about",
+            "markdown": "I'm a Product Manager with [Closely](http://closely.com), working on [Perch](http://perchapp.com), a tool thousands of small businesses use everyday to improve their online presence through watching and learning.\n\n![A bowl of bananas]",
+            "html": "<p>I'm a Product Manager with <a href=\"http://closely.com\">Closely</a>, working on <a href=\"http://perchapp.com\">Perch</a>, a tool thousands of small businesses use everyday to improve their online presence through watching and learning.</p>",
+            "image": null,
+            "featured": 0,
+            "page": 1,
+            "status": "published",
+            "language": "en_US",
+            "meta_title": null,
+            "meta_description": null,
+            "author_id": 1,
+            "created_at": 1456869295199,
+            "updated_at": 1457031036607,
+            "published_at": 1456869365443
+          },
+          {
+            "id": 3,
+            "title": "Onboarding: Show, Don't Just Tell",
+            "slug": "onboarding-users-is-harder-than-you-think",
+            "markdown": "Some great advice on key elements to your onboarding flow:\n\n>Offering users a structured set of steps to walk through helps reduce abandonment. Psychologically speaking, this makes a lot of sense. If new users know how many steps they must complete, they’re more likely to complete the process. This transparency earns websites more patience from users because uncertain, unexplained waits feel longer than known, finite waits.\n\nThe structured set of steps is often overlooked in favor of just 'telling' the user what to do next. Instead of trying to craft a great modal explaining what's next, build it into the flow so they always have a place to go back and see what to do next.",
+            "html": "<p>Some great advice on key elements to your onboarding flow:</p>\n\n<blockquote>\n  <p>Offering users a structured set of steps to walk through helps reduce abandonment. Psychologically speaking, this makes a lot of sense. If new users know how many steps they must complete, they’re more likely to complete the process. This transparency earns websites more patience from users because uncertain, unexplained waits feel longer than known, finite waits.</p>\n</blockquote>\n\n<p>The structured set of steps is often overlooked in favor of just 'telling' the user what to do next. Instead of trying to craft a great modal explaining what's next, build it into the flow so they always have a place to go back and see what to do next.</p>",
+            "image": null,
+            "featured": 0,
+            "page": 0,
+            "status": "published",
+            "language": "en_US",
+            "meta_title": null,
+            "meta_description": "https://blog.intercom.io/strategies-for-onboarding-new-users/",
+            "author_id": 1,
+            "created_at": 1456891412736,
+            "updated_at": 1456954599910,
+            "published_at": 1456891653488
+          },
+          {
+            "id": 4,
+            "title": "Looking Back",
+            "slug": "looking-back",
+            "markdown": "![Leeds School of Business](/img/leeds-colorado.jpg)\n\nSo it seems appropriate to start off this new blog with a look back at where I've been and a look forward to where I'm headed. I recently graduated (May 2009) from the University of Colorado at Boulder - [Leeds School of Business](http://leeds.colorado.edu/) with my MBA and have had several people approach me wondering what led me to the decision and would I do it over again.<!--more--> My undergrad degree was in Computer Science from the [South Dakota School of Mines and Technology](http://sdmines.sdsmt.edu/sdsmt) and I had been working for about five years doing software development, mostly front end web development with a bit of Java thrown in from time to time before I decided to go back to school. The decision came about after a series of setbacks in work and my life that forced me to think hard about what my next steps would be and where I wanted my career to go. Around this time I started listening one of the [Tony Robbins](http://www.tonyrobbins.com/) programs, something I wouldn't normally do but it seemed right at the time and helped me to dig into my motivations and goals. Through this I identified three goals that I wanted to complete over the next year (June 2005):\n\n1.  **Finish a Marathon in under 4 hours** - I ran the [Twin Cities Marathon](http://www.mtcmarathon.org/) in the Fall of 2005 and finished with a time of 3 hours, 54 minutes.\n2.  **Read one Book a Month** - I admittedly didn't complete this goal fully but it did reignite my passion for reading and I still have a large backlog of books I am making my way through.\n3.  **Get my Masters of Business Administration** - I worked over the subsequent year on taking the GMAT and applying to MBA programs and was accepted to the Leeds school in June 2006.\n\nThere were several reasons I chose to pursue an MBA as opposed to a Computer Science Masters degree, it started with an assessment I took on [Career Leader](http://www.careerleader.com/) (which I still refer to on occasion) and from a realization that I wasn't truly happy just writing code and felt I had more to offer beyond my career in Software Engineering. Along with that I never could shake the incredible entrepreneurial feeling I got starting an event promotions business ([Zoop Productions](http://zoop.org/)) with some classmates during college and I wanted to get a better sense for what it takes to run a business full time.\n\nI began the Evening MBA program at Leeds in the Fall of 2006 while I was working at [iFactor Consulting](http://ifactorconsulting.com/) as an Applictions Architect (developing products intended for power companies using the Smallworld GIS). My expectations going into it were to broaden my business knowledge particularly around Marketing and Entrepreneurship and get a better understanding for what it takes to lead a software product from inception to launch. I also though that in order to be taken seriously outside of software development, I needed to show that this was a career change I was committed to.\n\nThe [CU Leeds Evening MBA](http://leeds.colorado.edu/MBA_Evening/index.aspx?id=1428) program I chose is a three year degree which had me taking two three-hour classes a week during the fall, spring and summer semesters (no breaks!). Of the electives I took during the program two of them stood out, specifically New Product Development and Start-up Execution. It happens that these were the last two classes I took but I get the feeling I'll be referring to them many times in the years to come.\n\nNew Product Development was taught by Page Moreau and focused on how a company (or anyone for that matter) can go from concept to product launch by setting measurable toll gates in order to minimize 'group think' and systematically test for viable products. I feel like this user-focused process is one too few companies really embrace and instead they wind up developing products either solely based on what they think they can sell to existing customers or based on an internal idea which may or may not be a viable foundation for a product.\n\n[Frank Moyes](http://leeds-faculty.colorado.edu/moyes/html/bio.htm) taught my Start-Up Execution course which was a detailed look not at testing a concept or writing a business plan but what tactical steps one needs to take in order to start a business. This ranged from formation of the business to raising capital, hiring employees and many steps in between. Another part of the course I really enjoyed was the segment on selling which is something I didn't really consider a strength of mine but I came to the realization that whether you are starting a new business or building a product you are constantly selling. Both of these courses wrapped up my prior entrepreneurship and marketing experiences with applicable frameworks and tools I will take with me in the future.\n\nIn the end although I can't predict whether the cost and the time will fully justify themselves, I don't think I would be where I'm at right now as a Web Producer at [Local Matters](http://localmatters.com/) without the skills and confidence I gained through the MBA program. Like one of the speakers said during our commencement, \"Getting this degree is only the first step. What will really set you apart in the years ahead is whether or not you use it as a foundation for expanding your knowledge and driving change\".",
+            "html": "<p><img src=\"/img/leeds-colorado.jpg\" alt=\"Leeds School of Business\" /></p>\n\n<p>So it seems appropriate to start off this new blog with a look back at where I've been and a look forward to where I'm headed. I recently graduated (May 2009) from the University of Colorado at Boulder - <a href=\"http://leeds.colorado.edu/\">Leeds School of Business</a> with my MBA and have had several people approach me wondering what led me to the decision and would I do it over again.<!--more--> My undergrad degree was in Computer Science from the <a href=\"http://sdmines.sdsmt.edu/sdsmt\">South Dakota School of Mines and Technology</a> and I had been working for about five years doing software development, mostly front end web development with a bit of Java thrown in from time to time before I decided to go back to school. The decision came about after a series of setbacks in work and my life that forced me to think hard about what my next steps would be and where I wanted my career to go. Around this time I started listening one of the <a href=\"http://www.tonyrobbins.com/\">Tony Robbins</a> programs, something I wouldn't normally do but it seemed right at the time and helped me to dig into my motivations and goals. Through this I identified three goals that I wanted to complete over the next year (June 2005):</p>\n\n<ol>\n<li><strong>Finish a Marathon in under 4 hours</strong> - I ran the <a href=\"http://www.mtcmarathon.org/\">Twin Cities Marathon</a> in the Fall of 2005 and finished with a time of 3 hours, 54 minutes.  </li>\n<li><strong>Read one Book a Month</strong> - I admittedly didn't complete this goal fully but it did reignite my passion for reading and I still have a large backlog of books I am making my way through.  </li>\n<li><strong>Get my Masters of Business Administration</strong> - I worked over the subsequent year on taking the GMAT and applying to MBA programs and was accepted to the Leeds school in June 2006.</li>\n</ol>\n\n<p>There were several reasons I chose to pursue an MBA as opposed to a Computer Science Masters degree, it started with an assessment I took on <a href=\"http://www.careerleader.com/\">Career Leader</a> (which I still refer to on occasion) and from a realization that I wasn't truly happy just writing code and felt I had more to offer beyond my career in Software Engineering. Along with that I never could shake the incredible entrepreneurial feeling I got starting an event promotions business (<a href=\"http://zoop.org/\">Zoop Productions</a>) with some classmates during college and I wanted to get a better sense for what it takes to run a business full time.</p>\n\n<p>I began the Evening MBA program at Leeds in the Fall of 2006 while I was working at <a href=\"http://ifactorconsulting.com/\">iFactor Consulting</a> as an Applictions Architect (developing products intended for power companies using the Smallworld GIS). My expectations going into it were to broaden my business knowledge particularly around Marketing and Entrepreneurship and get a better understanding for what it takes to lead a software product from inception to launch. I also though that in order to be taken seriously outside of software development, I needed to show that this was a career change I was committed to.</p>\n\n<p>The <a href=\"http://leeds.colorado.edu/MBA_Evening/index.aspx?id=1428\">CU Leeds Evening MBA</a> program I chose is a three year degree which had me taking two three-hour classes a week during the fall, spring and summer semesters (no breaks!). Of the electives I took during the program two of them stood out, specifically New Product Development and Start-up Execution. It happens that these were the last two classes I took but I get the feeling I'll be referring to them many times in the years to come.</p>\n\n<p>New Product Development was taught by Page Moreau and focused on how a company (or anyone for that matter) can go from concept to product launch by setting measurable toll gates in order to minimize 'group think' and systematically test for viable products. I feel like this user-focused process is one too few companies really embrace and instead they wind up developing products either solely based on what they think they can sell to existing customers or based on an internal idea which may or may not be a viable foundation for a product.</p>\n\n<p><a href=\"http://leeds-faculty.colorado.edu/moyes/html/bio.htm\">Frank Moyes</a> taught my Start-Up Execution course which was a detailed look not at testing a concept or writing a business plan but what tactical steps one needs to take in order to start a business. This ranged from formation of the business to raising capital, hiring employees and many steps in between. Another part of the course I really enjoyed was the segment on selling which is something I didn't really consider a strength of mine but I came to the realization that whether you are starting a new business or building a product you are constantly selling. Both of these courses wrapped up my prior entrepreneurship and marketing experiences with applicable frameworks and tools I will take with me in the future.</p>\n\n<p>In the end although I can't predict whether the cost and the time will fully justify themselves, I don't think I would be where I'm at right now as a Web Producer at <a href=\"http://localmatters.com/\">Local Matters</a> without the skills and confidence I gained through the MBA program. Like one of the speakers said during our commencement, \"Getting this degree is only the first step. What will really set you apart in the years ahead is whether or not you use it as a foundation for expanding your knowledge and driving change\".</p>",
+            "image": null,
+            "featured": 0,
+            "page": 0,
+            "status": "published",
+            "language": "en_US",
+            "meta_title": null,
+            "meta_description": null,
+            "author_id": 1,
+            "created_at": 1456954774351,
+            "updated_at": 1456954871067,
+            "published_at": 1243197540000
+          },
+          {
+            "id": 5,
+            "title": "Breaking Down User Stories",
+            "slug": "breaking-down-user-stories-the-right-way",
+            "markdown": "> **The objective that every sprint deliver valuable, working software, is not a *requirement*.  It is a *design principle* of the Scrum process.**\n>\n> Agile is not about mandating processes, it is about getting better and faster.  When you can&rsquo;t reasonably decompose a story into something that can be delivered in a single sprint, don&rsquo;t.  You can have a sprint where you don&rsquo;t deliver anything, because you only complete part of one thing.  Yes, it will look bad on the burn-down chart.\n>\n> Will it mess with your velocity?  A bit.  But who cares?  Velocity is a measurement that helps inform projected delivery schedules.  You may have one sprint with zero velocity, but in the next sprint, when you do deliver the &ldquo;two sprint story&rdquo;, you&rsquo;ll have double the velocity.  Magically, your running average is back to normal.\n>\n> **Don't let the rulers you use to measure the team&rsquo;s output cause you to act irrationally.**\n\nvia [tynerblain.com](http://tynerblain.com/blog/2010/09/08/sprint-backlog-splitting-user-stories/)\n\n[Tyner Blain](http://tynerblain.com/blog/) has got to be one of the best resources when it comes to Product Management learning. I was catching up on some of their recent (and older) posts and this one on breaking down user stories caught my eye.\n\nParticularly the quote above. In our current release our team had to do exactly what is described, we had a zero velocity in Iteration 1 in order to get the core components of our feature in place but made that up by completing two large stories in Iteration 2. Since then we have been aggressively cutting down our feature set to focus in on the [Minimum Marketable Product](http://www.romanpichler.com/blog/product-planning/creating-products-that-customers-love/) that will meet our users needs.\n\nIt feels like sometimes people forget that Agile is not just about being flexible in how you develop software but also adapting the process to meet the needs of the team and the user.\n\nSome other Tyner Blain goodies I've been reading recently:\n\n> Writing Verifiable Requirements should be a rule that does not need to be written. Everyone reading this has seen or created requirements that can not be verified. The primary reason for writing requirements is to communicate to the team what they need to accomplish. If you can't verify that what the team delivered is acceptable, neither can the team. This may be the most obvious of the rules of writing requirements - but it is ignored every day.\n> [http://tynerblain.com/blog/2010/09/14/atomic-requirements/](http://tynerblain.com/blog/2010/09/14/atomic-requirements/)\n\n> Customer-Centric Market Model\n> [http://tynerblain.com/blog/2010/09/20/customer-centric-market-model/](http://tynerblain.com/blog/2010/09/20/customer-centric-market-model/)\n\n> Measuring the ROI of Design\n> [http://tynerblain.com/blog/2007/07/30/measuring-the-roi-of-design/](http://tynerblain.com/blog/2007/07/30/measuring-the-roi-of-design/)",
+            "html": "<blockquote>\n  <p><strong>The objective that every sprint deliver valuable, working software, is not a <em>requirement</em>.  It is a <em>design principle</em> of the Scrum process.</strong></p>\n  \n  <p>Agile is not about mandating processes, it is about getting better and faster.  When you can&rsquo;t reasonably decompose a story into something that can be delivered in a single sprint, don&rsquo;t.  You can have a sprint where you don&rsquo;t deliver anything, because you only complete part of one thing.  Yes, it will look bad on the burn-down chart.</p>\n  \n  <p>Will it mess with your velocity?  A bit.  But who cares?  Velocity is a measurement that helps inform projected delivery schedules.  You may have one sprint with zero velocity, but in the next sprint, when you do deliver the &ldquo;two sprint story&rdquo;, you&rsquo;ll have double the velocity.  Magically, your running average is back to normal.</p>\n  \n  <p><strong>Don't let the rulers you use to measure the team&rsquo;s output cause you to act irrationally.</strong></p>\n</blockquote>\n\n<p>via <a href=\"http://tynerblain.com/blog/2010/09/08/sprint-backlog-splitting-user-stories/\">tynerblain.com</a></p>\n\n<p><a href=\"http://tynerblain.com/blog/\">Tyner Blain</a> has got to be one of the best resources when it comes to Product Management learning. I was catching up on some of their recent (and older) posts and this one on breaking down user stories caught my eye.</p>\n\n<p>Particularly the quote above. In our current release our team had to do exactly what is described, we had a zero velocity in Iteration 1 in order to get the core components of our feature in place but made that up by completing two large stories in Iteration 2. Since then we have been aggressively cutting down our feature set to focus in on the <a href=\"http://www.romanpichler.com/blog/product-planning/creating-products-that-customers-love/\">Minimum Marketable Product</a> that will meet our users needs.</p>\n\n<p>It feels like sometimes people forget that Agile is not just about being flexible in how you develop software but also adapting the process to meet the needs of the team and the user.</p>\n\n<p>Some other Tyner Blain goodies I've been reading recently:</p>\n\n<blockquote>\n  <p>Writing Verifiable Requirements should be a rule that does not need to be written. Everyone reading this has seen or created requirements that can not be verified. The primary reason for writing requirements is to communicate to the team what they need to accomplish. If you can't verify that what the team delivered is acceptable, neither can the team. This may be the most obvious of the rules of writing requirements - but it is ignored every day.\n  <a href=\"http://tynerblain.com/blog/2010/09/14/atomic-requirements/\">http://tynerblain.com/blog/2010/09/14/atomic-requirements/</a></p>\n  \n  <p>Customer-Centric Market Model\n  <a href=\"http://tynerblain.com/blog/2010/09/20/customer-centric-market-model/\">http://tynerblain.com/blog/2010/09/20/customer-centric-market-model/</a></p>\n  \n  <p>Measuring the ROI of Design\n  <a href=\"http://tynerblain.com/blog/2007/07/30/measuring-the-roi-of-design/\">http://tynerblain.com/blog/2007/07/30/measuring-the-roi-of-design/</a></p>\n</blockquote>",
+            "image": null,
+            "featured": 0,
+            "page": 0,
+            "status": "published",
+            "language": "en_US",
+            "meta_title": null,
+            "meta_description": null,
+            "author_id": 1,
+            "created_at": 1456955620014,
+            "updated_at": 1456956564243,
+            "published_at": 1285189680000
+          },
+          {
+            "id": 6,
+            "title": "Prototype First",
+            "slug": "prototype-first",
+            "markdown": "Nice post-mortem from [Hipmunk](http://hipmunk.com) explaining why Protyping is such a valuable tool:\n> If you don't prototype your application before you start building, you're doing it wrong. It's just too much value for so little effort, you'd be nuts not to try it out.\n\nI totally agree with this statement. I've done projects where we fully prototyped the solution prior to implementing and while it didn't catch everything it made us think through the solution before putting code to it. Small tweaks were easy to test inside the existing prototype before code was written. On top of that we are able to put the prototype in front of customers and get invaluable feedback early on.",
+            "html": "<p>Nice post-mortem from <a href=\"http://hipmunk.com\">Hipmunk</a> explaining why Protyping is such a valuable tool:  </p>\n\n<blockquote>\n  <p>If you don't prototype your application before you start building, you're doing it wrong. It's just too much value for so little effort, you'd be nuts not to try it out.</p>\n</blockquote>\n\n<p>I totally agree with this statement. I've done projects where we fully prototyped the solution prior to implementing and while it didn't catch everything it made us think through the solution before putting code to it. Small tweaks were easy to test inside the existing prototype before code was written. On top of that we are able to put the prototype in front of customers and get invaluable feedback early on.</p>",
+            "image": null,
+            "featured": 0,
+            "page": 0,
+            "status": "published",
+            "language": "en_US",
+            "meta_title": null,
+            "meta_description": "http://blog.hipmunk.com/hipmunk-for-iphone-post-mortem",
+            "author_id": 1,
+            "created_at": 1456956792768,
+            "updated_at": 1456957003120,
+            "published_at": 1299881580000
+          },
+          {
+            "id": 7,
+            "title": "Technical Debt",
+            "slug": "technical-debt",
+            "markdown": ">*Technical Debt. Whys, hows and whens.*\n>\n>I prefer to be in control of a situation over acting in a reactive fashion. This leads me to make decisions in another way. Way earlier. In terms of how to produce good software, I would choose a way which allows me to deliver often, scope out or change my mind equally often and use that feedback [data] to guide my future decisions.\n\nHere is another article from [Martin Fowler on Technical Debt](http://www.martinfowler.com/bliki/TechnicalDebt.html).",
+            "html": "<blockquote>\n  <p><em>Technical Debt. Whys, hows and whens.</em></p>\n  \n  <p>I prefer to be in control of a situation over acting in a reactive fashion. This leads me to make decisions in another way. Way earlier. In terms of how to produce good software, I would choose a way which allows me to deliver often, scope out or change my mind equally often and use that feedback [data] to guide my future decisions.</p>\n</blockquote>\n\n<p>Here is another article from <a href=\"http://www.martinfowler.com/bliki/TechnicalDebt.html\">Martin Fowler on Technical Debt</a>.</p>",
+            "image": null,
+            "featured": 0,
+            "page": 0,
+            "status": "published",
+            "language": "en_US",
+            "meta_title": null,
+            "meta_description": "http://ellnestam.wordpress.com/2009/02/19/technical-debt-whys-hows-and-whens/",
+            "author_id": 1,
+            "created_at": 1456957087004,
+            "updated_at": 1456957199063,
+            "published_at": 1299881880000
+          },
+          {
+            "id": 8,
+            "title": "First Trail Run of Summer 2009",
+            "slug": "first-trail-run-of-summer-2009",
+            "markdown": "This morning I completed my first trail race of the summer, the [Evergreen Mountain Trail Race](http://www.finishlinetiming.com/races/Evergreen_Trail_Series/evergreen_mt.html) (I had planned on one earlier but decided to take more time to train). It was a 10 mile run around the Alderfer - Three Sisters Park and to the top of Evergreen Mountain in Evergreen, CO. The course itself was rather tricky as the park has a lot of connecting trails, thankfully I had pre-run the first half of the race a few weeks ago so I didn't get lost.\n\n![Map](/img/first-trail-run-1.png)\n\nThe thing that made this race one of the most difficult for me (short of the marathon) was the elevation gain of over 1200 feet. You can see the elevation profile here:\n\n![Profile](/img/first-trail-run-2.png)\n\nMy final time was **1 hour 37 min**, not bad considering the terrain. I'll have to do some more hill training for the next trail race which is August 1st, the [LaSportiva Eldora Trail 10k](http://www.digdeepsports.com/lasportivaeldora10k/generalinfo.html).",
+            "html": "<p>This morning I completed my first trail race of the summer, the <a href=\"http://www.finishlinetiming.com/races/Evergreen_Trail_Series/evergreen_mt.html\">Evergreen Mountain Trail Race</a> (I had planned on one earlier but decided to take more time to train). It was a 10 mile run around the Alderfer - Three Sisters Park and to the top of Evergreen Mountain in Evergreen, CO. The course itself was rather tricky as the park has a lot of connecting trails, thankfully I had pre-run the first half of the race a few weeks ago so I didn't get lost.</p>\n\n<p><img src=\"/img/first-trail-run-1.png\" alt=\"Map\" /></p>\n\n<p>The thing that made this race one of the most difficult for me (short of the marathon) was the elevation gain of over 1200 feet. You can see the elevation profile here:</p>\n\n<p><img src=\"/img/first-trail-run-2.png\" alt=\"Profile\" /></p>\n\n<p>My final time was <strong>1 hour 37 min</strong>, not bad considering the terrain. I'll have to do some more hill training for the next trail race which is August 1st, the <a href=\"http://www.digdeepsports.com/lasportivaeldora10k/generalinfo.html\">LaSportiva Eldora Trail 10k</a>.</p>",
+            "image": null,
+            "featured": 0,
+            "page": 0,
+            "status": "published",
+            "language": "en_US",
+            "meta_title": null,
+            "meta_description": null,
+            "author_id": 1,
+            "created_at": 1456957319021,
+            "updated_at": 1456957403535,
+            "published_at": 1247952060000
+          },
+          {
+            "id": 9,
+            "title": "Eldora Trail 10k",
+            "slug": "eldora-trail-10k",
+            "markdown": "This weekend I did my second trail race of the summer, the La Sportiva Eldora Trail 10k. The course was at the Eldora Mountain Resort along the Nordic Center trails. It was pretty muddy in parts but overall a fun and technical course. I ran along with a colleague from Local Matters ([@nicobrx](http://twitter.com/nicobrx)), who snapped a pic of me [crossing the finish](http://twitpic.com/ce1rx). There wasn't as big of an elevation gain as the Evergreen Mountain Run but much steeper descents than I had run on before (+489ft, -551ft).\n\nMy time was **55:43** which is decent but I know if I hadn't played in my rec. league hockey game the night before I'd have done much better. Next race is the Holy Cow Trail Stampede in Westminster which ought to be a fast one, on the trail (more of a path) where I did most of the training for the Marathon.",
+            "html": "<p>This weekend I did my second trail race of the summer, the La Sportiva Eldora Trail 10k. The course was at the Eldora Mountain Resort along the Nordic Center trails. It was pretty muddy in parts but overall a fun and technical course. I ran along with a colleague from Local Matters (<a href=\"http://twitter.com/nicobrx\">@nicobrx</a>), who snapped a pic of me <a href=\"http://twitpic.com/ce1rx\">crossing the finish</a>. There wasn't as big of an elevation gain as the Evergreen Mountain Run but much steeper descents than I had run on before (+489ft, -551ft).</p>\n\n<p>My time was <strong>55:43</strong> which is decent but I know if I hadn't played in my rec. league hockey game the night before I'd have done much better. Next race is the Holy Cow Trail Stampede in Westminster which ought to be a fast one, on the trail (more of a path) where I did most of the training for the Marathon.</p>",
+            "image": "/content/images/2016/03/eldorascenic.jpg",
+            "featured": 0,
+            "page": 0,
+            "status": "published",
+            "language": "en_US",
+            "meta_title": null,
+            "meta_description": null,
+            "author_id": 1,
+            "created_at": 1456957418172,
+            "updated_at": 1457039716599,
+            "published_at": 1249161840000
+          },
+          {
+            "id": 11,
+            "title": "How 4Hero Programmed Goldie's Software",
+            "slug": "how-4hero-programmed-goldies-software",
+            "markdown": "\nSven Von Thülen interviews [Goldie](http://www.goldie.co.uk):\n\n> “I had a lot of ideas and samples in my head and Marc and Dego would listen to what I said. We went into these intense sessions of cutting up breaks, recording them to DAT, resampling everything onto the computer and layering stuff. Because for me, I was making colors. That was my approach: let’s make the colors first, and then we’ll do everything else after. it was about eccelecticism. Like a graffiti writer says, “This is an outline. I’m gonna show you what colors you’re gonna use, and then we’re gonna fill it in together.” Put blue there, put pink there. That was my attitude toward music.”\n\nFascinating glimpse into the creative process with one of the pioneers of electronic music and [drum 'n' bass](https://en.wikipedia.org/wiki/Drum_and_bass).",
+            "html": "<p>Sven Von Thülen interviews <a href=\"http://www.goldie.co.uk\">Goldie</a>:</p>\n\n<blockquote>\n  <p>“I had a lot of ideas and samples in my head and Marc and Dego would listen to what I said. We went into these intense sessions of cutting up breaks, recording them to DAT, resampling everything onto the computer and layering stuff. Because for me, I was making colors. That was my approach: let’s make the colors first, and then we’ll do everything else after. it was about eccelecticism. Like a graffiti writer says, “This is an outline. I’m gonna show you what colors you’re gonna use, and then we’re gonna fill it in together.” Put blue there, put pink there. That was my attitude toward music.”</p>\n</blockquote>\n\n<p>Fascinating glimpse into the creative process with one of the pioneers of electronic music and <a href=\"https://en.wikipedia.org/wiki/Drum_and_bass\">drum 'n' bass</a>.</p>",
+            "image": null,
+            "featured": 0,
+            "page": 0,
+            "status": "published",
+            "language": "en_US",
+            "meta_title": null,
+            "meta_description": "http://www.electronicbeats.net/mentors-how-4hero-programmed-goldies-software/",
+            "author_id": 1,
+            "created_at": 1456963495357,
+            "updated_at": 1457030676843,
+            "published_at": 1456963868347
+          },
+          {
+            "id": 12,
+            "title": "Get Closer to Your Customers",
+            "slug": "get-closer-to-your-customers",
+            "markdown": "Great collection of tools and insights for startups to better understand their customers:\n\n>“It’s impossible to operate a business without interacting with customers and capturing their profiles, especially in the early, formative years of a company. “If you're building a web or mobile business, the way in which you interact with your customers is often via e-mail, push notifications, SMS or surveys inside or outside the product,” says Reinhardt. “The way you discover how easily they're using your product is with an analytics tool that shows you a funnel. The brick and mortar analog is a store owner standing in her store observing what's happening. It’s that fundamental.”",
+            "html": "<p>Great collection of tools and insights for startups to better understand their customers:</p>\n\n<blockquote>\n  <p>“It’s impossible to operate a business without interacting with customers and capturing their profiles, especially in the early, formative years of a company. “If you're building a web or mobile business, the way in which you interact with your customers is often via e-mail, push notifications, SMS or surveys inside or outside the product,” says Reinhardt. “The way you discover how easily they're using your product is with an analytics tool that shows you a funnel. The brick and mortar analog is a store owner standing in her store observing what's happening. It’s that fundamental.”</p>\n</blockquote>",
+            "image": null,
+            "featured": 0,
+            "page": 0,
+            "status": "published",
+            "language": "en_US",
+            "meta_title": null,
+            "meta_description": "http://firstround.com/review/the-tools-early-stage-startups-actually-need-to-understand-their-customers/",
+            "author_id": 1,
+            "created_at": 1457019340675,
+            "updated_at": 1457019588655,
+            "published_at": 1457019554038
+          },
+          {
+            "id": 13,
+            "title": "Trader Joe's Says NO to Social Media",
+            "slug": "trader-joes-says-no-to-social-media",
+            "markdown": "Alicia Eler on why Trader Joe's chooses not to maintain a presence on social media: \n\n>If Trader Joe’s were to join social media and chat with consumers, would that not just create the feeling of a fake, forced relationship? The right sort of customer craving the right sort of authenticity doesn’t need to vicariously latch on to brands on social media to feel complete. They aren’t slaves to Facebook or Twitter either. They have a “real” relationship with Trader Joe’s, grounded in going to the store, being there, being present. Trader Joe’s will not tweet at you. The only way to be recognized by Trader Joe’s is to have the cheery cashiers remember your name, to riff on Seinfeld-isms with some bearded guy serving samples of kung pao chicken with a side of brown rice. At Trader Joe’s, it’s IRL or nothing.\n\nThis article highlights the feelings of many small businesses we've worked with while building [Perch](http://perchapp.com). There is a perception that social media is too impersonal and only something 'big brands' can do effectively. \n\n>It would seem like this strategy could backfire with millennials, who are less likely to privilege IRL over online, if they even bother to distinguish them. But Joe doesn’t need to be your “friend” online. He doesn’t want a Tinderized relationship. ==Trader Joe’s is counting on capturing successive generations of its target consumers by being the choice for no-choices, the place where generic brands can feel exclusive. You’ll know without having to be told. You’ll buy without ever wondering if you’ve made the wrong choice.==\n\nWhile this may work for a nationally known chain like Trader Joes, for many businesses the key is finding a balance where social media becomes an extension of the face-to-face interactions you have every day with your customers. ",
+            "html": "<p>Alicia Eler on why Trader Joe's chooses not to maintain a presence on social media: </p>\n\n<blockquote>\n  <p>If Trader Joe’s were to join social media and chat with consumers, would that not just create the feeling of a fake, forced relationship? The right sort of customer craving the right sort of authenticity doesn’t need to vicariously latch on to brands on social media to feel complete. They aren’t slaves to Facebook or Twitter either. They have a “real” relationship with Trader Joe’s, grounded in going to the store, being there, being present. Trader Joe’s will not tweet at you. The only way to be recognized by Trader Joe’s is to have the cheery cashiers remember your name, to riff on Seinfeld-isms with some bearded guy serving samples of kung pao chicken with a side of brown rice. At Trader Joe’s, it’s IRL or nothing.</p>\n</blockquote>\n\n<p>This article highlights the feelings of many small businesses we've worked with while building <a href=\"http://perchapp.com\">Perch</a>. There is a perception that social media is too impersonal and only something 'big brands' can do effectively. </p>\n\n<blockquote>\n  <p>It would seem like this strategy could backfire with millennials, who are less likely to privilege IRL over online, if they even bother to distinguish them. But Joe doesn’t need to be your “friend” online. He doesn’t want a Tinderized relationship. <mark>Trader Joe’s is counting on capturing successive generations of its target consumers by being the choice for no-choices, the place where generic brands can feel exclusive. You’ll know without having to be told. You’ll buy without ever wondering if you’ve made the wrong choice.</mark></p>\n</blockquote>\n\n<p>While this may work for a nationally known chain like Trader Joes, for many businesses the key is finding a balance where social media becomes an extension of the face-to-face interactions you have every day with your customers. </p>",
+            "image": null,
+            "featured": 1,
+            "page": 0,
+            "status": "published",
+            "language": "en_US",
+            "meta_title": null,
+            "meta_description": "http://thenewinquiry.com/essays/joe-cool/",
+            "author_id": 1,
+            "created_at": 1457027366738,
+            "updated_at": 1457029221211,
+            "published_at": 1457029221212
+          },
+          {
+            "id": 14,
+            "title": "Coffee Cups of New York City",
+            "slug": "coffee-cups-of-new-york-city",
+            "markdown": "[Gear Patrol](http://gearpatrol.com/2016/01/14/nyc-disposable-coffee-cup-design/) presents a visual survey of New York's disposable coffee cups:\n\n>The receptacle was not born in New York City, nor is it unique to NYC’s busy streets — but the to-go cup’s ubiquity is symbolic of a certain lifestyle shared in the most populous place in the nation. Obtained from blue-collar breakfast trucks and high-minded cafes alike, these cups, each emblazoned with its own place of origin, together represent the democracy of a place with too many people and too little time. But quick as New Yorkers are to toss them, the disposable cup is here to stay. It’s simply a part of life.",
+            "html": "<p><a href=\"http://gearpatrol.com/2016/01/14/nyc-disposable-coffee-cup-design/\">Gear Patrol</a> presents a visual survey of New York's disposable coffee cups:</p>\n\n<blockquote>\n  <p>The receptacle was not born in New York City, nor is it unique to NYC’s busy streets — but the to-go cup’s ubiquity is symbolic of a certain lifestyle shared in the most populous place in the nation. Obtained from blue-collar breakfast trucks and high-minded cafes alike, these cups, each emblazoned with its own place of origin, together represent the democracy of a place with too many people and too little time. But quick as New Yorkers are to toss them, the disposable cup is here to stay. It’s simply a part of life.</p>\n</blockquote>",
+            "image": "/content/images/2016/03/Coffee-Cup-Survey-Gear-Patrol-Lead-Full-.jpg",
+            "featured": 0,
+            "page": 0,
+            "status": "published",
+            "language": "en_US",
+            "meta_title": null,
+            "meta_description": "http://gearpatrol.com/2016/01/14/nyc-disposable-coffee-cup-design/",
+            "author_id": 1,
+            "created_at": 1457115835664,
+            "updated_at": 1457675292934,
+            "published_at": 1457116185367
+          },
+          {
+            "id": 15,
+            "title": "The (Hidden) Costs of Real-Time Communication",
+            "slug": "the-hidden-costs-of-real-time-communication",
+            "markdown": "Jason Fried on the [pitfalls of group chat](https://m.signalvnoise.com/is-group-chat-making-you-sweat-744659addf7d#.gep2dyl52) (he discusses some of this in a [recent episode](https://overcast.fm/+BowssuM7Y) of Product Hunt radio):\n\n>At its very core, group chat and real-time communication are all about now. That’s why in some select circumstances it really shines. But chat conditions us to believe everything’s worth discussing quickly right now, except that hardly anything is. Turns out, very few things require ASAP attention. Further, ASAP is inflationary — it devalues any request that doesn’t say ASAP. \n\nJason makes a good argument that the presence of well-meaning features in group chat tools doesn't matter much if the design doesn't encourage them at a fundamental level:\n\n>A product is a series of design decisions with a specific outcome in mind. Yes, you can use tools as they weren’t intended, but most people follow the patterns suggested by the design. And so in the end, if people are exhausted and feeling unable to keep up, it’s the tool’s fault, not the user’s fault. If the design leads to stress, it’s a bad design.\n\nMore than any other group chat software I've used, [Slack](slack.com) has gone out of its way to promote good behaviors (like the absence of 'idle' states). However, it's up to your team to be aware of the cost of real-time communication and make sure you protect against the types of issues Jason brings up. Hopefully, we'll see more features like [Do Not Disturb hours](http://slackhq.com/post/135387122640/do-not-disturb) coming from the Slack team to promote better communication patterns.",
+            "html": "<p>Jason Fried on the <a href=\"https://m.signalvnoise.com/is-group-chat-making-you-sweat-744659addf7d#.gep2dyl52\">pitfalls of group chat</a> (he discusses some of this in a <a href=\"https://overcast.fm/+BowssuM7Y\">recent episode</a> of Product Hunt radio):</p>\n\n<blockquote>\n  <p>At its very core, group chat and real-time communication are all about now. That’s why in some select circumstances it really shines. But chat conditions us to believe everything’s worth discussing quickly right now, except that hardly anything is. Turns out, very few things require ASAP attention. Further, ASAP is inflationary — it devalues any request that doesn’t say ASAP. </p>\n</blockquote>\n\n<p>Jason makes a good argument that the presence of well-meaning features in group chat tools doesn't matter much if the design doesn't encourage them at a fundamental level:</p>\n\n<blockquote>\n  <p>A product is a series of design decisions with a specific outcome in mind. Yes, you can use tools as they weren’t intended, but most people follow the patterns suggested by the design. And so in the end, if people are exhausted and feeling unable to keep up, it’s the tool’s fault, not the user’s fault. If the design leads to stress, it’s a bad design.</p>\n</blockquote>\n\n<p>More than any other group chat software I've used, <a href=\"slack.com\">Slack</a> has gone out of its way to promote good behaviors (like the absence of 'idle' states). However, it's up to your team to be aware of the cost of real-time communication and make sure you protect against the types of issues Jason brings up. Hopefully, we'll see more features like <a href=\"http://slackhq.com/post/135387122640/do-not-disturb\">Do Not Disturb hours</a> coming from the Slack team to promote better communication patterns.</p>",
+            "image": null,
+            "featured": 0,
+            "page": 0,
+            "status": "published",
+            "language": "en_US",
+            "meta_title": null,
+            "meta_description": "https://m.signalvnoise.com/is-group-chat-making-you-sweat-744659addf7d#.gep2dyl52",
+            "author_id": 1,
+            "created_at": 1457375913010,
+            "updated_at": 1457381994854,
+            "published_at": 1457376794076
+          },
+          {
+            "id": 16,
+            "title": "Capturing the Spirit of Hayao Miyazaki",
+            "slug": "capturing-the-spirit-of-hayao-miyazaki",
+            "markdown": "![\"JUST ANOTHER DAY\" BY PATRICK O'KEEFE](/content/images/2016/03/miyazaki-art-show-print-5-0.jpg)\n\nThe Verge has an excellent write-up of the [Miyazaki Spirit](http://www.sketchpadgallery.com/event/miyazaki-spirit) gallery event that happened in San Fransisco this past weekend. Hayao Miyazaki is one of our family's favorite directors, and I love this synopsis of his style:\n\n>From **Princess Mononoke** and **My Neighbor Totoro** to **Ponyo** and **Howl's Moving Castle**, Miyazaki has spent the better part of four and a half decades pioneering a style of anime that is as transportive as it is grounded in recognizable human struggles. **Spirited Away's** Chihiro may be trapped in a bathhouse full for the spirit world, but it's still a coming of age story that could function flawlessly without the fantastical elements.\n\nDon't miss the gallery of images from the event!",
+            "html": "<p><img src=\"/content/images/2016/03/miyazaki-art-show-print-5-0.jpg\" alt=\"\"JUST ANOTHER DAY\" BY PATRICK O'KEEFE\" /></p>\n\n<p>The Verge has an excellent write-up of the <a href=\"http://www.sketchpadgallery.com/event/miyazaki-spirit\">Miyazaki Spirit</a> gallery event that happened in San Fransisco this past weekend. Hayao Miyazaki is one of our family's favorite directors, and I love this synopsis of his style:</p>\n\n<blockquote>\n  <p>From <strong>Princess Mononoke</strong> and <strong>My Neighbor Totoro</strong> to <strong>Ponyo</strong> and <strong>Howl's Moving Castle</strong>, Miyazaki has spent the better part of four and a half decades pioneering a style of anime that is as transportive as it is grounded in recognizable human struggles. <strong>Spirited Away's</strong> Chihiro may be trapped in a bathhouse full for the spirit world, but it's still a coming of age story that could function flawlessly without the fantastical elements.</p>\n</blockquote>\n\n<p>Don't miss the gallery of images from the event!</p>",
+            "image": null,
+            "featured": 0,
+            "page": 0,
+            "status": "published",
+            "language": "en_US",
+            "meta_title": null,
+            "meta_description": "http://theverge.com/2016/3/6/11163968/hayao-miyazaki-art-show-studio-ghibli-illustrations",
+            "author_id": 1,
+            "created_at": 1457379419835,
+            "updated_at": 1457403069694,
+            "published_at": 1457380220116
+          },
+          {
+            "id": 17,
+            "title": "Hearthstone Deck Recipes",
+            "slug": "hearthstone-onboarding",
+            "markdown": "I've been a closet [Hearthstone](http://playhearthstone.com) player since shortly after the game launched in early 2014. As a player, I enjoy the game mechanics and strategy but as a Product Manager, I've come to appreciate the design decisions the team has made and how transparent they are with their process. \n\nRecently, the team announced a feature aimed at new and returning players and I think it's a great one:\n\n>**Deck Recipes** are a new feature coming to Hearthstone to help budding deck-builders get a head-start on quickly crafting a solid deck to play in the Tavern. They’re great for both new players who haven’t built many decks, and experienced players who don’t want to create a deck entirely from scratch.\n\nI'm constantly impressed by how much thought goes into each new feature they launch, such as the ability to suggest a missing card:\n\n>Don’t have all of the cards to complete a specific Deck Recipe? No sweat! Simply click on one of the greyed out cards you’re missing, and the greatly improved “Suggest a Card” feature will help you replace it with a card from your collection. This should help make it easy to quickly finish a deck, and start playing!\n\n![Suggest a Card](/content/images/2016/03/1J3EURKJKI6X1456891663353.jpg)\n",
+            "html": "<p>I've been a closet <a href=\"http://playhearthstone.com\">Hearthstone</a> player since shortly after the game launched in early 2014. As a player, I enjoy the game mechanics and strategy but as a Product Manager, I've come to appreciate the design decisions the team has made and how transparent they are with their process. </p>\n\n<p>Recently, the team announced a feature aimed at new and returning players and I think it's a great one:</p>\n\n<blockquote>\n  <p><strong>Deck Recipes</strong> are a new feature coming to Hearthstone to help budding deck-builders get a head-start on quickly crafting a solid deck to play in the Tavern. They’re great for both new players who haven’t built many decks, and experienced players who don’t want to create a deck entirely from scratch.</p>\n</blockquote>\n\n<p>I'm constantly impressed by how much thought goes into each new feature they launch, such as the ability to suggest a missing card:</p>\n\n<blockquote>\n  <p>Don’t have all of the cards to complete a specific Deck Recipe? No sweat! Simply click on one of the greyed out cards you’re missing, and the greatly improved “Suggest a Card” feature will help you replace it with a card from your collection. This should help make it easy to quickly finish a deck, and start playing!</p>\n</blockquote>\n\n<p><img src=\"/content/images/2016/03/1J3EURKJKI6X1456891663353.jpg\" alt=\"Suggest a Card\" /></p>",
+            "image": null,
+            "featured": 0,
+            "page": 0,
+            "status": "published",
+            "language": "en_US",
+            "meta_title": null,
+            "meta_description": "http://us.battle.net/hearthstone/en/blog/20056279/let%E2%80%99s-get-brewing-with-deck-recipes-3-8-2016",
+            "author_id": 1,
+            "created_at": 1457669955510,
+            "updated_at": 1457673458010,
+            "published_at": 1457672577537
+          },
+          {
+            "id": 18,
+            "title": "How to Split User Stories",
+            "slug": "user-story-decomposition",
+            "markdown": "Some good advice from Mike Cohn on how to approach story decomposition:\n\n>When something will take a long time to develop, that's exactly when I want to use a process that forces me to get early and frequent feedback. This will counter many developers’ tendency (including my own) to retreat into a cave thinking we know what our users want.\n\nIn my experience, it's always worth digging a little deeper during planning to find ways to split user stories so they can be delivered in a single sprint. ",
+            "html": "<p>Some good advice from Mike Cohn on how to approach story decomposition:</p>\n\n<blockquote>\n  <p>When something will take a long time to develop, that's exactly when I want to use a process that forces me to get early and frequent feedback. This will counter many developers’ tendency (including my own) to retreat into a cave thinking we know what our users want.</p>\n</blockquote>\n\n<p>In my experience, it's always worth digging a little deeper during planning to find ways to split user stories so they can be delivered in a single sprint. </p>",
+            "image": null,
+            "featured": 0,
+            "page": 0,
+            "status": "published",
+            "language": "en_US",
+            "meta_title": null,
+            "meta_description": "http://mountaingoatsoftware.com/blog/advice-on-how-to-split-reporting-user-stories",
+            "author_id": 1,
+            "created_at": 1457673052248,
+            "updated_at": 1457715439092,
+            "published_at": 1457715212679
+          },
+          {
+            "id": 19,
+            "title": "Paying Down Product Debt",
+            "slug": "paying-down-product-debt",
+            "markdown": "Are you considering 'product debt\n>Product Management is (and always has been) a juggling act. Product Managers need to work hard to co-ordinate competing demands for new features and design enhancements within individual products. But they also need to synchronise the development of multiple products within the broader ecosystem. To achieve this, they must ensure that each delivers on the brand’s core value proposition.\n\n>Monitoring (and managing) product debt is one of the best ways to perform this juggling act and to guarantee you are considering the experience of the ‘multichannel’ and the ‘unichannel’ user at the same time.",
+            "html": "<p>Are you considering 'product debt  </p>\n\n<blockquote>\n  <p>Product Management is (and always has been) a juggling act. Product Managers need to work hard to co-ordinate competing demands for new features and design enhancements within individual products. But they also need to synchronise the development of multiple products within the broader ecosystem. To achieve this, they must ensure that each delivers on the brand’s core value proposition.</p>\n  \n  <p>Monitoring (and managing) product debt is one of the best ways to perform this juggling act and to guarantee you are considering the experience of the ‘multichannel’ and the ‘unichannel’ user at the same time.</p>\n</blockquote>",
+            "image": null,
+            "featured": 0,
+            "page": 0,
+            "status": "draft",
+            "language": "en_US",
+            "meta_title": null,
+            "meta_description": null,
+            "author_id": 1,
+            "created_at": 1457718607964,
+            "updated_at": 1457718653593,
+            "published_at": null
+          },
+          {
+            "id": 20,
+            "title": "The Trouble With Photos",
+            "slug": "the-trouble-with-photos",
+            "markdown": "![Photos App Syncing Error](/content/images/2016/03/photosapp-hero-alt-copy.png)\n\nOver the past year, [much has been made](https://marco.org/2015/01/04/apple-lost-functional-high-ground) about Apple's declining [software](http://www.loopinsight.com/2016/02/03/about-walt-mossberg-and-apples-app-problem/) [quality](http://daringfireball.net/2016/02/apples_app_problem) and while I'm not part of the 'Apple is doomed' camp, Walt Mossberg's [observation](http://www.theverge.com/2016/2/3/10900612/walt-mossberg-apple-iphone-ios-mac-osx-app-problems) about the Photos app hit home for me:\n\n>iCloud Photo Library works quickly and accurately on my iPhone and iPads, but is slow and balky on the desktop. I am not one of those people with 50,000 or 100,000 pictures, but it still takes forever on the Mac to find older photos, and some show up as just blank thumbnails. That isn’t Apple quality. \n\nMossberg doesn't provide much in the way of specifics surrounding his problems (something he's been criticized for) so I wanted to give a bit of detail on the Photos bug that has been frustrating me over the past year.\n\nBefore I dive into the problem, I think it's helpful to understand how far we've come in the way we manage our digital photo libraries. For me it started with saving the digital files off my camera memory card, possibly burning them to a CD for archiving but inevitably losing them during a move or upgrade to a new computer. Then came Flickr and suddenly it was possible to upload photos for backup and sharing, as long as I didn't want to download the originals again at full-resolution. Fast forward to a time where most photos are taken with our phones and Apple brought us iPhoto and Photo Stream, giving hope that all of the photos on our devices would be synced to our libraries (as long as you took care to backup the 40gb iPhoto library file). However, it turns out access to every photo you've taken created serious problems with organization and storage limits.\n\nTherefore, when Apple launched the redesigned Photos app with iCloud Photo Library I was excited by the prospect of not having to worry about syncing photos to and from my devices or manually organizing them into albums if I ever hoped to find them again. Once I experienced the delight of snapping a photo on my iPhone and seeing it immediately available in Photos on my MacBook, I was hooked (it still makes me smile.. when it works). \n\nThe reason I mention this is to note how far we've come but also that the frustrations with losing so many photos have conditioned me to be cautious in trusting a service to store them for me (especially now that I have children and hundreds of photos / videos I can never reproduce).\n\nThat brings me to the crux of the issue. About once a week when I open the Photos app on my Mac (usually to make a quick edit to a photo I took on my device) I get a message telling me that there are several photos waiting to be downloaded:\n\n![Waiting to Download](/content/images/2016/03/photosapp-waiting.png)\n\nThis message will stay unchanged (and in true Apple style, provides no ability to see more detail about what is going on) until I fully REBOOT my computer, at which point syncing will resume. As a former Windows user, it's like a flashback to the days where daily reboots were par for the course (normally my MacBook will not need a reboot for weeks at a time). \n\nSadly, that isn't the end of this story. Enter the dreaded circle of death:\n\n![Circle of Death](/content/images/2016/03/photosapp-hero-1.png)\n\nBecause I've enabled 'Download Originals to this Mac' (tells Photos to store the full-resolution originals on my local drive), once a photo has finished syncing I presume I'll be able to make edits to it or export it at any time, even if I'm not online. I discovered recently that if Photos syncing is 'stuck', sometimes photos from months ago inexplicably show the circle of death icon in the corner, preventing me from editing or exporting (not exactly building confidence that my photos are safely saved). Behind the scenes it appears the photo is available locally but Photos thinks it needs to be synced with iCloud and prevents editing or exporting. \n\nTime for another reboot!\n\n![Have you tried turning it off and back on again?](/content/images/2016/03/photosapp-turningitoffandonagain.jpg)\n\nThe experience of managing and archiving photos has improved dramatically in the past few years and I applaud Apple for making the syncing and backup process feel truly magical. However, now that we have experienced the magic, Apple has to take responsibility for making sure the cloud 'just works' every time for everyone (just like it has made OS X crashes a [thing of the past](http://www.macworld.com/article/2987277/operating-systems/os-x-el-capitan-review-mac-upgrade-thats-as-solid-as-a-rock.html)). ",
+            "html": "<p><img src=\"/content/images/2016/03/photosapp-hero-alt-copy.png\" alt=\"Photos App Syncing Error\" /></p>\n\n<p>Over the past year, <a href=\"https://marco.org/2015/01/04/apple-lost-functional-high-ground\">much has been made</a> about Apple's declining <a href=\"http://www.loopinsight.com/2016/02/03/about-walt-mossberg-and-apples-app-problem/\">software</a> <a href=\"http://daringfireball.net/2016/02/apples_app_problem\">quality</a> and while I'm not part of the 'Apple is doomed' camp, Walt Mossberg's <a href=\"http://www.theverge.com/2016/2/3/10900612/walt-mossberg-apple-iphone-ios-mac-osx-app-problems\">observation</a> about the Photos app hit home for me:</p>\n\n<blockquote>\n  <p>iCloud Photo Library works quickly and accurately on my iPhone and iPads, but is slow and balky on the desktop. I am not one of those people with 50,000 or 100,000 pictures, but it still takes forever on the Mac to find older photos, and some show up as just blank thumbnails. That isn’t Apple quality. </p>\n</blockquote>\n\n<p>Mossberg doesn't provide much in the way of specifics surrounding his problems (something he's been criticized for) so I wanted to give a bit of detail on the Photos bug that has been frustrating me over the past year.</p>\n\n<p>Before I dive into the problem, I think it's helpful to understand how far we've come in the way we manage our digital photo libraries. For me it started with saving the digital files off my camera memory card, possibly burning them to a CD for archiving but inevitably losing them during a move or upgrade to a new computer. Then came Flickr and suddenly it was possible to upload photos for backup and sharing, as long as I didn't want to download the originals again at full-resolution. Fast forward to a time where most photos are taken with our phones and Apple brought us iPhoto and Photo Stream, giving hope that all of the photos on our devices would be synced to our libraries (as long as you took care to backup the 40gb iPhoto library file). However, it turns out access to every photo you've taken created serious problems with organization and storage limits.</p>\n\n<p>Therefore, when Apple launched the redesigned Photos app with iCloud Photo Library I was excited by the prospect of not having to worry about syncing photos to and from my devices or manually organizing them into albums if I ever hoped to find them again. Once I experienced the delight of snapping a photo on my iPhone and seeing it immediately available in Photos on my MacBook, I was hooked (it still makes me smile.. when it works). </p>\n\n<p>The reason I mention this is to note how far we've come but also that the frustrations with losing so many photos have conditioned me to be cautious in trusting a service to store them for me (especially now that I have children and hundreds of photos / videos I can never reproduce).</p>\n\n<p>That brings me to the crux of the issue. About once a week when I open the Photos app on my Mac (usually to make a quick edit to a photo I took on my device) I get a message telling me that there are several photos waiting to be downloaded:</p>\n\n<p><img src=\"/content/images/2016/03/photosapp-waiting.png\" alt=\"Waiting to Download\" /></p>\n\n<p>This message will stay unchanged (and in true Apple style, provides no ability to see more detail about what is going on) until I fully REBOOT my computer, at which point syncing will resume. As a former Windows user, it's like a flashback to the days where daily reboots were par for the course (normally my MacBook will not need a reboot for weeks at a time). </p>\n\n<p>Sadly, that isn't the end of this story. Enter the dreaded circle of death:</p>\n\n<p><img src=\"/content/images/2016/03/photosapp-hero-1.png\" alt=\"Circle of Death\" /></p>\n\n<p>Because I've enabled 'Download Originals to this Mac' (tells Photos to store the full-resolution originals on my local drive), once a photo has finished syncing I presume I'll be able to make edits to it or export it at any time, even if I'm not online. I discovered recently that if Photos syncing is 'stuck', sometimes photos from months ago inexplicably show the circle of death icon in the corner, preventing me from editing or exporting (not exactly building confidence that my photos are safely saved). Behind the scenes it appears the photo is available locally but Photos thinks it needs to be synced with iCloud and prevents editing or exporting. </p>\n\n<p>Time for another reboot!</p>\n\n<p><img src=\"/content/images/2016/03/photosapp-turningitoffandonagain.jpg\" alt=\"Have you tried turning it off and back on again?\" /></p>\n\n<p>The experience of managing and archiving photos has improved dramatically in the past few years and I applaud Apple for making the syncing and backup process feel truly magical. However, now that we have experienced the magic, Apple has to take responsibility for making sure the cloud 'just works' every time for everyone (just like it has made OS X crashes a <a href=\"http://www.macworld.com/article/2987277/operating-systems/os-x-el-capitan-review-mac-upgrade-thats-as-solid-as-a-rock.html\">thing of the past</a>). </p>",
+            "image": null,
+            "featured": 1,
+            "page": 0,
+            "status": "published",
+            "language": "en_US",
+            "meta_title": null,
+            "meta_description": null,
+            "author_id": 1,
+            "created_at": 1458074687831,
+            "updated_at": 1458142796471,
+            "published_at": 1458085278031
+          },
+          {
+            "id": 21,
+            "title": "Labels",
+            "slug": "developers-vs-designers",
+            "markdown": "Why is it that most Developers I know would love it if Designers wrote code, but most Designers I know would shudder at the thought of their Developers doing design work?",
+            "html": "<p>Why is it that most Developers I know would love it if Designers wrote code, but most Designers I know would shudder at the thought of their Developers doing design work?</p>",
+            "image": null,
+            "featured": 0,
+            "page": 0,
+            "status": "draft",
+            "language": "en_US",
+            "meta_title": null,
+            "meta_description": null,
+            "author_id": 1,
+            "created_at": 1459261816404,
+            "updated_at": 1459261939905,
+            "published_at": null
+          },
+          {
+            "id": 22,
+            "title": "Perch 2.9",
+            "slug": "perch-2-9",
+            "markdown": "Here's a video:\n\n<iframe src=\"https://player.vimeo.com/video/162413585?autoplay=1&loop=1&title=0&byline=0&portrait=0\" width=\"250\" height=\"445\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n",
+            "html": "<p>Here's a video:</p>\n\n<iframe src=\"https://player.vimeo.com/video/162413585?autoplay=1&loop=1&title=0&byline=0&portrait=0\" width=\"250\" height=\"445\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+            "image": null,
+            "featured": 0,
+            "page": 0,
+            "status": "draft",
+            "language": "en_US",
+            "meta_title": null,
+            "meta_description": null,
+            "author_id": 1,
+            "created_at": 1460399511980,
+            "updated_at": 1460400980023,
+            "published_at": null
+          },
+          {
+            "id": 23,
+            "title": "Common Log-in Problems and Solutions",
+            "slug": "common-log-in-problems-and-solutions",
+            "markdown": "Nick Babich has a fresh look at one of the first and most error-prone experiences users have with any software product. Especially like his focus on the messaging presented when users make a mistake (error messages tend to be an afterthought during the design process):\n\n>Detailed analysis of major e-commerce sites found that *45% of all customers had multiple registrations in the system, 160,000 people requested their password every day, and 75% of these people never completed the purchase they started once they requested their password.*\n\n>Log-in is a big deal — big enough that most sites and apps have started exploring new designs solutions for the problem.",
+            "html": "<p>Nick Babich has a fresh look at one of the first and most error-prone experiences users have with any software product. Especially like his focus on the messaging presented when users make a mistake (error messages tend to be an afterthought during the design process):</p>\n\n<blockquote>\n  <p>Detailed analysis of major e-commerce sites found that <em>45% of all customers had multiple registrations in the system, 160,000 people requested their password every day, and 75% of these people never completed the purchase they started once they requested their password.</em></p>\n  \n  <p>Log-in is a big deal — big enough that most sites and apps have started exploring new designs solutions for the problem.</p>\n</blockquote>",
+            "image": null,
+            "featured": 0,
+            "page": 0,
+            "status": "published",
+            "language": "en_US",
+            "meta_title": "",
+            "meta_description": "https://uxplanet.org/most-common-log-in-problems-and-solutions-163a6209c0eb#.uh3moi92t",
+            "author_id": 1,
+            "created_at": 1461870139230,
+            "updated_at": 1461939684511,
+            "published_at": 1461939466707
+          },
+          {
+            "id": 24,
+            "title": "How Bungie Embraced Evolutionary Product Design with Destiny",
+            "slug": "the-evolutionary-process-of-building-software-products",
+            "markdown": "Dave Tach makes a great observation on the evolutionary nature of software products:\n\n>This is the ebb and flow of software development, where bits and bytes evolve beyond their creators' initial conceptions. Developers make educated guesses and pitch their product to the public. After it's released and potentially millions of people use it, they learn whether they guessed correctly. In some ways, Apple guessed wrong about the fundamentals of the software that powers its popular wearable. It is far from the only company to have done so. Set for release this fall, watchOS 3's big changes are the result of observation, reassessment and refinement.\n\nHis article is an interesting look at how game design has changed from monolithic single releases to an iterative process where designers adapt their games based on how players play it. ",
+            "html": "<p>Dave Tach makes a great observation on the evolutionary nature of software products:</p>\n\n<blockquote>\n  <p>This is the ebb and flow of software development, where bits and bytes evolve beyond their creators' initial conceptions. Developers make educated guesses and pitch their product to the public. After it's released and potentially millions of people use it, they learn whether they guessed correctly. In some ways, Apple guessed wrong about the fundamentals of the software that powers its popular wearable. It is far from the only company to have done so. Set for release this fall, watchOS 3's big changes are the result of observation, reassessment and refinement.</p>\n</blockquote>\n\n<p>His article is an interesting look at how game design has changed from monolithic single releases to an iterative process where designers adapt their games based on how players play it. </p>",
+            "image": null,
+            "featured": 0,
+            "page": 0,
+            "status": "published",
+            "language": "en_US",
+            "meta_title": "",
+            "meta_description": "http://www.polygon.com/features/2016/7/5/12079326/destiny-rise-of-iron-preview-interview",
+            "author_id": 1,
+            "created_at": 1467916915367,
+            "updated_at": 1467917654625,
+            "published_at": 1467917537950
+          },
+          {
+            "id": 25,
+            "title": "How We Do Spikes",
+            "slug": "how-we-do-spikes",
+            "markdown": "Sophie Déziel gives a great summary of her team's approach to research spikes. We handle them in a similar way at Closely but I especially liked her simple framework for documenting the outcome of the work (something that too often gets ignored in the rush for an answer):\n\n>The goal of a spike would be to produce knowledge and to reduce uncertainty. So, it’s important to follow some guidelines to make sure that the knowledge is communicated. This can be very useful for every level of development and management. So, here is the questions to be answered (and documented) in the time allocated:\n\n>* What is the problem that we want to solve?\n>* Is it feasible?\n>* How much effort does it need?\n\n>When the conclusion is that it is possible and the amount of effort is defined, the knowledge produced and documented should be enough for the product owner to create the stories to do the real work and help the development team to estimate it.\n",
+            "html": "<p>Sophie Déziel gives a great summary of her team's approach to research spikes. We handle them in a similar way at Closely but I especially liked her simple framework for documenting the outcome of the work (something that too often gets ignored in the rush for an answer):</p>\n\n<blockquote>\n  <p>The goal of a spike would be to produce knowledge and to reduce uncertainty. So, it’s important to follow some guidelines to make sure that the knowledge is communicated. This can be very useful for every level of development and management. So, here is the questions to be answered (and documented) in the time allocated:</p>\n  \n  <ul>\n  <li>What is the problem that we want to solve?</li>\n  <li>Is it feasible?</li>\n  <li>How much effort does it need?</li>\n  </ul>\n  \n  <p>When the conclusion is that it is possible and the amount of effort is defined, the knowledge produced and documented should be enough for the product owner to create the stories to do the real work and help the development team to estimate it.</p>\n</blockquote>",
+            "image": null,
+            "featured": 0,
+            "page": 0,
+            "status": "published",
+            "language": "en_US",
+            "meta_title": null,
+            "meta_description": "https://medium.com/@sophiedeziel/how-we-do-spikes-4a43f0d19967",
+            "author_id": 1,
+            "created_at": 1468006535367,
+            "updated_at": 1468007057017,
+            "published_at": 1468007057018
+          }
+        ],
+        "settings": [
+          {
+            "key": "title",
+            "value": "Brian Erickson",
+            "type": "blog"
+          },
+          {
+            "key": "description",
+            "value": "Product Management, iOS Development and Design.",
+            "type": "blog"
+          },
+          {
+            "key": "logo",
+            "value": "",
+            "type": "blog"
+          },
+          {
+            "key": "cover",
+            "value": "/content/images/2016/03/djbriane-background_blur_1400-2.jpg",
+            "type": "blog"
+          },
+          {
+            "key": "defaultLang",
+            "value": "en_US",
+            "type": "blog"
+          },
+          {
+            "key": "postsPerPage",
+            "value": "10",
+            "type": "blog"
+          },
+          {
+            "key": "permalinks",
+            "value": "/:slug/",
+            "type": "blog"
+          },
+          {
+            "key": "activeTheme",
+            "value": "casper-bme",
+            "type": "theme"
+          }
+        ],
+        "tags": [
+          {
+            "id": 1,
+            "name": "Getting Started",
+            "slug": "getting-started",
+            "description": null,
+            "hidden": 0
+          },
+          {
+            "id": 3,
+            "name": "bme_format_link",
+            "slug": "bme_format_link",
+            "description": null,
+            "hidden": 0
+          },
+          {
+            "id": 4,
+            "name": "Running",
+            "slug": "running",
+            "description": null,
+            "hidden": 0
+          },
+          {
+            "id": 5,
+            "name": "Coffee",
+            "slug": "coffee",
+            "description": null,
+            "hidden": 0
+          },
+          {
+            "id": 6,
+            "name": "Design",
+            "slug": "design",
+            "description": null,
+            "hidden": 0
+          },
+          {
+            "id": 7,
+            "name": "Team Communication",
+            "slug": "team-communication",
+            "description": null,
+            "hidden": 0
+          },
+          {
+            "id": 8,
+            "name": "Movies",
+            "slug": "movies",
+            "description": null,
+            "hidden": 0
+          },
+          {
+            "id": 9,
+            "name": "Anime",
+            "slug": "anime",
+            "description": null,
+            "hidden": 0
+          },
+          {
+            "id": 10,
+            "name": "Agile",
+            "slug": "agile",
+            "description": null,
+            "hidden": 0
+          },
+          {
+            "id": 11,
+            "name": "Process",
+            "slug": "process",
+            "description": null,
+            "hidden": 0
+          },
+          {
+            "id": 12,
+            "name": "Product Design",
+            "slug": "product-design",
+            "description": null,
+            "hidden": 0
+          },
+          {
+            "id": 13,
+            "name": "Gaming",
+            "slug": "gaming",
+            "description": null,
+            "hidden": 0
+          },
+          {
+            "id": 14,
+            "name": "Photography",
+            "slug": "photography",
+            "description": null,
+            "hidden": 0
+          }
+        ],
+        "posts_tags": [
+          {
+            "post_id": 3,
+            "tag_id": 3,
+            "sort_order": 0
+          },
+          {
+            "post_id": 6,
+            "tag_id": 3,
+            "sort_order": 0
+          },
+          {
+            "post_id": 7,
+            "tag_id": 3,
+            "sort_order": 0
+          },
+          {
+            "post_id": 8,
+            "tag_id": 4,
+            "sort_order": 0
+          },
+          {
+            "post_id": 9,
+            "tag_id": 4,
+            "sort_order": 0
+          },
+          {
+            "post_id": 11,
+            "tag_id": 3,
+            "sort_order": 0
+          },
+          {
+            "post_id": 12,
+            "tag_id": 3,
+            "sort_order": 0
+          },
+          {
+            "post_id": 13,
+            "tag_id": 3,
+            "sort_order": 0
+          },
+          {
+            "post_id": 14,
+            "tag_id": 3,
+            "sort_order": 0
+          },
+          {
+            "post_id": 14,
+            "tag_id": 5,
+            "sort_order": 1
+          },
+          {
+            "post_id": 14,
+            "tag_id": 6,
+            "sort_order": 2
+          },
+          {
+            "post_id": 15,
+            "tag_id": 3,
+            "sort_order": 0
+          },
+          {
+            "post_id": 15,
+            "tag_id": 7,
+            "sort_order": 1
+          },
+          {
+            "post_id": 16,
+            "tag_id": 3,
+            "sort_order": 0
+          },
+          {
+            "post_id": 16,
+            "tag_id": 8,
+            "sort_order": 1
+          },
+          {
+            "post_id": 16,
+            "tag_id": 9,
+            "sort_order": 2
+          },
+          {
+            "post_id": 17,
+            "tag_id": 3,
+            "sort_order": 0
+          },
+          {
+            "post_id": 18,
+            "tag_id": 3,
+            "sort_order": 0
+          },
+          {
+            "post_id": 18,
+            "tag_id": 10,
+            "sort_order": 1
+          },
+          {
+            "post_id": 18,
+            "tag_id": 11,
+            "sort_order": 2
+          },
+          {
+            "post_id": 17,
+            "tag_id": 12,
+            "sort_order": 1
+          },
+          {
+            "post_id": 17,
+            "tag_id": 13,
+            "sort_order": 2
+          },
+          {
+            "post_id": 23,
+            "tag_id": 3,
+            "sort_order": 0
+          },
+          {
+            "post_id": 23,
+            "tag_id": 6,
+            "sort_order": 1
+          },
+          {
+            "post_id": 24,
+            "tag_id": 3,
+            "sort_order": 0
+          },
+          {
+            "post_id": 24,
+            "tag_id": 12,
+            "sort_order": 1
+          },
+          {
+            "post_id": 24,
+            "tag_id": 13,
+            "sort_order": 2
+          },
+          {
+            "post_id": 25,
+            "tag_id": 3,
+            "sort_order": 0
+          },
+          {
+            "post_id": 25,
+            "tag_id": 10,
+            "sort_order": 1
+          },
+          {
+            "post_id": 25,
+            "tag_id": 11,
+            "sort_order": 2
+          }
+        ],
+        "users": [
+          {
+            "id": 1,
+            "name": "Brian Erickson",
+            "slug": "brian",
+            "image": "/content/images/2016/03/Brian-Profile-2016-1.jpg",
+            "cover": "/content/images/2016/03/djbriane-background_blur_1400-3.jpg",
+            "bio": null,
+            "website": null,
+            "location": "Denver, CO"
+          }
+        ]
+      }
+    }
+  ]
+}

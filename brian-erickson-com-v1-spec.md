@@ -154,34 +154,36 @@ Required for production validation: `basics.name`, `basics.title`, `basics.summa
 
 ## Visual Design Direction
 
-**Aesthetic:** Warm editorial with a technical counterpoint. Think a well-designed personal magazine for a product-minded technologist, not a SaaS landing page and not a generic developer portfolio template. The primary audience is people evaluating Brian professionally as a technical Product Manager / product leader.
+**Aesthetic:** Closely replicate the original Ghost/Casper site while modernizing the implementation for Astro. The site should still feel like Brian's old personal blog evolved forward, not a generic developer portfolio template. Use the preserved reference files in `specs/refs/original-site/` as the design source of truth.
 
 **Typography:**
-- Display / headings: `Lora` or `Playfair Display` (serif — warmth, character, readable at large sizes)
-- Body: `Inter` or `Source Sans 3` (sans-serif — professional scanability for resume and project content)
-- Monospace (code blocks, tags, dates): `IBM Plex Mono` or `JetBrains Mono`
-- Load via Google Fonts or Fontsource (self-hosted preferred for Lighthouse score)
+- Body/editorial copy: `Merriweather` (serif), matching the original Casper theme's article feel
+- Headings/navigation: `Open Sans` (sans-serif), matching the original Casper theme's compact bold headings and buttons
+- Monospace (code blocks, tags, dates): system monospace or `JetBrains Mono` if needed for readability
+- Self-host fonts with Fontsource if practical for Lighthouse; otherwise load only the required weights
 
 **Color palette:**
 ```css
---color-bg:        #FAF7F2;   /* warm off-white parchment */
---color-surface:   #F0EBE1;   /* slightly darker warm surface for cards */
---color-border:    #D9D0C4;   /* warm gray border */
---color-text:      #2C2825;   /* near-black warm brown */
---color-muted:     #7A6F64;   /* muted warm gray for metadata */
---color-accent:    #C0622A;   /* burnt orange — anchor links, tags, active states */
---color-accent-bg: #F5E6DA;   /* light accent tint for tag chips, hover states */
---color-technical: #2F5D62;   /* cool secondary accent for technical/product signals */
---color-focus:     #1F6F7A;   /* accessible focus/link contrast where orange is too warm */
+--color-bg:        #FFFFFF;   /* original Casper content surface */
+--color-hero-bg:   #222222;   /* fallback under cover images */
+--color-text:      #3A4145;   /* original body copy */
+--color-heading:   #2E2E2E;   /* original headings */
+--color-link:      #4A4A4A;   /* original link color */
+--color-link-hover:#111111;   /* original hover */
+--color-muted:     #9EABB3;   /* original post metadata */
+--color-border:    #EBF2F6;   /* original post dividers */
+--color-code-bg:   #F7FAFB;   /* original code blocks */
+--color-code-border:#E3EDF3;  /* original code borders */
+--color-focus:     #1F6F7A;   /* accessible modern focus treatment */
 ```
 
 **Layout principles:**
-- Single-column reading width (`max-width: 680px`) for blog posts and resume
-- Wider container (`max-width: 1100px`) for index pages with card grids
-- Generous vertical rhythm — don't compress the whitespace
-- No hero image required on homepage; strong typographic headline + 2–3 sentence bio is sufficient
-- Dates and tags in small-caps monospace to create visual hierarchy without extra weight
-- Do not use a profile photo in v1
+- Homepage uses the original full-viewport cover image treatment with centered title/description and overlay navigation
+- Single-column reading width (`max-width: 710px`) for blog posts and resume, matching Casper's `.inner` and `.post` width
+- Wider container (`max-width: 1100px`) only where the modern project/resume surfaces need comparison or grids
+- Preserve generous Casper vertical rhythm and the list-style blog index, including light dividers
+- Dates/tags use the original small uppercase sans-serif metadata style
+- Do not use a profile photo in v1 page content, but keep the original profile image as a reference asset
 - Use a simple `BE` favicon/brand mark; do not blend GPXplore motifs into the personal brand
 - Homepage/default metadata must describe current Brian and GPXplore, not decade-old archive content
 
@@ -345,7 +347,7 @@ brian-erickson.com/
 
 The agent should create and run a migration script (plain Node.js is fine) that:
 
-1. Reads `brian-erickson.ghost.2026-06-05.json`
+1. Reads `specs/refs/brian-erickson.ghost.2026-06-05.json`, a sanitized export that intentionally excludes Ghost admin/user secrets
 2. Filters to posts where `status: "published"` and `page: 0` (excludes the About Me page)
 3. For each post, writes a `.md` file to `src/content/blog/` with frontmatter derived from the Ghost data:
    - `title` → title
@@ -356,7 +358,7 @@ The agent should create and run a migration script (plain Node.js is fine) that:
    - `ghost_id` → id
    - `draft: false`
    - Body → markdown content after safe internal cleanup
-4. Copies referenced Ghost images into `public/images/blog/` and rewrites markdown image paths to the clean `/images/blog/...` structure
+4. Copies referenced Ghost images from `specs/refs/original-site/ghost-images/` into `public/images/blog/` and rewrites markdown image paths to the clean `/images/blog/...` structure
 5. Preserves compatibility for old image URLs (`/img/...` and `/content/images/...`) through copied files or redirects so old inbound image links do not break
 6. Performs safe link cleanup only: convert known internal links to new URLs, fix image paths, and remove tracking cruft such as `utm_*`
 7. Extracts external URLs into a link-audit report but does not check network status during migration

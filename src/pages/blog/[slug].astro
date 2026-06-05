@@ -1,0 +1,39 @@
+---
+import { getCollection } from "astro:content";
+import TagChip from "../../components/TagChip.astro";
+import Page from "../../layouts/Page.astro";
+import { estimateReadingMinutes, formatDate, isPublishedPost } from "../../lib/content";
+
+export async function getStaticPaths() {
+  const posts = (await getCollection("blog")).filter(isPublishedPost);
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+const minutes = estimateReadingMinutes(post.body);
+---
+
+<Page title={post.data.title} description={post.data.description} type="article">
+  <article class="reading-width">
+    <header class="page-header">
+      <p class="eyebrow">
+        {post.data.ghost_id ? "Originally published" : "Published"} {formatDate(post.data.date)}
+        <span aria-hidden="true">/</span>
+        {minutes} min read
+      </p>
+      <h1>{post.data.title}</h1>
+      {post.data.tags.length > 0 && (
+        <div class="tag-list">
+          {post.data.tags.map((tag) => <TagChip tag={tag} />)}
+        </div>
+      )}
+    </header>
+    <div class="content">
+      <Content />
+    </div>
+  </article>
+</Page>

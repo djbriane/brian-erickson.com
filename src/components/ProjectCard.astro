@@ -1,0 +1,26 @@
+---
+import type { CollectionEntry } from "astro:content";
+import TagChip from "./TagChip.astro";
+
+interface Props {
+  project: CollectionEntry<"projects">;
+}
+
+const { project } = Astro.props;
+---
+
+<article class="project-card">
+  {project.data.cover_image && (
+    <img src={project.data.cover_image} alt="" loading="lazy" />
+  )}
+  <p class="eyebrow">{project.data.subtitle}</p>
+  <h2><a href={`/projects/${project.slug}/`}>{project.data.title}</a></h2>
+  <p>{project.data.summary}</p>
+  <div class="project-card__meta">
+    <span class="status-badge">{project.data.status}</span>
+    <div class="tag-list" aria-label="Tags">
+      {project.data.tags.map((tag) => <TagChip tag={tag} />)}
+    </div>
+  </div>
+</article>
+

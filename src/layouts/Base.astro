@@ -1,0 +1,52 @@
+---
+import "@fontsource/inter/400.css";
+import "@fontsource/inter/600.css";
+import "@fontsource/lora/600.css";
+import "@fontsource/lora/700.css";
+import "@fontsource/ibm-plex-mono/400.css";
+import "../styles/global.css";
+import { SITE_DESCRIPTION, SITE_TITLE } from "../lib/content";
+
+interface Props {
+  title?: string;
+  description?: string;
+  type?: "website" | "article";
+}
+
+const {
+  title = SITE_TITLE,
+  description = SITE_DESCRIPTION,
+  type = "website",
+} = Astro.props;
+const pageTitle = title === SITE_TITLE ? title : `${title} | ${SITE_TITLE}`;
+const canonical = new URL(Astro.url.pathname, Astro.site ?? "https://brian-erickson.com").toString();
+const analyticsToken = import.meta.env.CLOUDFLARE_ANALYTICS_TOKEN;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content={type} />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary" />
+    {analyticsToken && (
+      <script
+        is:inline
+        defer
+        src="https://static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon={`{"token":"${analyticsToken}"}`}
+      ></script>
+    )}
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

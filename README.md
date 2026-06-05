@@ -20,13 +20,14 @@ Current build spec: [brian-erickson-com-v1-spec.md](brian-erickson-com-v1-spec.m
 
 ## Current State
 
-The Astro project has not been scaffolded yet. Existing inputs:
+The Astro project is scaffolded on the v1 spec. Existing migration inputs:
 
 - `brian-erickson-com-v1-spec.md`
-- `brian-erickson.ghost.2026-06-05.json`
+- `specs/refs/brian-erickson.ghost.2026-06-05.json` (sanitized export; no Ghost admin/user secrets)
+- `specs/refs/original-site/ghost-images/`
 - `brian-erickson-archive.tar.gz`
 
-Expected commands after scaffold:
+Common commands:
 
 ```bash
 npm run dev
@@ -34,3 +35,4 @@ npm test
 npm run build
 ```
 
+The Ghost migration script is currently a scaffold; the next build slice should implement the full migration and replace placeholder resume content with production data.
