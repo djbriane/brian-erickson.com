@@ -1,0 +1,54 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Resume" description="Experience, education, and selected work.">
+  <section>
+    <div class="container">
+      <p class="meta">Resume</p>
+      <h1>Brian Erickson</h1>
+      <p class="prose" style="color:var(--muted)">Product manager and developer. Brooklyn, NY.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container two-col">
+      <h2>Summary</h2>
+      <div class="prose">
+        <p>Fifteen years building consumer and B2B software, splitting time between product strategy and hands-on engineering. Most effective at the seams: the boundary between a roadmap and a sprint, between a design and shipped code, between what users say and what they need.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container two-col">
+      <h2>Experience</h2>
+      <div class="prose">
+        <h3>Founder · GPXplore <span class="meta" style="margin-left:0.5rem">2024 – Present</span></h3>
+        <ul class="bullets">
+          <li>Product, design, and full-stack development for an outdoor route-planning tool.</li>
+          <li>Shipped first public beta in five months from a clean repo.</li>
+        </ul>
+
+        <h3>Senior Product Manager · Closely <span class="meta" style="margin-left:0.5rem">2021 – 2024</span></h3>
+        <ul class="bullets">
+          <li>Owned the bullet-list feature area; grew weekly active use by 38%.</li>
+          <li>Partnered with engineering on a platform migration with zero downtime.</li>
+        </ul>
+
+        <h3>Product Manager · Earlier Project <span class="meta" style="margin-left:0.5rem">2018 – 2021</span></h3>
+        <ul class="bullets">
+          <li>Role TBD — light stand-in copy you can replace with real bullets.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container two-col">
+      <h2>Education</h2>
+      <div class="prose">
+        <p>B.S., Computer Science — replace with your school. Continued learning via short courses in design systems, GIS, and SQL performance.</p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

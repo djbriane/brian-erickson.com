@@ -1,0 +1,19 @@
+:root {
+  /* Palette pulled from the hero image */
+  --ink:         oklch(0.22 0.02 60);
+  --paper:       oklch(0.93 0.025 75);
+  --paper-soft:  oklch(0.88 0.03 70);
+  --muted:       oklch(0.52 0.02 60);
+  --accent:      oklch(0.52 0.18 28);
+  --accent-cool: oklch(0.58 0.09 235);
+  --rule:        oklch(0.78 0.02 70);
+
+  /* Typography */
+  --font-display: 'Space Grotesk Variable', 'Space Grotesk', system-ui, sans-serif;
+  --font-body:    'DM Sans Variable', 'DM Sans', system-ui, sans-serif;
+
+  /* Layout */
+  --measure: 62ch;
+  --page-pad: clamp(1.25rem, 4vw, 3rem);
+  --max-w: 1200px;
+}

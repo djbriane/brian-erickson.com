@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection, type CollectionEntry } from 'astro:content';
+
+export async function getStaticPaths() {
+  const projects = await getCollection('projects');
+  return projects.map((entry) => ({ params: { slug: entry.slug }, props: { entry } }));
+}
+
+interface Props { entry: CollectionEntry<'projects'> }
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+const { title, summary, status, focus, started, role, url } = entry.data;
+---
+<BaseLayout title={title} description={summary}>
+  <article>
+    <section>
+      <div class="container">
+        <p class="meta"><a href="/projects">← Projects</a></p>
+        <h1>{title}</h1>
+        <p class="prose" style="font-size:1.15rem;color:var(--muted)">{summary}</p>
+        <div class="meta-row" style="margin-top:1.5rem">
+          {status && <span class="meta">Status · {status}</span>}
+          {started && <span class="meta">Started · {started}</span>}
+          {role && <span class="meta">Role · {role}</span>}
+          {url && <span class="meta"><a class="arrow" href={url}>Visit</a></span>}
+        </div>
+        {focus && focus.length > 0 && (
+          <div style="margin-top:1rem">{focus.map((f) => <span class="tag">{f}</span>)}</div>
+        )}
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="prose">
+          <Content />
+        </div>
+      </div>
+    </section>
+  </article>
+</BaseLayout>

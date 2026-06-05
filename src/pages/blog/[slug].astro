@@ -1,5 +1,5 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 import TagChip from "../../components/TagChip.astro";
 import Page from "../../layouts/Page.astro";
 import { estimateReadingMinutes, formatDate, isPublishedPost } from "../../lib/content";
@@ -7,14 +7,14 @@ import { estimateReadingMinutes, formatDate, isPublishedPost } from "../../lib/c
 export async function getStaticPaths() {
   const posts = (await getCollection("blog")).filter(isPublishedPost);
   return posts.map((post) => ({
-    params: { slug: post.slug },
+    params: { slug: post.id },
     props: { post },
   }));
 }
 
 const { post } = Astro.props;
-const { Content } = await post.render();
-const minutes = estimateReadingMinutes(post.body);
+const { Content } = await render(post);
+const minutes = estimateReadingMinutes(post.body ?? "");
 ---
 
 <Page title={post.data.title} description={post.data.description} type="article">

@@ -1,5 +1,5 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 import TagChip from "../../components/TagChip.astro";
 import Page from "../../layouts/Page.astro";
 import { formatDate } from "../../lib/content";
@@ -7,13 +7,13 @@ import { formatDate } from "../../lib/content";
 export async function getStaticPaths() {
   const projects = await getCollection("projects");
   return projects.map((project) => ({
-    params: { slug: project.slug },
+    params: { slug: project.id },
     props: { project },
   }));
 }
 
 const { project } = Astro.props;
-const { Content } = await project.render();
+const { Content } = await render(project);
 ---
 
 <Page title={project.data.title} description={project.data.summary} type="article">

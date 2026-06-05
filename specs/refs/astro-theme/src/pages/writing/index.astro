@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import WritingItem from '../../components/WritingItem.astro';
+import { getCollection } from 'astro:content';
+const posts = (await getCollection('writing')).sort((a, b) => +b.data.date - +a.data.date);
+---
+<BaseLayout title="Writing" description="Essays and notes on product management, engineering, and design.">
+  <section>
+    <div class="container">
+      <h1>From the Archive</h1>
+      <p class="meta">Essays and notes</p>
+      <div class="list" style="margin-top:2rem">
+        {posts.map((p) => (
+          <WritingItem
+            title={p.data.title}
+            href={`/writing/${p.slug}`}
+            date={p.data.date}
+            summary={p.data.summary}
+            tags={p.data.tags}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

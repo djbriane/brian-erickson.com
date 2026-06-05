@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Contact" description="Get in touch with Brian Erickson.">
+  <section class="hero">
+    <div class="container">
+      <h1 class="name-lockup" style="font-size:clamp(3rem,9vw,7rem)">
+        Let's talk.
+        <small>Email is fastest. I read everything.</small>
+      </h1>
+    </div>
+  </section>
+  <section>
+    <div class="container two-col">
+      <h2>Direct</h2>
+      <div class="prose">
+        <p><a class="arrow" href="mailto:hello@example.com">hello@example.com</a></p>
+        <p><a class="arrow" href="https://www.linkedin.com/in/brianerickson/">LinkedIn</a></p>
+        <p><a class="arrow" href="https://github.com/djbriane">GitHub</a></p>
+        <p style="color:var(--muted);font-size:14px;margin-top:2rem">Replies usually within a day or two. For project inquiries, a one-paragraph summary helps.</p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

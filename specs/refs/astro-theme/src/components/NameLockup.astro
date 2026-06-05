@@ -1,0 +1,12 @@
+---
+interface Props {
+  name?: string;
+  tagline?: string;
+}
+const { name = 'Brian\nErickson', tagline = 'Product Management · Development · Brooklyn, NY' } = Astro.props;
+const lines = name.split('\n');
+---
+<h1 class="name-lockup">
+  {lines.map((line, i) => (<>{line}{i < lines.length - 1 && <br />}</>))}
+  <small>{tagline}</small>
+</h1>

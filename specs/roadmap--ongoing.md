@@ -36,6 +36,7 @@ A static personal site where Brian can:
 | Spec | Summary |
 |------|---------|
 | [brian-erickson-com-v1--planned.md](brian-erickson-com-v1--planned.md) | Primary v1 build: Astro site, Ghost migration, GPXplore project, resume, redirects, authoring docs. |
+| [portfolio-theme-refresh--planned.md](portfolio-theme-refresh--planned.md) | Whole-site portfolio theme replacement adapted from the Astro theme reference, preceded by an Astro current-major upgrade. |
 
 Promote larger backlog items into `specs/*--planned.md` before implementation.
 

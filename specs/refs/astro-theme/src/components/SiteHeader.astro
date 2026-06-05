@@ -1,0 +1,21 @@
+---
+const { pathname } = Astro.url;
+const links = [
+  { href: '/resume', label: 'Resume' },
+  { href: '/projects', label: 'Projects' },
+  { href: '/writing', label: 'Writing' },
+  { href: '/contact', label: 'Contact' },
+];
+const isCurrent = (href: string) =>
+  href === '/' ? pathname === '/' : pathname === href || pathname.startsWith(href + '/');
+---
+<header class="site-header">
+  <div class="container row">
+    <a class="brand" href="/">Brian Erickson</a>
+    <nav aria-label="Primary">
+      {links.map((l) => (
+        <a href={l.href} aria-current={isCurrent(l.href) ? 'page' : undefined}>{l.label}</a>
+      ))}
+    </nav>
+  </div>
+</header>

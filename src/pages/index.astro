@@ -1,13 +1,26 @@
 ---
 import { getCollection } from "astro:content";
-import ProjectCard from "../components/ProjectCard.astro";
-import PostListItem from "../components/PostListItem.astro";
+import TagChip from "../components/TagChip.astro";
 import Page from "../layouts/Page.astro";
-import { isPublishedPost, sortByDateDesc, SITE_DESCRIPTION } from "../lib/content";
+import { formatDate, isPublishedPost, sortByDateDesc, SITE_DESCRIPTION } from "../lib/content";
 import resume from "../data/resume.json";
 
 const posts = sortByDateDesc((await getCollection("blog")).filter(isPublishedPost)).slice(0, 3);
-const featuredProjects = (await getCollection("projects")).filter((project) => project.data.featured);
+const featuredProject = (await getCollection("projects")).find((project) => project.data.featured);
+const proofPoints = [
+  {
+    title: "Product judgment",
+    text: "Shape ambiguous workflows into focused product decisions, tradeoffs, and clear next steps.",
+  },
+  {
+    title: "Technical fluency",
+    text: "Work close enough to the implementation to reason about architecture, constraints, and delivery risk.",
+  },
+  {
+    title: "Real-world fit",
+    text: "Build for the places where software meets field work, imperfect data, and practical user habits.",
+  },
+];
 ---
 
 <Page
@@ -15,35 +28,85 @@ const featuredProjects = (await getCollection("projects")).filter((project) => p
   description={SITE_DESCRIPTION}
   cover={{ title: resume.basics.name, description: resume.basics.title }}
 >
-  <section class="section reading-width" style="text-align: center;">
-    <p class="eyebrow">Hello</p>
-    <p class="lede">{resume.basics.summary}</p>
+  <section class="home-intro section" aria-labelledby="home-intro-title">
+    <div class="home-intro__copy">
+      <p class="eyebrow">Professional Presence</p>
+      <h2 id="home-intro-title">Products with technical ambition and real-world edges.</h2>
+      <p>{resume.basics.summary}</p>
+    </div>
+    <div class="home-intro__notes" aria-label="Focus areas">
+      {proofPoints.map((point) => (
+        <article>
+          <h3>{point.title}</h3>
+          <p>{point.text}</p>
+        </article>
+      ))}
+    </div>
   </section>
 
-  {featuredProjects.length > 0 && (
-    <section class="section">
-      <div class="section-heading">
+  {featuredProject && (
+    <section class="home-featured section" aria-labelledby="featured-work-title">
+      <div class="section-heading home-section-heading">
         <p class="eyebrow">Featured Work</p>
-        <h2>Featured Work</h2>
+        <h2 id="featured-work-title">GPXplore is the current proof point.</h2>
       </div>
-      <div class="project-grid">
-        {featuredProjects.map((project) => <ProjectCard project={project} />)}
-      </div>
+      <article class="home-project-panel">
+        <div class="home-project-panel__body">
+          <p class="eyebrow">{featuredProject.data.subtitle}</p>
+          <h3><a href={`/projects/${featuredProject.id}/`}>{featuredProject.data.title}</a></h3>
+          <p class="home-project-panel__summary">{featuredProject.data.summary}</p>
+          <ul class="home-project-panel__details">
+            <li>Route planning, library, trip assembly, and field-reference workflows.</li>
+            <li>Local-first data model with GPX parsing, export, backup, and restore.</li>
+            <li>Maps, elevation, campground, wildfire, and day-sheet planning surfaces.</li>
+          </ul>
+          <div class="link-row">
+            <a class="button-link" href={`/projects/${featuredProject.id}/`}>Read case study</a>
+            {featuredProject.data.links.live && (
+              <a class="button-link button-link--solid" href={featuredProject.data.links.live} target="_blank" rel="noreferrer">
+                Visit GPXplore
+              </a>
+            )}
+          </div>
+        </div>
+        <aside class="home-project-panel__meta" aria-label="Project facts">
+          <div>
+            <span class="home-project-panel__label">Status</span>
+            <span class="status-badge">{featuredProject.data.status}</span>
+          </div>
+          <div>
+            <span class="home-project-panel__label">Focus</span>
+            <div class="tag-list tag-list--left">
+              {featuredProject.data.tags.map((tag) => <TagChip tag={tag} />)}
+            </div>
+          </div>
+          <div>
+            <span class="home-project-panel__label">Started</span>
+            <p>{formatDate(featuredProject.data.date)}</p>
+          </div>
+        </aside>
+      </article>
     </section>
   )}
 
   {posts.length > 0 && (
-    <section class="section reading-width">
-      <div class="section-heading" style="text-align: center;">
+    <section class="home-archive section" aria-labelledby="archive-title">
+      <div class="section-heading home-section-heading">
         <p class="eyebrow">From the Archive</p>
-        <h2>Writing</h2>
+        <h2 id="archive-title">Older writing, preserved as context.</h2>
       </div>
-      <div class="post-list">
-        {posts.map((post) => <PostListItem post={post} />)}
-      </div>
-      <p style="text-align: center; margin-top: 2rem;">
-        <a class="button-link" href="/blog/">All writing</a>
-      </p>
+      <ol class="home-archive-list">
+        {posts.map((post) => (
+          <li>
+            <a href={`/blog/${post.id}/`}>
+              <span>{post.data.title}</span>
+              <time datetime={post.data.date.toISOString()}>{formatDate(post.data.date)}</time>
+            </a>
+            <p>{post.data.description}</p>
+          </li>
+        ))}
+      </ol>
+      <a class="home-archive-link" href="/blog/">All writing</a>
     </section>
   )}
 </Page>

@@ -1,0 +1,63 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NameLockup from '../components/NameLockup.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import { getCollection } from 'astro:content';
+
+const projects = (await getCollection('projects')).sort((a, b) => a.data.order - b.data.order);
+const featured = projects.find((p) => p.data.featured) ?? projects[0];
+const more = projects.filter((p) => p.slug !== featured?.slug).slice(0, 2);
+---
+<BaseLayout title="Brian Erickson — Product & Development" description="Portfolio of Product Management and Development work by Brian Erickson.">
+  <section class="hero">
+    <div class="container">
+      <NameLockup />
+    </div>
+  </section>
+
+  {featured && (
+    <section>
+      <div class="container">
+        <h2>Featured work</h2>
+        <ProjectCard
+          title={featured.data.title}
+          summary={featured.data.summary}
+          href={`/projects/${featured.slug}`}
+          status={featured.data.status}
+          focus={featured.data.focus}
+          started={featured.data.started}
+        />
+      </div>
+    </section>
+  )}
+
+  {more.length > 0 && (
+    <section>
+      <div class="container">
+        <h2>More work</h2>
+        <div class="list">
+          {more.map((p) => (
+            <ProjectCard
+              title={p.data.title}
+              summary={p.data.summary}
+              href={`/projects/${p.slug}`}
+              status={p.data.status}
+              focus={p.data.focus}
+              started={p.data.started}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <section>
+    <div class="container two-col">
+      <h2>About</h2>
+      <div class="prose">
+        <p>I'm a product manager and developer focused on tools that respect the user's attention. I've shipped consumer and B2B software for over a decade, most recently at the intersection of mapping, location, and outdoor data.</p>
+        <p>Currently building <a href="/projects/gpxplore">GPXplore</a> and writing in the <a href="/writing">archive</a>. <a href="/contact">Get in touch</a>.</p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
