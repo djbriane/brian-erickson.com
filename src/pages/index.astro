@@ -3,42 +3,47 @@ import { getCollection } from "astro:content";
 import ProjectCard from "../components/ProjectCard.astro";
 import PostListItem from "../components/PostListItem.astro";
 import Page from "../layouts/Page.astro";
-import { isPublishedPost, sortByDateDesc } from "../lib/content";
+import { isPublishedPost, sortByDateDesc, SITE_DESCRIPTION } from "../lib/content";
 import resume from "../data/resume.json";
 
 const posts = sortByDateDesc((await getCollection("blog")).filter(isPublishedPost)).slice(0, 3);
 const featuredProjects = (await getCollection("projects")).filter((project) => project.data.featured);
 ---
 
-<Page>
-  <section class="hero">
-    <p class="eyebrow">Brian Erickson</p>
-    <h1>{resume.basics.title}</h1>
+<Page
+  width="wide"
+  description={SITE_DESCRIPTION}
+  cover={{ title: resume.basics.name, description: resume.basics.title }}
+>
+  <section class="section reading-width" style="text-align: center;">
+    <p class="eyebrow">Hello</p>
     <p class="lede">{resume.basics.summary}</p>
   </section>
 
-  <section class="section-band">
-    <div class="section-heading">
-      <p class="eyebrow">Featured Work</p>
-      <h2>Product work with terrain under it</h2>
-    </div>
-    <div class="project-grid">
-      {featuredProjects.map((project) => <ProjectCard project={project} />)}
-    </div>
-  </section>
+  {featuredProjects.length > 0 && (
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Featured Work</p>
+        <h2>Featured Work</h2>
+      </div>
+      <div class="project-grid">
+        {featuredProjects.map((project) => <ProjectCard project={project} />)}
+      </div>
+    </section>
+  )}
 
-  <section class="section-band">
-    <div class="section-heading">
-      <p class="eyebrow">From the Archive</p>
-      <h2>Writing</h2>
-    </div>
-    {posts.length > 0 ? (
+  {posts.length > 0 && (
+    <section class="section reading-width">
+      <div class="section-heading" style="text-align: center;">
+        <p class="eyebrow">From the Archive</p>
+        <h2>Writing</h2>
+      </div>
       <div class="post-list">
         {posts.map((post) => <PostListItem post={post} />)}
       </div>
-    ) : (
-      <p class="muted">The Ghost archive will appear here after migration.</p>
-    )}
-  </section>
+      <p style="text-align: center; margin-top: 2rem;">
+        <a class="button-link" href="/blog/">All writing</a>
+      </p>
+    </section>
+  )}
 </Page>
-

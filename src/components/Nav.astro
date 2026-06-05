@@ -1,4 +1,9 @@
 ---
+interface Props {
+  variant?: "solid" | "overlay";
+}
+
+const { variant = "solid" } = Astro.props;
 const path = Astro.url.pathname;
 const links = [
   { href: "/resume/", label: "Resume" },
@@ -8,7 +13,7 @@ const links = [
 ];
 ---
 
-<header class="site-header">
+<header class={`site-header site-header--${variant}`}>
   <a class="brand" href="/" aria-label="Brian Erickson home">Brian Erickson</a>
   <nav class="site-nav" aria-label="Primary navigation">
     {links.map((link) => (
@@ -18,4 +23,3 @@ const links = [
     ))}
   </nav>
 </header>
-

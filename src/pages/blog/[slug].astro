@@ -18,11 +18,11 @@ const minutes = estimateReadingMinutes(post.body);
 ---
 
 <Page title={post.data.title} description={post.data.description} type="article">
-  <article class="reading-width">
-    <header class="page-header">
-      <p class="eyebrow">
+  <article>
+    <header class="post-header">
+      <p class="post-meta">
         {post.data.ghost_id ? "Originally published" : "Published"} {formatDate(post.data.date)}
-        <span aria-hidden="true">/</span>
+        <span class="sep" aria-hidden="true">•</span>
         {minutes} min read
       </p>
       <h1>{post.data.title}</h1>
@@ -32,8 +32,11 @@ const minutes = estimateReadingMinutes(post.body);
         </div>
       )}
     </header>
-    <div class="content">
+    <div class="post-content">
       <Content />
     </div>
+    <p style="margin-top: 3rem; text-align: center;">
+      <a class="button-link" href="/blog/">← All writing</a>
+    </p>
   </article>
 </Page>

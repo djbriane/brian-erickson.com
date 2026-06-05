@@ -12,7 +12,7 @@ const hasNext = posts.length > pageSize;
 ---
 
 <Page title="Writing" description="Writing by Brian Erickson, including the migrated Ghost archive.">
-  <header class="page-header">
+  <header class="page-header" style="text-align: center;">
     <p class="eyebrow">Writing</p>
     <h1>From the Archive</h1>
     <p class="lede">Older posts preserved as history, with newer writing to follow.</p>
@@ -23,7 +23,7 @@ const hasNext = posts.length > pageSize;
       {pagePosts.map((post) => <PostListItem post={post} />)}
     </div>
   ) : (
-    <p class="muted">The Ghost archive will appear here after migration.</p>
+    <p class="muted">No posts published yet.</p>
   )}
 
   <Pagination nextUrl={hasNext ? "/blog/page/2/" : undefined} />

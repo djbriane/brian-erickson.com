@@ -16,50 +16,48 @@ const description = `${resume.basics.name}'s resume, experience, education, and 
     {hasResumePdf && <p><a class="button-link" href="/resume.pdf">Download PDF</a></p>}
   </header>
 
-  <div class="reading-width">
-    <ResumeSection title="Summary">
-      <p>{resume.basics.summary}</p>
-    </ResumeSection>
+  <ResumeSection title="Summary">
+    <p>{resume.basics.summary}</p>
+  </ResumeSection>
 
-    <ResumeSection title="Experience">
-      <div class="timeline">
-        {resume.experience.map((item) => (
-          <article class="timeline-item">
-            <p class="eyebrow">{item.start} - {item.end}</p>
-            <h3>{item.title}</h3>
-            <p class="muted">{item.company}</p>
-            <p>{item.description}</p>
-            <ul>
-              {item.highlights.map((highlight) => <li>{highlight}</li>)}
-            </ul>
-          </article>
-        ))}
-      </div>
-    </ResumeSection>
+  <ResumeSection title="Experience">
+    {resume.experience.map((item) => (
+      <article class="resume-entry">
+        <div class="resume-entry__head">
+          <h3>{item.title} — {item.company}</h3>
+          <span class="resume-entry__dates">{item.start} – {item.end}</span>
+        </div>
+        <p>{item.description}</p>
+        <ul>
+          {item.highlights.map((highlight) => <li>{highlight}</li>)}
+        </ul>
+      </article>
+    ))}
+  </ResumeSection>
 
-    <ResumeSection title="Education">
-      <div class="stack">
-        {resume.education.map((item) => (
-          <article>
-            <h3>{item.institution}</h3>
-            <p>{item.degree}{item.year ? `, ${item.year}` : ""}</p>
-          </article>
-        ))}
-      </div>
-    </ResumeSection>
+  <ResumeSection title="Education">
+    {resume.education.map((item) => (
+      <article class="resume-entry">
+        <div class="resume-entry__head">
+          <h3>{item.institution}</h3>
+          {item.year && <span class="resume-entry__dates">{item.year}</span>}
+        </div>
+        <p>{item.degree}</p>
+      </article>
+    ))}
+  </ResumeSection>
 
-    <ResumeSection title="Skills">
-      <div class="skill-grid">
-        {Object.entries(resume.skills).map(([group, skills]) => (
-          <section>
-            <h3>{group}</h3>
-            <ul>
-              {skills.map((skill) => <li>{skill}</li>)}
-            </ul>
-          </section>
-        ))}
-      </div>
-    </ResumeSection>
-  </div>
+  <ResumeSection title="Skills">
+    <div class="skill-grid">
+      {Object.entries(resume.skills).map(([group, skills]) => (
+        <section>
+          <h3>{group}</h3>
+          <ul>
+            {skills.map((skill) => <li>{skill}</li>)}
+          </ul>
+        </section>
+      ))}
+    </div>
+  </ResumeSection>
 </Page>
 

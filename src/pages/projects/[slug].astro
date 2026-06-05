@@ -17,34 +17,31 @@ const { Content } = await project.render();
 ---
 
 <Page title={project.data.title} description={project.data.summary} type="article">
-  <article class="reading-width project-detail">
+  <article>
     <header class="page-header">
       <p class="eyebrow">{project.data.subtitle} / {formatDate(project.data.date)}</p>
       <h1>{project.data.title}</h1>
       <p class="lede">{project.data.summary}</p>
-      <div class="tag-list">
+      <div class="tag-list" style="justify-content: flex-start;">
         <span class="status-badge">{project.data.status}</span>
         {project.data.tags.map((tag) => <TagChip tag={tag} />)}
       </div>
       {project.data.cover_image && (
-        <img class="cover-image" src={project.data.cover_image} alt="" loading="eager" />
+        <img src={project.data.cover_image} alt="" loading="eager" style="margin-top: 1.5rem; border-radius: 6px;" />
       )}
     </header>
 
-    <div class="content">
+    {Object.values(project.data.links).some(Boolean) && (
+      <div class="link-row">
+        {project.data.links.live && <a class="button-link" href={project.data.links.live} target="_blank" rel="noreferrer">Live site ↗</a>}
+        {project.data.links.github && <a class="button-link" href={project.data.links.github} target="_blank" rel="noreferrer">GitHub ↗</a>}
+        {project.data.links.case_study && <a class="button-link" href={project.data.links.case_study} target="_blank" rel="noreferrer">Case study ↗</a>}
+      </div>
+    )}
+
+    <div class="post-content">
       <Content />
     </div>
-
-    {Object.values(project.data.links).some(Boolean) && (
-      <aside class="link-panel">
-        <h2>Links</h2>
-        <ul>
-          {project.data.links.live && <li><a href={project.data.links.live}>Live site</a></li>}
-          {project.data.links.github && <li><a href={project.data.links.github}>GitHub</a></li>}
-          {project.data.links.case_study && <li><a href={project.data.links.case_study}>Case study</a></li>}
-        </ul>
-      </aside>
-    )}
   </article>
 </Page>
 
