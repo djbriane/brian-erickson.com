@@ -8,6 +8,7 @@ Status key: unchecked = idea; no implementation target yet.
 
 ## Quick Wins
 
+- [ ] Polish the homepage cover hero on small screens (≤375px): the cover title and overlay nav are clipped on the right at the narrowest widths. Needs a responsive width/clamp pass on `.site-cover__inner`, `.site-cover__title`, and the overlay `.site-nav`. Desktop and tablet render correctly.
 - [ ] Add RSS feed via `@astrojs/rss` if it remains simple.
 - [ ] Add reading time to blog index rows.
 - [ ] Add `/blog/tags/[tag]/` pages and tag-filtered archive views.

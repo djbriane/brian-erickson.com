@@ -20,7 +20,9 @@ No shipped specs yet.
 
 ## Partially Shipped
 
-None.
+| Spec | Status | Notes |
+|------|--------|-------|
+| [brian-erickson-com-v1--planned.md](brian-erickson-com-v1--planned.md) | In progress on `feature/v1-static-site` | Ghost migration complete (19 posts, images, redirects, About extraction) with focused tests; Casper/Open Sans + Merriweather visual design ported (cover hero, 710px reading column, post-index rhythm). Pending: final production resume data and PR. |
 
 ---
 
