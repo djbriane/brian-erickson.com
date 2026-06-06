@@ -6,14 +6,14 @@ Guidance for AI coding assistants working in this repository. Human contributors
 
 `brian-erickson.com` is Brian Erickson's static personal site: a professional portfolio, resume, GPXplore project showcase, and migrated Ghost writing archive. The build target is Astro static output deployed to Cloudflare Pages.
 
-Current build-out spec: [specs/portfolio-theme-refresh--planned.md](specs/portfolio-theme-refresh--planned.md).
+Spec status: [specs/spec-status--ongoing.md](specs/spec-status--ongoing.md). Latest shipped build-out: [specs/built/portfolio-theme-refresh--built.md](specs/built/portfolio-theme-refresh--built.md).
 
 Domain vocabulary and content-source rules: [CONTEXT.md](CONTEXT.md).
 
 ## Workflow
 
-1. Read [CONTEXT.md](CONTEXT.md) and the current build-out spec before changing behavior.
-2. For non-trivial features, confirm or draft a spec first. Keep the current build-out spec in `specs/` unless the user explicitly asks for a root-level planning doc.
+1. Read [CONTEXT.md](CONTEXT.md) and [specs/spec-status--ongoing.md](specs/spec-status--ongoing.md) before changing behavior.
+2. For non-trivial features, confirm or draft a spec first. Keep active specs in `specs/` unless the user explicitly asks for a root-level planning doc.
 3. Work on `feature/<short-kebab-description>` branches. Do not commit features directly to `main`.
 4. Run the relevant verification before finishing:
    - `npm test` once the project exists
@@ -93,7 +93,8 @@ Keep the body short. Add what a reviewer would otherwise miss: skipped tests, de
 
 | Path | Role |
 |------|------|
-| `specs/portfolio-theme-refresh--planned.md` | Current build-out spec |
+| `specs/spec-status--ongoing.md` | Active and built spec status |
+| `specs/built/portfolio-theme-refresh--built.md` | Shipped portfolio theme refresh spec |
 | `CONTEXT.md` | Project vocabulary and content-source decisions |
 | `src/content/blog/` | Blog post markdown after build scaffold exists |
 | `src/content/projects/` | Project markdown after build scaffold exists |

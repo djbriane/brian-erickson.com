@@ -1,10 +1,12 @@
 # Portfolio Theme Refresh
 
-Status: Implemented on the active v1 build branch.
+Status: Built.
+
+Shipped on `main`. The site runs as static Astro output on Cloudflare Pages (`npm run build` → `dist/`).
 
 Supersedes the homepage-only portfolio refresh direction that kept the Casper/Ghost first viewport as the primary design constraint.
 
-Implementation note: the copied Astro theme reference was removed after the design was adapted into the live app, so this spec is now the canonical record for the refresh direction.
+Implementation note: the copied Astro theme reference was removed after the design was adapted into the live app, so this spec remains the canonical record for the refresh direction.
 
 ## Summary
 

@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for helping improve `brian-erickson.com`. The current build-out is guided by one active spec: [specs/portfolio-theme-refresh--planned.md](specs/portfolio-theme-refresh--planned.md).
+Thanks for helping improve `brian-erickson.com`. Spec status: [specs/spec-status--ongoing.md](specs/spec-status--ongoing.md).
 
 ## Before You Start
 
