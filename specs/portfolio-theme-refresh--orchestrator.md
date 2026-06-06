@@ -19,12 +19,12 @@ Top risks:
 
 Last updated: 2026-06-05
 
-Branch: `feature/v1-static-site`
+Branch: `feature/portfolio-theme-refresh`
 
 Known working context:
 
-- Current site is Astro 4 static output with Cloudflare Pages target.
-- Existing homepage/style draft was based on the superseded Casper-continuity direction and may be replaced.
+- Current site is Astro 6 static output with Cloudflare Pages target.
+- Portfolio theme refresh is applied across the main public routes.
 - Reference theme lives at `specs/refs/astro-theme/`.
 - New canonical spec is `specs/portfolio-theme-refresh--planned.md`.
 
@@ -33,10 +33,11 @@ Done:
 - Decision tree resolved for scope, typography, hero, homepage order, route/content invariants, deployment posture, QA cadence, and out-of-scope work.
 - Phase 1 complete: Astro toolchain upgraded to v6 with Content Layer API migration.
 - Phase 2 complete: portfolio theme tokens, fonts, sticky header, shorter hero, page/component styling, and default social image metadata applied.
+- Phase 3 complete: responsive browser QA passed and small contrast token polish applied.
 
 Next:
 
-- Begin Phase 3 final browser QA and polish.
+- Review and commit Phase 3 polish, then open a PR when ready.
 
 ## Execution Policy
 
@@ -286,6 +287,14 @@ Done criteria:
 - Browser QA checklist passes.
 - `npm test` passes.
 - `npm run build` passes.
+
+### Phase 3 handoff (2026-06-05)
+
+- **Polish applied:** darkened `--muted`, `--accent`, and `--accent-cool` in `src/styles/tokens.css` so metadata, links/buttons, and tag text clear contrast targets on the warm paper background.
+- **Browser QA:** checked `/`, `/projects/`, `/projects/gpxplore/`, `/blog/`, `/blog/technical-debt/`, `/resume/`, `/contact/`, and `/404/` at 375px, 768px, and 1366px.
+- **Layout checks:** no horizontal overflow, detected text clipping, missing visible image `alt` attributes, or duplicate/missing visible `h1`s across the 24 route/viewport combinations.
+- **Visual spot checks:** mobile homepage, mobile GPXplore detail, tablet blog index, desktop homepage, and desktop resume confirmed header/nav legibility, hero framing, GPXplore prominence, compact archive rhythm, and readable resume structure.
+- **Verification:** `npm test` and `npm run build` passed after the polish.
 
 ## Sequencing And Handoff Protocol
 

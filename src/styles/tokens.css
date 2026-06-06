@@ -4,10 +4,10 @@
   --paper: oklch(0.94 0.025 75);
   --paper-soft: oklch(0.9 0.03 72);
   --surface: oklch(0.97 0.018 78);
-  --muted: oklch(0.53 0.02 60);
-  --accent: oklch(0.52 0.18 28);
+  --muted: oklch(0.5 0.02 60);
+  --accent: oklch(0.49 0.18 28);
   --accent-strong: oklch(0.43 0.16 28);
-  --accent-cool: oklch(0.55 0.09 230);
+  --accent-cool: oklch(0.5 0.09 230);
   --rule: oklch(0.78 0.02 70);
   --rule-soft: oklch(0.86 0.018 72);
   --focus: oklch(0.48 0.15 220);
