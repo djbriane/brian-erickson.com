@@ -8,9 +8,9 @@ const hasResumePdf = existsSync(new URL("../../public/resume.pdf", import.meta.u
 const description = `${resume.basics.name}'s resume, experience, education, and skills.`;
 ---
 
-<Page title="Resume" description={description}>
+<Page title="Résumé" description={description}>
   <header class="page-header">
-    <p class="eyebrow">Resume</p>
+    <p class="eyebrow">Résumé</p>
     <h1>{resume.basics.name}</h1>
     <p class="lede">{resume.basics.title}</p>
     {hasResumePdf && <p><a class="button-link" href="/resume.pdf">Download PDF</a></p>}

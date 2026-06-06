@@ -1,6 +1,5 @@
 ---
 import { getCollection } from "astro:content";
-import TagChip from "../components/TagChip.astro";
 import Page from "../layouts/Page.astro";
 import { formatDate, isPublishedPost, sortByDateDesc, SITE_DESCRIPTION } from "../lib/content";
 import resume from "../data/resume.json";
@@ -39,22 +38,17 @@ const featuredProject = (await getCollection("projects")).find((project) => proj
             )}
           </div>
         </div>
-        <aside class="home-project-panel__meta" aria-label="Project facts">
-          <div>
-            <span class="home-project-panel__label">Status</span>
-            <span class="status-badge">{featuredProject.data.status}</span>
-          </div>
-          <div>
-            <span class="home-project-panel__label">Focus</span>
-            <div class="tag-list tag-list--left">
-              {featuredProject.data.tags.map((tag) => <TagChip tag={tag} />)}
-            </div>
-          </div>
-          <div>
-            <span class="home-project-panel__label">Started</span>
-            <p>{formatDate(featuredProject.data.date)}</p>
-          </div>
-        </aside>
+        {featuredProject.data.cover_image && (
+          <a class="home-project-shot" href={`/projects/${featuredProject.id}/`} aria-label={`${featuredProject.data.title} screenshot`}>
+            <img
+              src={featuredProject.data.cover_image}
+              alt={`Screenshot of ${featuredProject.data.title}`}
+              width="2438"
+              height="1850"
+              loading="lazy"
+            />
+          </a>
+        )}
       </article>
     </section>
   )}
@@ -67,7 +61,7 @@ const featuredProject = (await getCollection("projects")).find((project) => proj
     <div class="home-bridge__body">
       <p>{resume.basics.summary}</p>
       <div class="link-row">
-        <a class="button-link" href="/resume/">Resume</a>
+        <a class="button-link" href="/resume/">Résumé</a>
       </div>
     </div>
   </section>
