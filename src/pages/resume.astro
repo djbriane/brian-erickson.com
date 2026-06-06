@@ -28,9 +28,11 @@ const description = `${resume.basics.name}'s resume, experience, education, and 
           <span class="resume-entry__dates">{item.start} – {item.end}</span>
         </div>
         <p>{item.description}</p>
-        <ul>
-          {item.highlights.map((highlight) => <li>{highlight}</li>)}
-        </ul>
+        {item.highlights.length > 0 && (
+          <ul>
+            {item.highlights.map((highlight) => <li>{highlight}</li>)}
+          </ul>
+        )}
       </article>
     ))}
   </ResumeSection>
@@ -60,4 +62,3 @@ const description = `${resume.basics.name}'s resume, experience, education, and 
     </div>
   </ResumeSection>
 </Page>
-

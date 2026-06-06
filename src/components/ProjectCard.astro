@@ -7,20 +7,22 @@ interface Props {
 }
 
 const { project } = Astro.props;
+const hasCoverImage = Boolean(project.data.cover_image);
 ---
 
-<article class="project-card">
-  {project.data.cover_image && (
-    <img src={project.data.cover_image} alt="" loading="lazy" />
-  )}
-  <p class="eyebrow">{project.data.subtitle}</p>
-  <h2><a href={`/projects/${project.id}/`}>{project.data.title}</a></h2>
-  <p>{project.data.summary}</p>
-  <div class="project-card__meta">
-    <span class="status-badge">{project.data.status}</span>
-    <div class="tag-list" aria-label="Tags">
-      {project.data.tags.map((tag) => <TagChip tag={tag} />)}
+<article class:list={["project-card", !hasCoverImage && "project-card--text-only"]}>
+  <div class="project-card__content">
+    <p class="project-card__subtitle">{project.data.subtitle}</p>
+    <h2><a href={`/projects/${project.id}/`}>{project.data.title}</a></h2>
+    <p>{project.data.summary}</p>
+    <div class="project-card__meta">
+      <span class="status-badge">{project.data.status}</span>
+      <div class="tag-list" aria-label="Tags">
+        {project.data.tags.map((tag) => <TagChip tag={tag} />)}
+      </div>
     </div>
   </div>
+  {hasCoverImage && (
+    <img src={project.data.cover_image} alt="" loading="lazy" />
+  )}
 </article>
-

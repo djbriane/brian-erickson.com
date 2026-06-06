@@ -7,20 +7,6 @@ import resume from "../data/resume.json";
 
 const posts = sortByDateDesc((await getCollection("blog")).filter(isPublishedPost)).slice(0, 3);
 const featuredProject = (await getCollection("projects")).find((project) => project.data.featured);
-const proofPoints = [
-  {
-    title: "Product judgment",
-    text: "Shape ambiguous workflows into focused product decisions, tradeoffs, and clear next steps.",
-  },
-  {
-    title: "Technical fluency",
-    text: "Work close enough to the implementation to reason about architecture, constraints, and delivery risk.",
-  },
-  {
-    title: "Real-world fit",
-    text: "Build for the places where software meets field work, imperfect data, and practical user habits.",
-  },
-];
 ---
 
 <Page
@@ -28,27 +14,11 @@ const proofPoints = [
   description={SITE_DESCRIPTION}
   cover={{ title: resume.basics.name, description: resume.basics.title }}
 >
-  <section class="home-intro section" aria-labelledby="home-intro-title">
-    <div class="home-intro__copy">
-      <p class="eyebrow">Professional Presence</p>
-      <h2 id="home-intro-title">Products with technical ambition and real-world edges.</h2>
-      <p>{resume.basics.summary}</p>
-    </div>
-    <div class="home-intro__notes" aria-label="Focus areas">
-      {proofPoints.map((point) => (
-        <article>
-          <h3>{point.title}</h3>
-          <p>{point.text}</p>
-        </article>
-      ))}
-    </div>
-  </section>
-
   {featuredProject && (
     <section class="home-featured section" aria-labelledby="featured-work-title">
       <div class="section-heading home-section-heading">
         <p class="eyebrow">Featured Work</p>
-        <h2 id="featured-work-title">GPXplore is the current proof point.</h2>
+        <h2 id="featured-work-title">What I'm working on now.</h2>
       </div>
       <article class="home-project-panel">
         <div class="home-project-panel__body">
@@ -89,11 +59,24 @@ const proofPoints = [
     </section>
   )}
 
+  <section id="about" class="home-bridge section" aria-labelledby="home-about-title">
+    <div class="section-heading home-bridge__heading">
+      <p class="eyebrow">About</p>
+      <h2 id="home-about-title">Product leader exploring ideas with real world impact.</h2>
+    </div>
+    <div class="home-bridge__body">
+      <p>{resume.basics.summary}</p>
+      <div class="link-row">
+        <a class="button-link" href="/resume/">Resume</a>
+      </div>
+    </div>
+  </section>
+
   {posts.length > 0 && (
     <section class="home-archive section" aria-labelledby="archive-title">
       <div class="section-heading home-section-heading">
         <p class="eyebrow">From the Archive</p>
-        <h2 id="archive-title">Older writing, preserved as context.</h2>
+        <h2 id="archive-title">Past musings, preserved as context.</h2>
       </div>
       <ol class="home-archive-list">
         {posts.map((post) => (

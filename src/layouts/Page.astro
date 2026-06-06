@@ -20,12 +20,9 @@ const { title, description, type, width = "reading", cover } = Astro.props;
 ---
 
 <Base title={title} description={description} type={type}>
-  {cover ? (
-    <SiteCover title={cover.title} description={cover.description} image={cover.image} />
-  ) : (
-    <Nav />
-  )}
-  <main class="site-main">
+  <Nav />
+  {cover && <SiteCover title={cover.title} description={cover.description} image={cover.image} />}
+  <main class:list={["site-main", cover && "site-main--after-hero"]}>
     <div class={width === "wide" ? "wide-width" : "reading-width"}>
       <slot />
     </div>

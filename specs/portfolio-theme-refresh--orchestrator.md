@@ -32,10 +32,11 @@ Done:
 
 - Decision tree resolved for scope, typography, hero, homepage order, route/content invariants, deployment posture, QA cadence, and out-of-scope work.
 - Phase 1 complete: Astro toolchain upgraded to v6 with Content Layer API migration.
+- Phase 2 complete: portfolio theme tokens, fonts, sticky header, shorter hero, page/component styling, and default social image metadata applied.
 
 Next:
 
-- Begin Phase 2 theme token, layout, and component replacement.
+- Begin Phase 3 final browser QA and polish.
 
 ## Execution Policy
 
@@ -217,6 +218,16 @@ Done criteria:
 
 - Automated verification passes.
 - Known visual caveats are listed for phase 3.
+
+### Phase 2 handoff (2026-06-05)
+
+- **Fonts:** switched to `@fontsource-variable/space-grotesk` and `@fontsource-variable/dm-sans`; removed Open Sans and Merriweather packages.
+- **Theme foundation:** added `src/styles/tokens.css`; rebuilt `src/styles/global.css` around warm paper, dark ink, coral accent, cool tag accent, soft rules, sticky header, sparse lists/cards, prose, resume, contact, pagination, and print styles.
+- **Layouts and metadata:** `Base.astro` now emits default `og:image` and Twitter image metadata using `/images/cover.jpg`; `Page.astro` uses the sticky header globally and the hero as a standalone section.
+- **Homepage:** replaced the full-screen cover with the shorter portfolio hero; GPXplore now follows immediately after the hero; standalone proof-point trio removed; compact archive remains secondary.
+- **Routes/components:** blog index/detail, project index/detail, resume, contact, and 404 share the new visual system while preserving `/blog/`, schemas, published-post filtering, migrated-post cues, and static output.
+- **Verification:** `npm test` (32 passed), `npm run build` (27 pages, 0 check errors), browser smoke at default desktop route set plus 375px homepage check.
+- **Known visual caveats for Phase 3:** only smoke-tested visually; full 375px, 768px, and desktop route-by-route polish remains Phase 3.
 
 ## Phase 3: Final Browser QA And Polish
 

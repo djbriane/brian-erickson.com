@@ -2,7 +2,7 @@ import type { CollectionEntry } from "astro:content";
 
 export const SITE_TITLE = "Brian Erickson";
 export const SITE_DESCRIPTION =
-  "Brian Erickson is a product manager building technically ambitious products for real-world users.";
+  "Brian Erickson is a senior product manager at Mailgun (Sinch) building B2B SaaS products for enterprise adoption and product-led growth.";
 export const SITE_URL = "https://brian-erickson.com";
 
 export function todayUtcDateString(date = new Date()) {

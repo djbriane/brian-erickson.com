@@ -16,7 +16,7 @@ Brian's present professional framing. Canonical source: `src/data/resume.json`, 
 Current v1 focus line:
 
 ```text
-Product Manager building technically ambitious products for real-world users.
+Senior Product Manager at Mailgun (Sinch) building B2B SaaS products for enterprise adoption and product-led growth.
 ```
 
 ## Resume Data
@@ -68,4 +68,3 @@ Cloudflare Pages redirects in `public/_redirects`. Ghost used root slug URLs (`/
 ## Static Output
 
 Astro static output deployed to Cloudflare Pages. No Cloudflare adapter is needed in v1 unless future runtime code is introduced.
-

@@ -22,20 +22,20 @@ const { Content } = await render(project);
       <p class="eyebrow">{project.data.subtitle} / {formatDate(project.data.date)}</p>
       <h1>{project.data.title}</h1>
       <p class="lede">{project.data.summary}</p>
-      <div class="tag-list" style="justify-content: flex-start;">
+      <div class="tag-list">
         <span class="status-badge">{project.data.status}</span>
         {project.data.tags.map((tag) => <TagChip tag={tag} />)}
       </div>
       {project.data.cover_image && (
-        <img src={project.data.cover_image} alt="" loading="eager" style="margin-top: 1.5rem; border-radius: 6px;" />
+        <img class="project-hero-image" src={project.data.cover_image} alt={`Screenshot of ${project.data.title}`} loading="eager" />
       )}
     </header>
 
     {Object.values(project.data.links).some(Boolean) && (
       <div class="link-row">
-        {project.data.links.live && <a class="button-link" href={project.data.links.live} target="_blank" rel="noreferrer">Live site ↗</a>}
-        {project.data.links.github && <a class="button-link" href={project.data.links.github} target="_blank" rel="noreferrer">GitHub ↗</a>}
-        {project.data.links.case_study && <a class="button-link" href={project.data.links.case_study} target="_blank" rel="noreferrer">Case study ↗</a>}
+        {project.data.links.live && <a class="button-link" href={project.data.links.live} target="_blank" rel="noreferrer">Live site</a>}
+        {project.data.links.github && <a class="button-link" href={project.data.links.github} target="_blank" rel="noreferrer">GitHub</a>}
+        {project.data.links.case_study && <a class="button-link" href={project.data.links.case_study} target="_blank" rel="noreferrer">Case study</a>}
       </div>
     )}
 
@@ -44,4 +44,3 @@ const { Content } = await render(project);
     </div>
   </article>
 </Page>
-

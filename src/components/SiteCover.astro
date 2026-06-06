@@ -1,6 +1,4 @@
 ---
-import Nav from "./Nav.astro";
-
 interface Props {
   title: string;
   description?: string;
@@ -8,16 +6,12 @@ interface Props {
 }
 
 const { title, description, image = "/images/cover.jpg" } = Astro.props;
-const style = image
-  ? `background-image: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.35)), url("${image}");`
-  : undefined;
+const style = image ? `--hero-image: url("${image}");` : undefined;
 ---
 
 <div class="site-cover" style={style}>
-  <Nav variant="overlay" />
   <div class="site-cover__inner">
     <h1 class="site-cover__title">{title}</h1>
     {description && <p class="site-cover__description">{description}</p>}
   </div>
-  <span class="site-cover__scroll" aria-hidden="true">↓</span>
 </div>

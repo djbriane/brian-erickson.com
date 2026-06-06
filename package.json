@@ -18,8 +18,8 @@
   "dependencies": {
     "@astrojs/check": "^0.9.9",
     "@astrojs/sitemap": "^3.7.3",
-    "@fontsource/merriweather": "^5.2.11",
-    "@fontsource/open-sans": "^5.2.7",
+    "@fontsource-variable/dm-sans": "^5.2.8",
+    "@fontsource-variable/space-grotesk": "^5.2.10",
     "astro": "^6.4.4",
     "typescript": "^5.6.3"
   },
