@@ -2,7 +2,7 @@
 
 Static personal site for Brian Erickson: professional presence, resume, GPXplore project showcase, and migrated Ghost writing archive.
 
-Current build spec: [brian-erickson-com-v1-spec.md](brian-erickson-com-v1-spec.md).
+Current build-out spec: [specs/portfolio-theme-refresh--planned.md](specs/portfolio-theme-refresh--planned.md).
 
 ## Project Docs
 
@@ -13,17 +13,14 @@ Current build spec: [brian-erickson-com-v1-spec.md](brian-erickson-com-v1-spec.m
 | [CONTRIBUTING.md](CONTRIBUTING.md) | Human-oriented contribution workflow |
 | [CODEX.md](CODEX.md) | Codex quick reference |
 | [CLAUDE.md](CLAUDE.md) | Claude Code quick reference |
-| [specs/roadmap--ongoing.md](specs/roadmap--ongoing.md) | Forward work index |
-| [specs/backlog--ongoing.md](specs/backlog--ongoing.md) | Unscheduled follow-ups |
-| [specs/spec-status--ongoing.md](specs/spec-status--ongoing.md) | Implementation status |
-| [specs/release-notes--ongoing.md](specs/release-notes--ongoing.md) | Release history |
+| [specs/portfolio-theme-refresh--planned.md](specs/portfolio-theme-refresh--planned.md) | Current build-out spec |
 
 ## Local Development
 
 ```bash
 npm install
 npm run dev      # local dev server at http://localhost:4321
-npm test         # migration + content smoke tests
+npm test         # content smoke tests
 npm run build    # astro check + static build into dist/
 ```
 
@@ -96,23 +93,15 @@ Place real screenshots under `public/images/projects/` and set `cover_image` in
 Set `draft: true`, or use a future UTC `date`, to keep a post out of the build,
 sitemap, and listings until you're ready.
 
-## Ghost Migration
+## Writing Archive
 
-The published Ghost archive has already been migrated. To regenerate it from the
-sanitized export (`specs/refs/brian-erickson.ghost.2026-06-05.json`):
-
-```bash
-npm run migrate:ghost            # idempotent: never overwrites existing markdown
-npm run migrate:ghost -- --force # regenerate posts, images, About, and redirects
-```
-
-It writes posts to `src/content/blog/`, copies referenced images to
-`public/images/blog/`, extracts the stale About page to `src/data/about.md` (reference
-only — not published), and rebuilds `public/_redirects` (preserving the manual section).
+The Ghost archive has already been migrated. The canonical archive now lives in
+`src/content/blog/`, with referenced images in `public/images/blog/` and legacy
+redirects in `public/_redirects`.
 
 ## Deployment
 
 Static `dist/` output deploys to Cloudflare Pages (build command `npm run build`,
-output `dist/`, Node 20). Set `CLOUDFLARE_ANALYTICS_TOKEN` in the Pages dashboard only
+output `dist/`, Node 22.12+). Set `CLOUDFLARE_ANALYTICS_TOKEN` in the Pages dashboard only
 if you want Cloudflare Web Analytics; the snippet is omitted when it is unset. Account
-setup (GitHub repo, Pages connection, DNS) is owner-managed — see the build spec.
+setup (GitHub repo, Pages connection, DNS) is owner-managed.

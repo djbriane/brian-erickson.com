@@ -1,21 +1,21 @@
 # Portfolio Theme Refresh
 
-Status: Planned for the active v1 build branch.
+Status: Implemented on the active v1 build branch.
 
-Supersedes: [homepage-portfolio-refresh--planned.md](homepage-portfolio-refresh--planned.md).
+Supersedes the homepage-only portfolio refresh direction that kept the Casper/Ghost first viewport as the primary design constraint.
 
-Reference: [refs/astro-theme](refs/astro-theme/).
+Implementation note: the copied Astro theme reference was removed after the design was adapted into the live app, so this spec is now the canonical record for the refresh direction.
 
 ## Summary
 
-Replace the current Ghost/Casper-inspired visual direction with a whole-site portfolio theme adapted from the Astro theme reference. The refresh should make the site feel like a current professional portfolio for evaluating Brian's product judgment, technical fluency, and shipped work, while preserving the existing v1 content model, routes, migration behavior, and static Cloudflare Pages deployment posture.
+Replace the current Ghost/Casper-inspired visual direction with a whole-site portfolio theme adapted from the Astro theme reference. The refresh should make the site feel like a current professional portfolio for evaluating Brian's product judgment, technical fluency, and shipped work, while preserving the existing v1 content model, routes, migrated archive content, legacy redirects, and static Cloudflare Pages deployment posture.
 
 Before theme implementation proceeds, upgrade the project to the current supported Astro major and verify the existing site still passes tests and build.
 
 ## Goals
 
 - Upgrade Astro and official Astro integrations to the current supported major before visual replacement work begins.
-- Apply a whole-site portfolio visual system based on `specs/refs/astro-theme`, reimplemented inside the existing app structure.
+- Apply a whole-site portfolio visual system reimplemented inside the existing app structure.
 - Replace the full-screen Ghost cover with the reference theme's shorter portfolio hero pattern.
 - Use `Brian Erickson` as the dominant homepage hero signal, with the current identity line as supporting copy.
 - Put GPXplore immediately after the hero as the primary evidence section.

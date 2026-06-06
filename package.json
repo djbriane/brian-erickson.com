@@ -11,9 +11,7 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "test": "vitest run --passWithNoTests",
-    "format": "prettier --write .",
-    "migrate:ghost": "node scripts/migrate-ghost.js",
-    "audit:links": "node scripts/audit-links.js"
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@astrojs/check": "^0.9.9",
