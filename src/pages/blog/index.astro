@@ -1,0 +1,30 @@
+---
+import { getCollection } from "astro:content";
+import Pagination from "../../components/Pagination.astro";
+import PostListItem from "../../components/PostListItem.astro";
+import Page from "../../layouts/Page.astro";
+import { isPublishedPost, sortByDateDesc } from "../../lib/content";
+
+const pageSize = 10;
+const posts = sortByDateDesc((await getCollection("blog")).filter(isPublishedPost));
+const pagePosts = posts.slice(0, pageSize);
+const hasNext = posts.length > pageSize;
+---
+
+<Page title="Writing" description="Writing by Brian Erickson, including the migrated Ghost archive.">
+  <header class="page-header page-header--center">
+    <p class="eyebrow">Writing</p>
+    <h1>From the Archive</h1>
+    <p class="lede">Older posts preserved as history, with newer writing to follow.</p>
+  </header>
+
+  {pagePosts.length > 0 ? (
+    <div class="post-list">
+      {pagePosts.map((post) => <PostListItem post={post} />)}
+    </div>
+  ) : (
+    <p class="muted">No posts published yet.</p>
+  )}
+
+  <Pagination nextUrl={hasNext ? "/blog/page/2/" : undefined} />
+</Page>

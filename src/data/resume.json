@@ -1,0 +1,130 @@
+{
+  "basics": {
+    "name": "Brian Erickson",
+    "title": "I'm a PM at Mailgun working on the tools developers use to build with email. This site is a collection of my work — case studies, projects I'm tinkering on, and some writing.",
+    "summary": "I started in software engineering and ended up in product. Turns out I like the whole problem, not just the code. I've worked across messaging, security, and developer platforms, mostly focused on the unglamorous middle: turning what customers actually need into things they adopt and keep using. This site is where I collect that work, plus whatever I'm tinkering on.",
+    "location": "Denver, CO",
+    "email": "contact@brian-erickson.com",
+    "linkedin": "https://linkedin.com/in/berickson",
+    "github": "https://github.com/djbriane"
+  },
+  "experience": [
+    {
+      "company": "Mailgun (Sinch)",
+      "title": "Senior Product Manager",
+      "start": "2025",
+      "end": "present",
+      "description": "Senior Product Manager for Mailgun, Sinch's email platform.",
+      "highlights": []
+    },
+    {
+      "company": "StackHawk",
+      "title": "Senior Product Manager",
+      "start": "2022",
+      "end": "2025",
+      "description": "Led product strategy and execution for StackHawk's application security platform, helping enterprise security teams integrate testing into CI/CD workflows.",
+      "highlights": [
+        "Drove the API Discovery launch, leveraging AI to improve existing customer adoption of the core product by 250% and contributing directly to $2.2M in pipeline expansion over two quarters.",
+        "Launched gRPC API scanning, positioning StackHawk as the first application security provider with gRPC support and unlocking key enterprise accounts.",
+        "Built the Oversight Dashboard to improve security posture visibility and support enterprise sales by aligning reporting capabilities with compliance requirements."
+      ]
+    },
+    {
+      "company": "SimpleTexting / Sinch",
+      "title": "Head of Product",
+      "start": "2020",
+      "end": "2022",
+      "description": "First product hire at SimpleTexting, scaling the product organization and helping align the messaging platform with Sinch's broader portfolio.",
+      "highlights": [
+        "Scaled the product organization from one person to five cross-functional teams to accelerate product delivery and support rapid growth.",
+        "Increased MRR by $20K+ within the first year through targeted SMB-focused feature development.",
+        "Established core product processes and adopted an empowered product team model to improve execution velocity and collaboration."
+      ]
+    },
+    {
+      "company": "ThriveHive",
+      "title": "Product Management Director",
+      "start": "2011",
+      "end": "2019",
+      "description": "Owned product strategy and development of Perch from concept to a mobile-first SMB marketing platform with more than 150K users.",
+      "highlights": [
+        "Led Perch to recognition as the #1 Business App at SXSW with a 4.9 App Store rating.",
+        "Led acquisition integration, aligning Perch with ThriveHive's SMB marketing suite under Gannett's LocalIQ brand.",
+        "Improved user signups by 16%, activation by 60%, and retention by 30% through iterative A/B testing and user-centered design."
+      ]
+    },
+    {
+      "company": "Trimble Navigation",
+      "title": "Product Manager",
+      "start": "2009",
+      "end": "2011",
+      "description": "Led development and launch of VisionLink, Trimble's next-generation telematics application powering Caterpillar's Product Link.",
+      "highlights": [
+        "Managed an international product team across three continents.",
+        "Implemented Agile methodologies and structured strategic planning to improve product delivery timelines and align user needs, business goals, and marketing initiatives.",
+        "Facilitated user research and developed action plans for UX/UI improvements using wireframes and mockups for stakeholder communication."
+      ]
+    },
+    {
+      "company": "Local Matters, Inc.",
+      "title": "Product Manager",
+      "start": "2008",
+      "end": "2009",
+      "description": "Managed roadmap and requirements for a local-search web platform serving 4 million+ monthly unique visitors.",
+      "highlights": []
+    },
+    {
+      "company": "Local Matters, Inc.",
+      "title": "UX Engineer",
+      "start": "2007",
+      "end": "2008",
+      "description": "User Experience Engineer for new product development on interactive social sites and Facebook platform applications.",
+      "highlights": [
+        "Developed sites using JavaScript, HTML, CSS, and Java Server Pages."
+      ]
+    },
+    {
+      "company": "iFactor Consulting, Inc.",
+      "title": "Applications Architect",
+      "start": "2005",
+      "end": "2007",
+      "description": "Architect and primary developer for web-based products used by major power companies to communicate outage status, configure notifications, and ensure data quality.",
+      "highlights": [
+        "Responsible for product strategy, system architecture, user interface design, and development."
+      ]
+    },
+    {
+      "company": "bConnected Software, Inc.",
+      "title": "Senior Software Engineer",
+      "start": "2004",
+      "end": "2005",
+      "description": "Senior Software Engineer at bConnected Software before its acquisition by Kaiser Permanente.",
+      "highlights": []
+    },
+    {
+      "company": "GE Digital Energy - Smallworld",
+      "title": "Software Engineer",
+      "start": "2000",
+      "end": "2004",
+      "description": "Software Engineer working on geospatial and utility software products.",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Colorado - Leeds School of Business",
+      "degree": "MBA - Entrepreneurship, Marketing",
+      "year": 2009
+    },
+    {
+      "institution": "South Dakota School of Mines and Technology",
+      "degree": "BS, Computer Science",
+      "year": ""
+    }
+  ],
+  "skills": {
+    "Product Leadership": ["Roadmap and strategy", "Agile methodologies", "Customer discovery", "Competitive analysis"],
+    "Design / User Experience": ["User research", "Prototyping", "Usability testing"],
+    "Technical Expertise": ["API design", "REST", "GraphQL", "SQL", "Analytics and data-driven decisions", "AI and prompt engineering"]
+  }
+}

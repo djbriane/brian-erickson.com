@@ -1,0 +1,89 @@
+---
+import { getCollection } from "astro:content";
+import Page from "../layouts/Page.astro";
+import { formatDate, isPublishedPost, sortByDateDesc, SITE_DESCRIPTION } from "../lib/content";
+import resume from "../data/resume.json";
+
+const posts = sortByDateDesc((await getCollection("blog")).filter(isPublishedPost)).slice(0, 3);
+const featuredProject = (await getCollection("projects")).find((project) => project.data.featured);
+---
+
+<Page
+  width="wide"
+  description={SITE_DESCRIPTION}
+  cover={{ title: resume.basics.name, description: resume.basics.title }}
+>
+  {featuredProject && (
+    <section class="home-featured section" aria-labelledby="featured-work-title">
+      <div class="section-heading home-section-heading">
+        <p class="eyebrow">Featured Work</p>
+        <h2 id="featured-work-title">What I'm working on now.</h2>
+      </div>
+      <article class="home-project-panel">
+        <div class="home-project-panel__body">
+          <p class="eyebrow">{featuredProject.data.subtitle}</p>
+          <h3><a href={`/projects/${featuredProject.id}/`}>{featuredProject.data.title}</a></h3>
+          <p class="home-project-panel__summary">{featuredProject.data.summary}</p>
+          <ul class="home-project-panel__details">
+            <li>Route planning, library, trip assembly, and field-reference workflows.</li>
+            <li>Local-first data model with GPX parsing, export, backup, and restore.</li>
+            <li>Maps, elevation, campground, wildfire, and day-sheet planning surfaces.</li>
+          </ul>
+          <div class="link-row">
+            <a class="button-link" href={`/projects/${featuredProject.id}/`}>Read case study</a>
+            {featuredProject.data.links.live && (
+              <a class="button-link button-link--solid" href={featuredProject.data.links.live} target="_blank" rel="noreferrer">
+                Visit GPXplore
+              </a>
+            )}
+          </div>
+        </div>
+        {featuredProject.data.cover_image && (
+          <a class="home-project-shot" href={`/projects/${featuredProject.id}/`} aria-label={`${featuredProject.data.title} screenshot`}>
+            <img
+              src={featuredProject.data.cover_image}
+              alt={`Screenshot of ${featuredProject.data.title}`}
+              width="2438"
+              height="1850"
+              loading="lazy"
+            />
+          </a>
+        )}
+      </article>
+    </section>
+  )}
+
+  <section id="about" class="home-bridge section" aria-labelledby="home-about-title">
+    <div class="section-heading home-bridge__heading">
+      <p class="eyebrow">About</p>
+      <h2 id="home-about-title">PM. Builder. Occasional tinkerer.</h2>
+    </div>
+    <div class="home-bridge__body">
+      <p>{resume.basics.summary}</p>
+      <div class="link-row">
+        <a class="button-link" href="/resume/">Résumé</a>
+      </div>
+    </div>
+  </section>
+
+  {posts.length > 0 && (
+    <section class="home-archive section" aria-labelledby="archive-title">
+      <div class="section-heading home-section-heading">
+        <p class="eyebrow">From the Archive</p>
+        <h2 id="archive-title">Past musings, preserved as context.</h2>
+      </div>
+      <ol class="home-archive-list">
+        {posts.map((post) => (
+          <li>
+            <a href={`/blog/${post.id}/`}>
+              <span>{post.data.title}</span>
+              <time datetime={post.data.date.toISOString()}>{formatDate(post.data.date)}</time>
+            </a>
+            <p>{post.data.description}</p>
+          </li>
+        ))}
+      </ol>
+      <a class="home-archive-link" href="/blog/">All writing</a>
+    </section>
+  )}
+</Page>

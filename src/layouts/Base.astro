@@ -1,0 +1,57 @@
+---
+import "@fontsource-variable/space-grotesk";
+import "@fontsource-variable/dm-sans";
+import "../styles/global.css";
+import { SITE_DESCRIPTION, SITE_TITLE } from "../lib/content";
+
+interface Props {
+  title?: string;
+  description?: string;
+  type?: "website" | "article";
+  image?: string;
+}
+
+const {
+  title = SITE_TITLE,
+  description = SITE_DESCRIPTION,
+  type = "website",
+  image = "/images/cover.jpg",
+} = Astro.props;
+const pageTitle = title === SITE_TITLE ? title : `${title} | ${SITE_TITLE}`;
+const site = Astro.site ?? "https://brian-erickson.com";
+const canonical = new URL(Astro.url.pathname, site).toString();
+const socialImage = new URL(image, site).toString();
+const analyticsToken = import.meta.env.CLOUDFLARE_ANALYTICS_TOKEN;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content={type} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={socialImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImage} />
+    {analyticsToken && (
+      <script
+        is:inline
+        defer
+        src="https://static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon={`{"token":"${analyticsToken}"}`}
+      ></script>
+    )}
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

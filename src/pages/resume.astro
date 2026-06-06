@@ -1,0 +1,64 @@
+---
+import { existsSync } from "node:fs";
+import ResumeSection from "../components/ResumeSection.astro";
+import Page from "../layouts/Page.astro";
+import resume from "../data/resume.json";
+
+const hasResumePdf = existsSync(new URL("../../public/resume.pdf", import.meta.url));
+const description = `${resume.basics.name}'s resume, experience, education, and skills.`;
+---
+
+<Page title="Résumé" description={description}>
+  <header class="page-header">
+    <p class="eyebrow">Résumé</p>
+    <h1>{resume.basics.name}</h1>
+    <p class="lede">{resume.basics.title}</p>
+    {hasResumePdf && <p><a class="button-link" href="/resume.pdf">Download PDF</a></p>}
+  </header>
+
+  <ResumeSection title="Summary">
+    <p>{resume.basics.summary}</p>
+  </ResumeSection>
+
+  <ResumeSection title="Experience">
+    {resume.experience.map((item) => (
+      <article class="resume-entry">
+        <div class="resume-entry__head">
+          <h3>{item.title} — {item.company}</h3>
+          <span class="resume-entry__dates">{item.start} – {item.end}</span>
+        </div>
+        <p>{item.description}</p>
+        {item.highlights.length > 0 && (
+          <ul>
+            {item.highlights.map((highlight) => <li>{highlight}</li>)}
+          </ul>
+        )}
+      </article>
+    ))}
+  </ResumeSection>
+
+  <ResumeSection title="Education">
+    {resume.education.map((item) => (
+      <article class="resume-entry">
+        <div class="resume-entry__head">
+          <h3>{item.institution}</h3>
+          {item.year && <span class="resume-entry__dates">{item.year}</span>}
+        </div>
+        <p>{item.degree}</p>
+      </article>
+    ))}
+  </ResumeSection>
+
+  <ResumeSection title="Skills">
+    <div class="skill-grid">
+      {Object.entries(resume.skills).map(([group, skills]) => (
+        <section>
+          <h3>{group}</h3>
+          <ul>
+            {skills.map((skill) => <li>{skill}</li>)}
+          </ul>
+        </section>
+      ))}
+    </div>
+  </ResumeSection>
+</Page>

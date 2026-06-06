@@ -1,0 +1,38 @@
+---
+import { getCollection } from "astro:content";
+import Pagination from "../../../components/Pagination.astro";
+import PostListItem from "../../../components/PostListItem.astro";
+import Page from "../../../layouts/Page.astro";
+import { isPublishedPost, sortByDateDesc } from "../../../lib/content";
+
+export async function getStaticPaths() {
+  const pageSize = 10;
+  const posts = sortByDateDesc((await getCollection("blog")).filter(isPublishedPost));
+  const pageCount = Math.ceil(posts.length / pageSize);
+  return Array.from({ length: Math.max(0, pageCount - 1) }, (_, index) => {
+    const page = index + 2;
+    return { params: { page: String(page) } };
+  });
+}
+
+const currentPage = Number(Astro.params.page);
+const pageSize = 10;
+const posts = sortByDateDesc((await getCollection("blog")).filter(isPublishedPost));
+const start = (currentPage - 1) * pageSize;
+const pagePosts = posts.slice(start, start + pageSize);
+const prevUrl = currentPage === 2 ? "/blog/" : `/blog/page/${currentPage - 1}/`;
+const nextUrl = start + pageSize < posts.length ? `/blog/page/${currentPage + 1}/` : undefined;
+---
+
+<Page title={`Writing Page ${currentPage}`} description="Writing by Brian Erickson.">
+  <header class="page-header page-header--center">
+    <p class="eyebrow">Writing</p>
+    <h1>Archive Page {currentPage}</h1>
+  </header>
+
+  <div class="post-list">
+    {pagePosts.map((post) => <PostListItem post={post} />)}
+  </div>
+
+  <Pagination prevUrl={prevUrl} nextUrl={nextUrl} />
+</Page>

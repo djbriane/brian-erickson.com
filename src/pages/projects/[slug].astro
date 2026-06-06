@@ -1,0 +1,46 @@
+---
+import { getCollection, render } from "astro:content";
+import TagChip from "../../components/TagChip.astro";
+import Page from "../../layouts/Page.astro";
+import { formatDate } from "../../lib/content";
+
+export async function getStaticPaths() {
+  const projects = await getCollection("projects");
+  return projects.map((project) => ({
+    params: { slug: project.id },
+    props: { project },
+  }));
+}
+
+const { project } = Astro.props;
+const { Content } = await render(project);
+---
+
+<Page title={project.data.title} description={project.data.summary} type="article">
+  <article>
+    <header class="page-header">
+      <p class="eyebrow">{project.data.subtitle} / {formatDate(project.data.date)}</p>
+      <h1>{project.data.title}</h1>
+      <p class="lede">{project.data.summary}</p>
+      <div class="tag-list">
+        <span class="status-badge">{project.data.status}</span>
+        {project.data.tags.map((tag) => <TagChip tag={tag} />)}
+      </div>
+      {project.data.cover_image && (
+        <img class="project-hero-image" src={project.data.cover_image} alt={`Screenshot of ${project.data.title}`} loading="eager" />
+      )}
+    </header>
+
+    {Object.values(project.data.links).some(Boolean) && (
+      <div class="link-row">
+        {project.data.links.live && <a class="button-link" href={project.data.links.live} target="_blank" rel="noreferrer">Live site</a>}
+        {project.data.links.github && <a class="button-link" href={project.data.links.github} target="_blank" rel="noreferrer">GitHub</a>}
+        {project.data.links.case_study && <a class="button-link" href={project.data.links.case_study} target="_blank" rel="noreferrer">Case study</a>}
+      </div>
+    )}
+
+    <div class="post-content">
+      <Content />
+    </div>
+  </article>
+</Page>

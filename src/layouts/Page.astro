@@ -1,0 +1,31 @@
+---
+import Footer from "../components/Footer.astro";
+import Nav from "../components/Nav.astro";
+import SiteCover from "../components/SiteCover.astro";
+import Base from "./Base.astro";
+
+interface Props {
+  title?: string;
+  description?: string;
+  type?: "website" | "article";
+  width?: "reading" | "wide";
+  cover?: {
+    title: string;
+    description?: string;
+    image?: string;
+  };
+}
+
+const { title, description, type, width = "reading", cover } = Astro.props;
+---
+
+<Base title={title} description={description} type={type}>
+  <Nav />
+  {cover && <SiteCover title={cover.title} description={cover.description} image={cover.image} />}
+  <main class:list={["site-main", cover && "site-main--after-hero"]}>
+    <div class={width === "wide" ? "wide-width" : "reading-width"}>
+      <slot />
+    </div>
+  </main>
+  <Footer />
+</Base>

@@ -16,7 +16,7 @@ Brian's present professional framing. Canonical source: `src/data/resume.json`, 
 Current v1 focus line:
 
 ```text
-Product Manager building technically ambitious products for real-world users.
+Senior Product Manager at Mailgun (Sinch) building B2B SaaS products for enterprise adoption and product-led growth.
 ```
 
 ## Resume Data
@@ -29,15 +29,11 @@ The migrated Ghost blog. It is historical context, not the homepage lead. Homepa
 
 ## Migrated Post
 
-A blog post imported from the Ghost export with `ghost_id` in frontmatter. Migrated posts should display a subtle "Originally published" cue.
+A historical archive post imported from the old Ghost site with `ghost_id` in frontmatter. Migrated posts should display a subtle "Originally published" cue.
 
 ## Published Post
 
 A blog post where `draft !== true` and `date <= todayUtcDateString`. Future-dated posts are treated as scheduled/unpublished.
-
-## Ghost About
-
-The old Ghost `About Me` page. It is stale historical reference only and should be extracted to `src/data/about.md`. It must not drive the live homepage bio.
 
 ## GPXplore
 
@@ -68,4 +64,3 @@ Cloudflare Pages redirects in `public/_redirects`. Ghost used root slug URLs (`/
 ## Static Output
 
 Astro static output deployed to Cloudflare Pages. No Cloudflare adapter is needed in v1 unless future runtime code is introduced.
-

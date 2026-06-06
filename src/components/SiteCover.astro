@@ -1,0 +1,17 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+}
+
+const { title, description, image = "/images/cover.jpg" } = Astro.props;
+const style = image ? `--hero-image: url("${image}");` : undefined;
+---
+
+<div class="site-cover" style={style}>
+  <div class="site-cover__inner">
+    <h1 class="site-cover__title">{title}</h1>
+    {description && <p class="site-cover__description">{description}</p>}
+  </div>
+</div>
