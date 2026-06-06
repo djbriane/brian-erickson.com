@@ -22,3 +22,8 @@ tmp/
 npm-debug.log*
 pnpm-debug.log*
 yarn-debug.log*
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example

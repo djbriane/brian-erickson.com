@@ -2,7 +2,17 @@
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
     "resolveJsonModule": true,
-    "types": ["node"]
+    "types": [
+      "node"
+    ]
   },
-  "exclude": ["dist", "node_modules", "specs/refs", "tmp"]
+  "exclude": [
+    "dist",
+    "node_modules",
+    "specs/refs",
+    "tmp"
+  ],
+  "include": [
+    "./worker-configuration.d.ts"
+  ]
 }
