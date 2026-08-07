@@ -2,9 +2,12 @@ import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 
 describe("content smoke checks", () => {
-  it("has 19 migrated blog posts", () => {
+  it("keeps the 19 migrated Ghost archive posts", () => {
     const files = readdirSync("src/content/blog").filter((f) => f.endsWith(".md"));
-    expect(files).toHaveLength(19);
+    const migrated = files.filter((file) =>
+      /\nghost_id: \d+/.test(readFileSync(`src/content/blog/${file}`, "utf8")),
+    );
+    expect(migrated).toHaveLength(19);
   });
 
   it("every blog post carries required frontmatter", () => {
@@ -16,6 +19,14 @@ describe("content smoke checks", () => {
       expect(contents).toMatch(/\ndate:/);
       expect(contents).toMatch(/\ndescription:/);
       expect(contents).toMatch(/\ndraft: false/);
+    }
+  });
+
+  it("migrated posts keep a ghost_id", () => {
+    const files = readdirSync("src/content/blog").filter((f) => f.endsWith(".md"));
+    for (const file of files) {
+      const contents = readFileSync(`src/content/blog/${file}`, "utf8");
+      if (!/\nghost_id:/.test(contents)) continue;
       expect(contents).toMatch(/\nghost_id: \d+/);
     }
   });
