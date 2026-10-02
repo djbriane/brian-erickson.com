@@ -1,5 +1,5 @@
 ---
-title: GPXplore
+title: GPXplore Web
 date: 2026-05-24
 status: active
 tags:
@@ -11,8 +11,8 @@ summary: A local-first backcountry route planner for building GPX routes, assemb
 subtitle: Backcountry route planner
 cover_image: /images/projects/gpxplore-home.jpg
 links:
-  live: https://gpxplore.net
-featured: true
+  live: https://app.gpxplore.net/
+featured: false
 ---
 
 GPXplore is a browser-based route planner for motorcycle and bicycle backcountry trips. It imports GPX tracks, lets riders trim and refine them on a topographic map, pin campgrounds and other places, build multi-day itineraries, and export routes when they are ready to ride.
@@ -45,7 +45,7 @@ GPXplore has been a useful exercise in keeping product judgment close to impleme
 
 ## Build Approach
 
-I built GPXplore as an experiment in spec-driven, AI-assisted development. I started with a Lovable prototype, then moved into Cursor and Claude Code once the product needed real architecture and release discipline.
+I built GPXplore as an experiment in spec-driven, AI-assisted development. I started with a Lovable prototype, then moved into Claude and Codex once the product needed real architecture and release discipline.
 
 The working pattern was to resolve ambiguity first, write the decision down, then hand implementation to the model. The LLM could move fast on mechanics, but the product decisions still needed to come from clear constraints: what the rider needs, what the route data can support, what a GPS device will accept, and what should stay out of the product until there is a real need.
 

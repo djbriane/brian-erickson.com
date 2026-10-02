@@ -23,9 +23,9 @@ Senior Product Manager at Mailgun (Sinch) building B2B SaaS products for enterpr
 
 Structured current resume content stored in `src/data/resume.json`. This drives `/resume`, homepage identity, and contact basics. Production builds should reject placeholder resume content.
 
-## Writing Archive
+## Writing
 
-The migrated Ghost blog. It is historical context, not the homepage lead. Homepage label is **From the Archive** until Brian has newer writing to feature. Blog route remains `/blog/`; nav label is **Writing**.
+Current writing and the migrated Ghost archive. Blog route remains `/blog/`; nav and homepage labels are **Thoughts**.
 
 ## Migrated Post
 
@@ -37,7 +37,7 @@ A blog post where `draft !== true` and `date <= todayUtcDateString`. Future-date
 
 ## GPXplore
 
-Brian's active personal project and the single featured v1 project. It lives at `/projects/gpxplore/` on the personal site and links to `https://gpxplore.net`.
+Brian's backcountry planning product. The shipped iOS app is featured at `/projects/gpxplore-ios/`, with App Store and `https://www.gpxplore.net/` links. The web planner retains `/projects/gpxplore/` and links to `https://app.gpxplore.net/`.
 
 Positioning:
 

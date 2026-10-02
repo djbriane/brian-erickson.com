@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1280" viewBox="0 0 1600 1280"><rect width="1600" height="1280" fill="#F8F5EE"/>
+<text x="80" y="70" fill="#365D45" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="600">GPXPLORE / BUILDING WITH AGENTS</text>
+<text x="80" y="155" fill="#26382D" font-family="Helvetica, Arial, sans-serif" font-size="62" font-weight="700">From prompts to a release process.</text>
+<text x="80" y="212" fill="#647367" font-family="Helvetica, Arial, sans-serif" font-size="27" font-weight="400">The prototype started the journey; explicit contracts helped it grow.</text>
+<rect x="80" y="290" width="1440" height="126" rx="18" fill="#E7E9DD"/>
+<circle cx="136" cy="350" r="32" fill="#537A89"/>
+<text x="116" y="360" fill="#F8F5EE" font-family="Helvetica, Arial, sans-serif" font-size="25" font-weight="600">01</text>
+<text x="200" y="345" fill="#26382D" font-family="Helvetica, Arial, sans-serif" font-size="36" font-weight="600">Explore</text>
+<text x="480" y="338" fill="#26382D" font-family="Helvetica, Arial, sans-serif" font-size="29" font-weight="600">Make the idea tangible</text>
+<text x="480" y="380" fill="#647367" font-family="Helvetica, Arial, sans-serif" font-size="23" font-weight="400">Lovable prototype, May 20 · A working GPX tool to react to.</text>
+<rect x="80" y="438" width="1440" height="126" rx="18" fill="#E7E9DD"/>
+<circle cx="136" cy="498" r="32" fill="#365D45"/>
+<text x="116" y="508" fill="#F8F5EE" font-family="Helvetica, Arial, sans-serif" font-size="25" font-weight="600">02</text>
+<text x="200" y="493" fill="#26382D" font-family="Helvetica, Arial, sans-serif" font-size="36" font-weight="600">Specify</text>
+<text x="480" y="486" fill="#26382D" font-family="Helvetica, Arial, sans-serif" font-size="29" font-weight="600">Write down the decisions</text>
+<text x="480" y="528" fill="#647367" font-family="Helvetica, Arial, sans-serif" font-size="23" font-weight="400">Specs, ADRs and agent guidance · Behavior, constraints and repo ownership.</text>
+<rect x="80" y="586" width="1440" height="126" rx="18" fill="#E7E9DD"/>
+<circle cx="136" cy="646" r="32" fill="#AD6D46"/>
+<text x="116" y="656" fill="#F8F5EE" font-family="Helvetica, Arial, sans-serif" font-size="25" font-weight="600">03</text>
+<text x="200" y="641" fill="#26382D" font-family="Helvetica, Arial, sans-serif" font-size="36" font-weight="600">Implement</text>
+<text x="480" y="634" fill="#26382D" font-family="Helvetica, Arial, sans-serif" font-size="29" font-weight="600">Change the right layer</text>
+<text x="480" y="676" fill="#647367" font-family="Helvetica, Arial, sans-serif" font-size="23" font-weight="400">Web, pipeline and native iOS · Shared contracts keep the pieces aligned.</text>
+<rect x="80" y="734" width="1440" height="126" rx="18" fill="#E7E9DD"/>
+<circle cx="136" cy="794" r="32" fill="#365D45"/>
+<text x="116" y="804" fill="#F8F5EE" font-family="Helvetica, Arial, sans-serif" font-size="25" font-weight="600">04</text>
+<text x="200" y="789" fill="#26382D" font-family="Helvetica, Arial, sans-serif" font-size="36" font-weight="600">Verify</text>
+<text x="480" y="782" fill="#26382D" font-family="Helvetica, Arial, sans-serif" font-size="29" font-weight="600">Make changes reviewable</text>
+<text x="480" y="824" fill="#647367" font-family="Helvetica, Arial, sans-serif" font-size="23" font-weight="400">Tests, builds and pull requests · Evidence before a change reaches release.</text>
+<rect x="80" y="882" width="1440" height="126" rx="18" fill="#E7E9DD"/>
+<circle cx="136" cy="942" r="32" fill="#365D45"/>
+<text x="116" y="952" fill="#F8F5EE" font-family="Helvetica, Arial, sans-serif" font-size="25" font-weight="600">05</text>
+<text x="200" y="937" fill="#26382D" font-family="Helvetica, Arial, sans-serif" font-size="36" font-weight="600">Release</text>
+<text x="480" y="930" fill="#26382D" font-family="Helvetica, Arial, sans-serif" font-size="29" font-weight="600">Ship the whole experience</text>
+<text x="480" y="972" fill="#647367" font-family="Helvetica, Arial, sans-serif" font-size="23" font-weight="400">TestFlight → App Store → website · The app and its public entry point go live.</text>
+<text x="80" y="1094" fill="#365D45" font-family="Helvetica, Arial, sans-serif" font-size="31" font-weight="600">A story about directing, connecting and checking agent work.</text>
+<text x="80" y="1174" fill="#647367" font-family="Helvetica, Arial, sans-serif" font-size="19" font-weight="400">Based on repository conventions and launch history; this is not a claim that every step was automated.</text>
+<text x="80" y="1216" fill="#365D45" font-family="Helvetica, Arial, sans-serif" font-size="21" font-weight="600">GPXplore · October 1, 2026 · gpxplore.net</text>
+</svg>

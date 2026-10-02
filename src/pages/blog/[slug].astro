@@ -5,7 +5,9 @@ import Page from "../../layouts/Page.astro";
 import { estimateReadingMinutes, formatDate, isPublishedPost } from "../../lib/content";
 
 export async function getStaticPaths() {
-  const posts = (await getCollection("blog")).filter(isPublishedPost);
+  const posts = (await getCollection("blog")).filter(
+    (post) => import.meta.env.DEV || isPublishedPost(post),
+  );
   return posts.map((post) => ({
     params: { slug: post.id },
     props: { post },
@@ -21,7 +23,7 @@ const minutes = estimateReadingMinutes(post.body ?? "");
   <article>
     <header class="post-header">
       <p class="post-meta">
-        {post.data.ghost_id ? "Originally published" : "Published"} {formatDate(post.data.date)}
+        {!isPublishedPost(post) ? "Draft preview" : post.data.ghost_id ? "Originally published" : "Published"} {formatDate(post.data.date)}
         <span class="sep" aria-hidden="true">•</span>
         {minutes} min read
       </p>

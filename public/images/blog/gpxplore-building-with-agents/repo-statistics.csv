@@ -1,0 +1,4 @@
+repo,main_commit,commits_excluding_template,github_merged_prs,active_days,product_lines,test_lines
+gpxplore-web,35821ff6250d055ad210373b2005abdc67094f3e,976,130,51,61533,25620
+gpxplore-pipeline,2c5cf09a244edf96ded1b1a1fe4c4ee7f9e3a399,114,19,22,18410,6500
+gpxplore-ios,bfa6438879c26318e7e2d2795121f09cd921ca47,731,52,65,68951,46797

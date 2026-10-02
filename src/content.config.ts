@@ -24,9 +24,11 @@ const projects = defineCollection({
     summary: z.string().min(1),
     subtitle: z.string().min(1),
     cover_image: z.string().optional(),
+    highlights: z.array(z.string()).default([]),
     links: z
       .object({
         live: z.url().optional(),
+        app_store: z.url().optional(),
         github: z.url().optional(),
         case_study: z.url().optional(),
       })

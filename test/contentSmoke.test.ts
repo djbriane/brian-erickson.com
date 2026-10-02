@@ -3,7 +3,9 @@ import { describe, expect, it } from "vitest";
 
 describe("content smoke checks", () => {
   it("keeps the 19 migrated Ghost archive posts", () => {
-    const files = readdirSync("src/content/blog").filter((f) => f.endsWith(".md"));
+    const files = readdirSync("src/content/blog").filter((f) =>
+      f.endsWith(".md"),
+    );
     const migrated = files.filter((file) =>
       /\nghost_id: \d+/.test(readFileSync(`src/content/blog/${file}`, "utf8")),
     );
@@ -11,19 +13,23 @@ describe("content smoke checks", () => {
   });
 
   it("every blog post carries required frontmatter", () => {
-    const files = readdirSync("src/content/blog").filter((f) => f.endsWith(".md"));
+    const files = readdirSync("src/content/blog").filter((f) =>
+      f.endsWith(".md"),
+    );
     for (const file of files) {
       const contents = readFileSync(`src/content/blog/${file}`, "utf8");
       expect(contents).toMatch(/^---\n[\s\S]*?\n---/);
       expect(contents).toMatch(/\ntitle:/);
       expect(contents).toMatch(/\ndate:/);
       expect(contents).toMatch(/\ndescription:/);
-      expect(contents).toMatch(/\ndraft: false/);
+      expect(contents).toMatch(/\ndraft: (true|false)\s*\n/);
     }
   });
 
   it("migrated posts keep a ghost_id", () => {
-    const files = readdirSync("src/content/blog").filter((f) => f.endsWith(".md"));
+    const files = readdirSync("src/content/blog").filter((f) =>
+      f.endsWith(".md"),
+    );
     for (const file of files) {
       const contents = readFileSync(`src/content/blog/${file}`, "utf8");
       if (!/\nghost_id:/.test(contents)) continue;
@@ -48,7 +54,9 @@ describe("content smoke checks", () => {
   });
 
   it("leaves no legacy Ghost image paths in migrated bodies", () => {
-    const files = readdirSync("src/content/blog").filter((f) => f.endsWith(".md"));
+    const files = readdirSync("src/content/blog").filter((f) =>
+      f.endsWith(".md"),
+    );
     for (const file of files) {
       const contents = readFileSync(`src/content/blog/${file}`, "utf8");
       expect(contents).not.toMatch(/\/content\/images\//);

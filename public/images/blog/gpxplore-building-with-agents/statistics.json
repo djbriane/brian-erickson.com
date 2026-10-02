@@ -1,0 +1,1520 @@
+{
+  "snapshot": "2026-10-01",
+  "scope": "origin/main of all three repositories",
+  "repositories": {
+    "web": {
+      "repo": "gpxplore-web",
+      "sha": "35821ff6250d055ad210373b2005abdc67094f3e",
+      "commits": 976,
+      "excluded_template_commits": 1,
+      "active_days": 51,
+      "first_commit_date": "2026-05-20",
+      "merged_prs": 128,
+      "source": {
+        "app": {
+          "lines": 61533,
+          "files": 279
+        },
+        "test": {
+          "lines": 25620,
+          "files": 118
+        }
+      },
+      "dates": [
+        "2026-05-20",
+        "2026-05-21",
+        "2026-05-22",
+        "2026-05-23",
+        "2026-05-24",
+        "2026-05-25",
+        "2026-05-26",
+        "2026-05-27",
+        "2026-05-28",
+        "2026-05-29",
+        "2026-05-30",
+        "2026-05-31",
+        "2026-06-01",
+        "2026-06-02",
+        "2026-06-03",
+        "2026-06-04",
+        "2026-06-06",
+        "2026-06-07",
+        "2026-06-08",
+        "2026-06-09",
+        "2026-06-10",
+        "2026-06-11",
+        "2026-06-12",
+        "2026-06-13",
+        "2026-06-15",
+        "2026-06-16",
+        "2026-06-18",
+        "2026-06-20",
+        "2026-06-28",
+        "2026-07-01",
+        "2026-07-02",
+        "2026-07-03",
+        "2026-07-06",
+        "2026-07-07",
+        "2026-07-10",
+        "2026-07-18",
+        "2026-07-20",
+        "2026-07-21",
+        "2026-07-22",
+        "2026-07-23",
+        "2026-07-26",
+        "2026-07-28",
+        "2026-08-04",
+        "2026-08-05",
+        "2026-08-17",
+        "2026-09-22",
+        "2026-09-23",
+        "2026-09-25",
+        "2026-09-26",
+        "2026-09-28",
+        "2026-09-30"
+      ],
+      "merged_pr_details": [
+        [
+          "171",
+          "2026-09-30T15:49:06Z",
+          "35821ff6250d055ad210373b2005abdc67094f3e",
+          "feat(marketing): redesign homepage with iPhone launch signup"
+        ],
+        [
+          "170",
+          "2026-09-28T21:43:50Z",
+          "3fb3af78b5d7892f36691803c4eb8fe80678b5e4",
+          "chore(planner): stop persisting Worker request logs"
+        ],
+        [
+          "169",
+          "2026-09-28T14:06:08Z",
+          "7251620a66f9be203b8a2d0403e756899308871e",
+          "fix(ops): allow for Unraid parity-check load before alerting"
+        ],
+        [
+          "168",
+          "2026-09-29T02:30:48Z",
+          "e24d73c6255a0af17978fe797f0b56e04a4ee4b5",
+          "feat(marketing): add iOS-first GPXplore homepage"
+        ],
+        [
+          "167",
+          "2026-09-26T00:57:13Z",
+          "ede19ea1ad61eaeb8ef174eefe25bd281fc4dbca",
+          "docs(specs): move shipped specs to built/ and refresh status, roadmap, backlog"
+        ],
+        [
+          "166",
+          "2026-09-25T21:14:25Z",
+          "be46f2cfc8d8b51e514b01492104110097e4773c",
+          "feat(ops): gpxplore-ops monitoring Worker"
+        ],
+        [
+          "165",
+          "2026-09-27T03:43:09Z",
+          "d8cbefe22488304a5105c2c74787184b442ee6f5",
+          "feat(elevation): use our own elevation route and fill short gaps"
+        ],
+        [
+          "164",
+          "2026-09-25T19:39:38Z",
+          "15bb807833d94d36714a777b59107559a9116499",
+          "feat(routing): self-hosted elevation route, connector ele, web budget"
+        ],
+        [
+          "163",
+          "2026-09-25T18:21:43Z",
+          "e29d9b170a018aa7b7bcbb93e71e2cffc8123d7e",
+          "fix(lint-staged): run ESLint from repo root with config path"
+        ],
+        [
+          "162",
+          "2026-09-23T23:36:59Z",
+          "154d6461441a64239cba80b925dc0bca645c2fa8",
+          "Surface coverage: rebuilt caches (bridging + access fallback)"
+        ],
+        [
+          "160",
+          "2026-09-23T20:34:55Z",
+          "f3c4713be4201ed35bb8fab998f95d21b63cebe9",
+          "Route enrichment: profile corpus, connector services, MTBDR August 2026"
+        ],
+        [
+          "159",
+          "2026-09-22T22:08:49Z",
+          "c0933b4d584a52bc7240f130e2b01f80c38a86c1",
+          "feat(legal): add Privacy Policy and Terms of Use pages shared with iOS"
+        ],
+        [
+          "156",
+          "2026-08-17T16:28:46Z",
+          "5995e1933a6e0b925b08f9156640ba966150cdad",
+          "data(enrichment): MVUM designations + full-corpus rebuild on 260816"
+        ],
+        [
+          "147",
+          "2026-08-05T16:45:00Z",
+          "b6f01ebb55bb04673349cd5516cbb3e39f4c6815",
+          "data(enrichment): full-corpus surface + town-services cache rebuild against production"
+        ],
+        [
+          "146",
+          "2026-08-05T05:50:36Z",
+          "a94516b087c7145873c1c05a46f1e33d968bfb1c",
+          "Wire the BDR route hint into the route planner's surface hook"
+        ],
+        [
+          "145",
+          "2026-08-05T05:19:59Z",
+          "ad8ff56223a3d3eb23e20fa3039a80962907fa2b",
+          "Consume the published BDR route-enrichment cache"
+        ],
+        [
+          "127",
+          "2026-07-28T17:52:45Z",
+          "cb0cf7887df55295593cb51967bea03ccb79cede",
+          "Route templates: PREFIX_LABELS + docs for pipeline-built trip templates"
+        ],
+        [
+          "126",
+          "2026-07-26T16:51:10Z",
+          "a57161f9e97c1d4d8374e041c4900cf7c31a76ba",
+          "fix(surface): bump CURRENT_SURFACE_ENGINE_VERSION to surface-normalization/3"
+        ],
+        [
+          "114",
+          "2026-07-23T18:06:01Z",
+          "0b3edf336463c4b08faccefcf480e566becef73f",
+          "fix(surface): refine taxonomy and smooth condition ribbon"
+        ],
+        [
+          "113",
+          "2026-07-22T23:59:15Z",
+          "a46b753e411155b4fb1f19b938687e16f0498a20",
+          "feat(surface): add rider-facing surface classification"
+        ],
+        [
+          "112",
+          "2026-07-22T21:37:56Z",
+          "eb5cb3a1af3b7d98c785c8119fdb417371480bc1",
+          "refactor(effort): rename top effort band `very-technical` to `extreme`"
+        ],
+        [
+          "111",
+          "2026-07-22T21:08:51Z",
+          "fcd0b344acd83ae243064c21a1b913fe6215b1bb",
+          "feat(extend): route track extension clicks along real roads (PR-A)"
+        ],
+        [
+          "110",
+          "2026-07-23T00:08:18Z",
+          "2d754fa544a7b7740680eb5f779ae0a60fc40b0e",
+          "feat(stats-ribbon): drop stat cells with nothing to report"
+        ],
+        [
+          "109",
+          "2026-07-21T22:31:36Z",
+          "53a3ea75574354cb2a7121252c1c057bea572a3b",
+          "feat(stats-ribbon): stats ribbon cleanup + richer stat tooltips across every surface"
+        ],
+        [
+          "108",
+          "2026-07-21T17:11:52Z",
+          "fdd032ae2e077a68b40f76e56b6b37ed91529c9c",
+          "feat(surface): fast-follow display polish, day-view + import ribbon fixes"
+        ],
+        [
+          "107",
+          "2026-07-21T05:18:12Z",
+          "0834c879829cb65249228b6a3e1dd45170e66c83",
+          "feat(surface): display consistency + exported roughness (iOS)"
+        ],
+        [
+          "106",
+          "2026-07-20T22:37:11Z",
+          "d4aa7ce99b9e1c51fd60dcb5b5ba983ccbe27b6d",
+          "feat(effort): surface in the effort model \u2014 built, calibrated, deliberately not published"
+        ],
+        [
+          "105",
+          "2026-07-20T13:04:37Z",
+          "07e0aa0b1d7e4b3d37c69bfe597cea4cbd6b2ebd",
+          "feat(surface): route surface summary as a ring stat + dominant-class mix"
+        ],
+        [
+          "104",
+          "2026-07-19T04:07:45Z",
+          "f77573ae2758a5ae7378de2343da89385fae038a",
+          "Add route-owned road surface enrichment"
+        ],
+        [
+          "103",
+          "2026-07-18T19:27:18Z",
+          "e68dd2e4eda0d22200e1bdccd88cc3e68d378d8c",
+          "feat(routing): add whole-route enrichment proxy"
+        ],
+        [
+          "101",
+          "2026-07-18T18:19:38Z",
+          "38e25c44f67703e43f38a017ec18861c92fe53e8",
+          "fix+feat(seo): correct production origin to app.gpxplore.net + BDR discovery groundwork"
+        ],
+        [
+          "100",
+          "2026-07-18T16:58:28Z",
+          "7169f23693317a95b73a7f736d1ab773c0ac9063",
+          "feat(routing): connector routing endpoint + public-surface machinery (gpxplore-pipeline#16)"
+        ],
+        [
+          "99",
+          "2026-07-11T05:35:41Z",
+          "e00245426f44fd9289406dedd5cbe56e8072ebf0",
+          "fix(narrative): quality model for all tiers, skip civic + title-echo POIs (missed by #98)"
+        ],
+        [
+          "98",
+          "2026-07-11T03:03:08Z",
+          "1a7e228b918a433b9af0dd0b8f23906d71ed67f2",
+          "feat(narrative): day-prose quality \u2014 anti-flourish, quality model for all tiers, skip civic POIs"
+        ],
+        [
+          "97",
+          "2026-07-08T04:35:09Z",
+          "68273465f9d813741aaf6b9456236566f8eb13dc",
+          "feat(narrative): day narrative prompt lab + reorder-safe prompt overhaul"
+        ],
+        [
+          "96",
+          "2026-07-07T18:23:06Z",
+          "a9058ffcf72ea5c4aab950485fe2d9c38ab5bcdd",
+          "feat(narrative): improve remote day prose quality"
+        ],
+        [
+          "95",
+          "2026-07-06T20:03:15Z",
+          "894d950a8a5347b8dabebd184c42d185a6858c5a",
+          "feat(api): add /api/day-narrative Workers AI endpoint"
+        ],
+        [
+          "94",
+          "2026-07-04T00:14:14Z",
+          "496c99d1f5ddd576939b9bb62b12ce0c6334f6e7",
+          "Feature/trip large payloads indexeddb"
+        ],
+        [
+          "93",
+          "2026-07-04T00:07:23Z",
+          "e1b150eebc8acad1cdbb1bd976ce5a934c798aea",
+          "Update campgrounds data (2026-07-03 v2)"
+        ],
+        [
+          "92",
+          "2026-07-03T20:12:16Z",
+          "a46a1a1bc1a73b0bcb27c5b561eff310dcb26a15",
+          "docs(specs): add effort-factor-breakdown and route-profile-enrichment specs"
+        ],
+        [
+          "91",
+          "2026-07-02T18:51:33Z",
+          "6730f4325332364e6d77a00354f68e92da3f6686",
+          "feat(api): add route profile enrichment response"
+        ],
+        [
+          "90",
+          "2026-07-02T05:53:46Z",
+          "6f2fe8bfe243cbd784ac07e887a842b32cf31285",
+          "feat(effort): expose route effort/curviness over POST /api/route-effort for non-JS clients"
+        ],
+        [
+          "89",
+          "2026-07-02T05:22:09Z",
+          "dd3a0d3a171007df0ba8a1008d9c7e5258fa9566",
+          "docs(specs): archive shipped spec docs"
+        ],
+        [
+          "88",
+          "2026-07-01T20:50:25Z",
+          "95d9d34a2760aa39d8861ff396cc0ceeb07d7c46",
+          "data: refresh campground snapshot (2026-07-01)"
+        ],
+        [
+          "87",
+          "2026-07-01T20:07:47Z",
+          "2c2a084141ab31881126576918ab505df6615ce0",
+          "chore(ios): remove campground snapshot generator (ported to pipeline)"
+        ],
+        [
+          "86",
+          "2026-07-01T19:37:03Z",
+          "274012bda76a83d9f5200fdc0225c4649b61fc57",
+          "feat(effort): switchback detection for curviness, Effort, and Energy Load"
+        ],
+        [
+          "85",
+          "2026-06-28T16:12:10Z",
+          "19e070e7f2cb5ad902412b653dffcaa566002d44",
+          "docs(spec): mark companion-bundle-export superseded by gpxtrip"
+        ],
+        [
+          "84",
+          "2026-06-28T15:53:44Z",
+          "acf655653e9b40ea4e1fa8db57dba2bac5e809e0",
+          "fix(ios-snapshot): campground data quality \u2014 URLs, closures, unique ids"
+        ],
+        [
+          "83",
+          "2026-06-21T04:27:35Z",
+          "db116ff2fdac4fa29aca8b5391b93537bf6679f9",
+          "fix(wildfire): drop nonexistent WFIGS outField breaking perimeter query"
+        ],
+        [
+          "82",
+          "2026-06-21T03:54:25Z",
+          "2fd63d33a90a3a5e959e1bd3e98e17a9dce9a488",
+          "feat(ios): campground snapshot + normalized wildfire API data contracts"
+        ],
+        [
+          "81",
+          "2026-06-21T00:42:39Z",
+          "5906b52f3f444c386ea83bf9a8281f352b95f57f",
+          "feat(export): add rich Place details to .gpxtrip + Share preflight"
+        ],
+        [
+          "80",
+          "2026-06-19T05:32:54Z",
+          "2a3eb7811db60208c17317be35f6dcae44f661a6",
+          "feat(export): share .gpxtrip as a web/iOS trip interchange"
+        ],
+        [
+          "79",
+          "2026-06-15T20:56:03Z",
+          "cdab758e846f54f8fb3bc44ced18d696a2ef98a6",
+          "feat(places): unify place-edit drawer (edit custom places) + Route Notes polish"
+        ],
+        [
+          "78",
+          "2026-06-28T16:06:20Z",
+          "ad0901259aa86040ffb839b4e3955355498ec8a2",
+          "refactor(effort): consolidate effort factor math into route-components"
+        ],
+        [
+          "77",
+          "2026-06-13T00:07:56Z",
+          "6e0d067f1d723d10d0cd316d8611c01c3b7f4aae",
+          "feat(trips): Trip Transfer \u2014 file-based trip sharing (.gpxtrip)"
+        ],
+        [
+          "76",
+          "2026-06-12T22:04:51Z",
+          "222fa8d3ebf510c6a596cf2e28211a4f8d193a52",
+          "test(trips): cover useLaunchpadStore through the persistence seam (PR-B)"
+        ],
+        [
+          "75",
+          "2026-06-12T22:03:02Z",
+          "3a33faf6987910b3f119b0afbed9801f99e6b818",
+          "refactor(trips): own trip persistence behind one seam (PR-A)"
+        ],
+        [
+          "74",
+          "2026-06-12T05:19:29Z",
+          "f44ddc5ba8d21c5ddb512e278b3248bbecdcf7e5",
+          "fix(copy): unify GPS vocabulary and tighten user-facing copy"
+        ],
+        [
+          "73",
+          "2026-06-12T04:47:26Z",
+          "09e34ea7b6e22847fb312cb1177d1f09812b404b",
+          "fix(mobile): stat-strip, card & menu layout fixes + effort-factor doc reconcile"
+        ],
+        [
+          "72",
+          "2026-06-12T00:10:06Z",
+          "d017288cecaf1c6edcacbf31310e7784b2cb0b7c",
+          "feat(effort): Effort Factor display \u2014 chip on lists, meter on detail surfaces"
+        ],
+        [
+          "71",
+          "2026-06-11T14:02:58Z",
+          "b29b834a43b467adae32e1edfe8f898e0c90b7de",
+          "fix(milestone-1): field-companion hardening + changelog"
+        ],
+        [
+          "70",
+          "2026-06-10T10:04:09Z",
+          "51665e680273322716fbad3512b10229a19f8674",
+          "feat(guidebook): multi-day trip Guidebook print packet"
+        ],
+        [
+          "69",
+          "2026-06-10T23:26:08Z",
+          "4f65b01b343ba36f65b6208ac48900a0af05c930",
+          "feat: Milestone 1 promote-wide gate (sample route, feedback link, SEC-11 Phase A headers)"
+        ],
+        [
+          "68",
+          "2026-06-09T23:28:06Z",
+          "6ce576f16bec776c67851e9472864bcfa00ecd8e",
+          "feat(security): rate-limit upstream-key-spending API proxies (SEC-12/P3)"
+        ],
+        [
+          "67",
+          "2026-06-09T23:28:51Z",
+          "fc903cc27ae3aa9fa4066b3e5072bb5312e49a6e",
+          "docs(security): document production Worker secrets + deploy checklist (SEC-10)"
+        ],
+        [
+          "66",
+          "2026-06-09T23:25:27Z",
+          "ebc683c2542f49aabd6b872a6bcd0729750d8af1",
+          "fix(security): harden API proxies and client URL validation (P1)"
+        ],
+        [
+          "65",
+          "2026-06-09T18:57:12Z",
+          "fca95c838bf4065b3604b85c9658dcaa14d249ba",
+          "feat(bdr): BDR auto-trip from multi-track GPX"
+        ],
+        [
+          "64",
+          "2026-06-09T16:12:34Z",
+          "01d4b319199bcf2a656f95876b30839c86fea661",
+          "feat(trip): trip overview sticky map with list\u2194map hover"
+        ],
+        [
+          "62",
+          "2026-06-08T17:01:38Z",
+          "9d5e17b2c6ce36f2e3c71709dd2cbf3a7fdeeeb4",
+          "feat(refs): import reference-track GPX waypoints into the route"
+        ],
+        [
+          "61",
+          "2026-06-08T02:36:43Z",
+          "83f70c19fd1bb7bace7c9593a9543e13476b3eb5",
+          "feat(route-library): move saved-route geometry to IndexedDB"
+        ],
+        [
+          "60",
+          "2026-06-07T20:40:28Z",
+          "39a25057cdd3d2672145a1484b65442f425a97d7",
+          "feat(trim): retain trimmed sections as references"
+        ],
+        [
+          "59",
+          "2026-06-06T18:51:46Z",
+          "9affccb0afc6230452e32f6f8709bfd912c626bd",
+          "feat(layers): build map layers panel"
+        ],
+        [
+          "58",
+          "2026-06-08T17:02:37Z",
+          "8d9e16fd7f75295cf11522f83d906d34ea0c85cf",
+          "refactor(store): extract traversal helpers in useLaunchpadStore"
+        ],
+        [
+          "57",
+          "2026-06-04T21:01:28Z",
+          "6488a924d0f58866a97908828500828613798729",
+          "feat(map): refresh primary route track styling"
+        ],
+        [
+          "56",
+          "2026-06-05T01:46:57Z",
+          "5e662aea2ad4db298cd50934a5ef65a017fa82da",
+          "feat(gpx): retain DMD NavigationCard on import and export"
+        ],
+        [
+          "55",
+          "2026-06-04T19:20:58Z",
+          "bb1e69505f300d24deff9908f0295e57df65bbb6",
+          "feat(join): bypass merge \u2014 splice alt/detour track into primary mid-route"
+        ],
+        [
+          "54",
+          "2026-06-04T16:31:48Z",
+          "2a7f0d91422b163b49922d163b525af146ac9416",
+          "feat(export): DMD2 / Adventure GPS export mode (Tier 1 + Tier 2)"
+        ],
+        [
+          "53",
+          "2026-06-04T03:46:50Z",
+          "6ad384464d43eb3210a3b3fd789f85cf8eceb2a7",
+          "feat(trips): retain GPX waypoints through trips + hazard subtype taxonomy"
+        ],
+        [
+          "52",
+          "2026-06-03T20:10:15Z",
+          "f1fa7aa9ccc59f71d1fcadf8b5abbae8c2b13498",
+          "feat(analytics): anonymous product telemetry via Cloudflare Analytics Engine"
+        ],
+        [
+          "51",
+          "2026-06-03T17:58:31Z",
+          "df753fce4ba91bfcc27965b5ed0f1aba04c54610",
+          "feat(trips, routes): elevation rows + list/grid views + card scheme"
+        ],
+        [
+          "50",
+          "2026-06-03T04:02:51Z",
+          "6e0d1cbc39e130a28354a68a198ab8526d959ddc",
+          "docs(about): rework About page and add Changelog"
+        ],
+        [
+          "49",
+          "2026-06-08T20:09:25Z",
+          "b6d3dfcc4b236aa60928b1f7082312b892a27ffc",
+          "chore(format): apply prettier across TS tree and require lint in CI"
+        ],
+        [
+          "48",
+          "2026-06-02T05:08:55Z",
+          "b7b4c654f74234d2d3fa5f37bae393f3722ceef4",
+          "feat(planner): add data snapshot export/import backup"
+        ],
+        [
+          "47",
+          "2026-06-02T02:43:31Z",
+          "fde351386895f47631629ed8f27797cddf309783",
+          "feat(planner): release-v1 hardening \u2014 nav guard, UX polish, place colors"
+        ],
+        [
+          "46",
+          "2026-06-01T15:27:38Z",
+          "810ebf2dfd54e110fad95ad57d0c61b5d89c9ae2",
+          "feat(day-view): refresh header rail and trip parity"
+        ],
+        [
+          "45",
+          "2026-06-01T05:57:56Z",
+          "9eeb2f1750d04fd8bad060aa22f1e3742637cc60",
+          "fix(trips): reconcile Living Day View mobile with responsive spec"
+        ],
+        [
+          "44",
+          "2026-06-01T02:18:01Z",
+          "4ff6ff62418c31d8226bb1b9e4ce1dbe20c35871",
+          "feat(responsive): add field companion phone surfaces"
+        ],
+        [
+          "42",
+          "2026-06-02T22:15:25Z",
+          "4b5b3626a82fff7c229b3f0bbe48a1438e2d2dbb",
+          "feat(units): add imperial/metric units preference"
+        ],
+        [
+          "41",
+          "2026-06-01T01:16:00Z",
+          "f7e07e79b6b6f7822507a8f9cd6b7c01ea6e5f0c",
+          "feat(wildfire): add active wildfire map overlay"
+        ],
+        [
+          "40",
+          "2026-06-01T02:04:20Z",
+          "6d0381fd84c84221d9ab0d49189d9eaa63adbe11",
+          "feat(trips): add Living Day View"
+        ],
+        [
+          "39",
+          "2026-05-31T14:29:52Z",
+          "af6de5037cbb8287bb2ae5b3307d179e0e213f25",
+          "feat(effort-miles): calibration-free effort-miles metric + live planner + trip day surfaces"
+        ],
+        [
+          "38",
+          "2026-05-31T01:37:39Z",
+          "8efef09d13e82c389dba0f24942c84b342e2a988",
+          "feat(places): adjustable pin location in site preview + More picker polish"
+        ],
+        [
+          "37",
+          "2026-05-30T23:19:51Z",
+          "d1601648d69f70840b493ea9623be63026bbd4be",
+          "feat(elevation): energy-load debug overlay + live calibration tooling (?load=1)"
+        ],
+        [
+          "36",
+          "2026-05-30T23:18:25Z",
+          "1eb06e8c47a6c12633e6b2e70efed09466f029bd",
+          "feat(gpx): extended place types \u2014 scenic, sight, hot_spring, hazard via Other drill-down"
+        ],
+        [
+          "35",
+          "2026-05-30T04:51:30Z",
+          "1ab2e827b06e7927b1868893e36d1d72a1aa7d3c",
+          "feat(gpx): multi-file / multi-track GPX import across all surfaces"
+        ],
+        [
+          "34",
+          "2026-05-29T23:32:39Z",
+          "badf34ad8449c1cbcfd8d4e5dd30624f6fc04e9e",
+          "feat(gpx): render real route geometry in route thumbnails"
+        ],
+        [
+          "33",
+          "2026-05-30T04:58:51Z",
+          "c9b3baa1d786432a0a1dccf4e1bd248c3ec1f885",
+          "feat(brand): rebrand to GPXplore and apply High Desert identity app-wide"
+        ],
+        [
+          "31",
+          "2026-05-29T13:23:52Z",
+          "788792dfc0524db9e9021108b83d454ff992687c",
+          "feat: add custom places (user-dropped waypoints)"
+        ],
+        [
+          "30",
+          "2026-05-29T01:25:06Z",
+          "66de749b06643fc1a50814f56ddedbabcc919841",
+          "docs(specs): reorganize specs folder and add forward-work specs"
+        ],
+        [
+          "29",
+          "2026-05-28T18:25:51Z",
+          "7049b29dd9c10c16704ba7b4d838bfa23a905499",
+          "feat(trailhead): Trailhead v2 IA, routes, and trip-mode planner"
+        ],
+        [
+          "28",
+          "2026-05-27T21:52:42Z",
+          "7ff40c90f76b891350f5d147d70a496ebda5c78d",
+          "feat(drawers): unified place drawer \u2014 campground + GPX via single activePoiStore surface"
+        ],
+        [
+          "27",
+          "2026-05-27T18:27:31Z",
+          "f706ef992418d7aaca43401c570cf3fb59327d85",
+          "feat(places-drawer): unified Places drawer (Phases 1\u20134)"
+        ],
+        [
+          "26",
+          "2026-05-27T08:30:23Z",
+          "b59ccc4263a297dffbdd4154ee53a019570cdae4",
+          "feat(trip-forks): Step 4 closeout \u2014 Trip-Owned Route Forks"
+        ],
+        [
+          "25",
+          "2026-05-27T04:41:43Z",
+          "09d00105f4c29de86c1785b7a4594458f6c2c21b",
+          "docs(specs): spec reconciliation & store architecture documentation"
+        ],
+        [
+          "24",
+          "2026-05-27T04:27:12Z",
+          "2fe0284fb9e118d438d5521c075b781207ebc5b8",
+          "feat(places): Phase 1\u20132 complete + hygiene cleanup"
+        ],
+        [
+          "23",
+          "2026-05-26T19:29:34Z",
+          "bef5d2d0b41b66b1e026707e3b9c05e03d4d47fe",
+          "feat(shell): unified navigation shell across Plan, Library, Trips, and Trip detail"
+        ],
+        [
+          "22",
+          "2026-05-26T03:42:28Z",
+          "21883df566daba4c98aad4ff55477f7d1063184a",
+          "feat(step4): Unified SPA \u2014 route consolidation, nav shell, elevation badges"
+        ],
+        [
+          "21",
+          "2026-05-25T21:48:53Z",
+          "ba3a793a94e9560489c08b9f28407d96c472dfd6",
+          "docs(specs): close out Step 3, extract design system, prep Step 4"
+        ],
+        [
+          "20",
+          "2026-05-25T21:39:52Z",
+          "6c29fc22182c50fc3493ba133ae8254465cad712",
+          "feat(launchpad): Launchpad redesign \u2014 slices 01\u201311 + close-out"
+        ],
+        [
+          "19",
+          "2026-05-25T18:03:00Z",
+          "120d1e568d44fbc9edf13b1839c83f7138b98c72",
+          "feat(launchpad): finish release a planning ux"
+        ],
+        [
+          "18",
+          "2026-05-25T08:14:30Z",
+          "a5fc4d6ed5ad834a70312f44c1c5adb70da447ea",
+          "feat(launchpad): add printable day sheet route"
+        ],
+        [
+          "17",
+          "2026-05-25T07:48:15Z",
+          "8aecd59348b2b0fe09b922b44fed4aaa497c0fc2",
+          "feat(route-components): add optional waypoints prop to RouteElevationProfile"
+        ],
+        [
+          "16",
+          "2026-05-25T07:21:14Z",
+          "cfa45acedf7a853258678d17acfcdce36b45e321",
+          "feat(launchpad): add trip detail, day detail, and route attach flows"
+        ],
+        [
+          "15",
+          "2026-05-25T04:25:02Z",
+          "06e1e81bcf601ecf64bddb13ba98139a2f7f9f31",
+          "feat(launchpad): add markdown trip import"
+        ],
+        [
+          "14",
+          "2026-05-25T04:24:42Z",
+          "74ab70eac1f972547c53c4878c33a4e5ae454b5e",
+          "refactor(monorepo): split planner into workspace apps"
+        ],
+        [
+          "13",
+          "2026-05-25T00:13:45Z",
+          "97ca45f126a606143cf54f0f8cb25cb69a70833f",
+          "docs(spec): add Step 3 launchpad format spec and domain glossary"
+        ],
+        [
+          "12",
+          "2026-05-24T21:19:24Z",
+          "4afc48e0f966ef5582203f8eff11809e8a442f6c",
+          "feat(library): add Step 2 route library MVP"
+        ],
+        [
+          "11",
+          "2026-05-24T18:02:55Z",
+          "eda713ea66719dc9ba1152f8bbf9f398392d5316",
+          "feat(routes): add saved route read contract"
+        ],
+        [
+          "10",
+          "2026-05-24T17:43:27Z",
+          "4cf215b740f9840fdef1533ed295b7a299427cca",
+          "docs(specs): lock Step 2 and Step 3 design decisions"
+        ],
+        [
+          "9",
+          "2026-05-24T17:19:17Z",
+          "7e93b9a2e7c77399e2b665f4c3b567139c97ebb6",
+          "refactor(map): extract controlled route map view"
+        ],
+        [
+          "8",
+          "2026-05-24T15:32:09Z",
+          "7f9e318c15191f6443cdb84d902d1cfe4b79500a",
+          "refactor(chart): extract controlled RouteElevationProfile (PR 1)"
+        ],
+        [
+          "7",
+          "2026-05-24T05:31:07Z",
+          "22e1114f4260fe1d6373b9465c63e1a3cd8e0199",
+          "Feature/contributor docs"
+        ],
+        [
+          "6",
+          "2026-05-24T03:46:13Z",
+          "0bcbf80c540ea51c56affe2ddcab4e668ef93115",
+          "feat(drawers): satellite POI preview inset in waypoint and campground drawers"
+        ],
+        [
+          "5",
+          "2026-05-24T01:13:08Z",
+          "c142cc7faa7f21d1590bef63c51cabfe3099e3cd",
+          "feat(extend): endpoint extension with undo/redo toolbar and reference track joining"
+        ],
+        [
+          "4",
+          "2026-05-23T20:36:15Z",
+          "625d697ab6006d0b5c396e478d56139818fec911",
+          "feat(trim): support sub-point trim precision"
+        ],
+        [
+          "3",
+          "2026-05-23T17:03:23Z",
+          "98f63b652596f764b0ff2a9a10007025f7419187",
+          "Route planner: track styling refresh + trim-drag responsiveness"
+        ],
+        [
+          "2",
+          "2026-05-22T19:15:34Z",
+          "c3b2dbde46cf1975d00793e53eff2f5189998768",
+          "  Simplify export to Standard/Breadcrumb modes with geometry simplification for Breadcrumb"
+        ],
+        [
+          "1",
+          "2026-05-22T02:44:38Z",
+          "072f4442854237682e9fdbb2deaab8e34a4c8eed",
+          "Update name in Wrangler configuration file to match deployed Worker"
+        ]
+      ],
+      "github_merged_prs": 130
+    },
+    "pipeline": {
+      "repo": "gpxplore-pipeline",
+      "sha": "2c5cf09a244edf96ded1b1a1fe4c4ee7f9e3a399",
+      "commits": 114,
+      "excluded_template_commits": 0,
+      "active_days": 22,
+      "first_commit_date": "2026-07-01",
+      "merged_prs": 19,
+      "source": {
+        "app": {
+          "lines": 18410,
+          "files": 70
+        },
+        "test": {
+          "lines": 6500,
+          "files": 13
+        }
+      },
+      "dates": [
+        "2026-07-01",
+        "2026-07-02",
+        "2026-07-03",
+        "2026-07-06",
+        "2026-07-17",
+        "2026-07-18",
+        "2026-07-22",
+        "2026-07-25",
+        "2026-07-26",
+        "2026-07-28",
+        "2026-08-04",
+        "2026-08-05",
+        "2026-08-09",
+        "2026-08-15",
+        "2026-08-16",
+        "2026-08-17",
+        "2026-08-19",
+        "2026-08-20",
+        "2026-09-01",
+        "2026-09-23",
+        "2026-09-25",
+        "2026-09-28"
+      ],
+      "merged_pr_details": [
+        [
+          "33",
+          "2026-09-28T14:06:14Z",
+          "2c5cf09a244edf96ded1b1a1fe4c4ee7f9e3a399",
+          "feat(enrichment): report a running Unraid parity check on /health"
+        ],
+        [
+          "32",
+          "2026-09-26T00:57:07Z",
+          "78005c5f48e036ca11c5629c7845ddc1908609d2",
+          "docs(specs): refresh spec status, add status index and backlog"
+        ],
+        [
+          "31",
+          "2026-09-25T22:30:55Z",
+          "cb6f160ceff0ff92f699b7e441e3e95577b02d69",
+          "fix(enrichment): report off-graph routes as no_match, not a retryable error"
+        ],
+        [
+          "30",
+          "2026-09-25T19:55:15Z",
+          "89b3b17c4522c708d593d76c5e5e469cab1d46ad",
+          "feat(valhalla): self-hosted elevation on the NUC, /health, benchmark"
+        ],
+        [
+          "29",
+          "2026-09-23T23:29:52Z",
+          "207afb56ec974d38e7b5f07a97abadca6c0e6d8d",
+          "Surface coverage: bridge sparse GPX, gate caches on their source, add a census"
+        ],
+        [
+          "28",
+          "2026-09-23T23:29:30Z",
+          "0a9474bbb37895c9ae439b36036d7a08c8ef01b1",
+          "Surface cache: rebuild from the GPX, reuse exact matches only (fixes MTBDR MT3/MT5)"
+        ],
+        [
+          "27",
+          "2026-09-23T20:34:20Z",
+          "0871972272fb64843524eead6045be133507666a",
+          "Rebuild MTBDR enrichment on the August 2026 edition"
+        ],
+        [
+          "26",
+          "2026-09-23T18:56:15Z",
+          "08c49f636dd06834365ca975df57d691def84ff6",
+          "Route profile cache (curviness/climb/effort) for the whole corpus, plus services fixes"
+        ],
+        [
+          "25",
+          "2026-08-19T19:11:48Z",
+          "3bf878f5b03a01e0040dcbb0cca2315591b57872",
+          "Add Texas state park campgrounds (TPWD)"
+        ],
+        [
+          "24",
+          "2026-08-19T17:26:23Z",
+          "7a048598b48927beaa34bfa0cc993900a558c309",
+          "MVUM access sidecar: build, runtime join, cache invalidation, iOS enrichment channel"
+        ],
+        [
+          "23",
+          "2026-08-16T04:32:51Z",
+          "8edd4c1117b20294b3484cbab1f16750d9b8326a",
+          "feat(routes): register and enrich Hells Canyon BDR-X"
+        ],
+        [
+          "22",
+          "2026-08-05T18:17:02Z",
+          "86b13f72b566cacb74b6e874483613976772793a",
+          "Extend the enrichment cache to the route-template family (CDT/TAT/Silverton)"
+        ],
+        [
+          "21",
+          "2026-08-05T05:19:37Z",
+          "269e327f6a3897f1d8ce584fd1e48b239b390eba",
+          "BDR enrichment cache: published-mode segmentation, surface + services cache, publish pipeline"
+        ],
+        [
+          "20",
+          "2026-07-28T17:50:10Z",
+          "a6325659bb960280949c00144a21c0710f93aeec",
+          "Route templates: BDR-shaped trip templates from published routes"
+        ],
+        [
+          "19",
+          "2026-07-26T16:51:49Z",
+          "2344836942a45f5ddb1015770e265e41038537c6",
+          "feat(valhalla): rider surface classification on a CONUS+BC+AB graph"
+        ],
+        [
+          "12",
+          "2026-07-26T16:51:51Z",
+          "376eeb3204452bd2d4ff1409dc10e97652db1678",
+          "Add Valhalla self-hosted routing track (deploy, prototypes, specs)"
+        ],
+        [
+          "3",
+          "2026-07-17T14:07:30Z",
+          "2782f1d5ce2bb2a0c76725b4303cb04b93a245c0",
+          "Add state campground sources and USFS POI layer pipeline"
+        ],
+        [
+          "2",
+          "2026-07-17T14:06:59Z",
+          "dff14bc9f809f39a4e4c72e3f7d38effc8eb2fba",
+          "Add western state and province campground sources"
+        ],
+        [
+          "1",
+          "2026-07-17T14:06:34Z",
+          "88f9f82980fba895f63f15acd90cd511cca6209d",
+          "Add western US + BC campground sources (WY, WA, CA, OR, AZ, BC)"
+        ]
+      ],
+      "github_merged_prs": 19
+    },
+    "ios": {
+      "repo": "gpxplore-ios",
+      "sha": "bfa6438879c26318e7e2d2795121f09cd921ca47",
+      "commits": 731,
+      "excluded_template_commits": 0,
+      "active_days": 65,
+      "first_commit_date": "2026-06-08",
+      "merged_prs": 52,
+      "source": {
+        "app": {
+          "lines": 68951,
+          "files": 267
+        },
+        "test": {
+          "lines": 46797,
+          "files": 180
+        }
+      },
+      "dates": [
+        "2026-06-08",
+        "2026-06-14",
+        "2026-06-15",
+        "2026-06-16",
+        "2026-06-17",
+        "2026-06-18",
+        "2026-06-19",
+        "2026-06-20",
+        "2026-06-21",
+        "2026-06-27",
+        "2026-06-28",
+        "2026-06-29",
+        "2026-06-30",
+        "2026-07-01",
+        "2026-07-02",
+        "2026-07-03",
+        "2026-07-04",
+        "2026-07-05",
+        "2026-07-06",
+        "2026-07-07",
+        "2026-07-10",
+        "2026-07-11",
+        "2026-07-12",
+        "2026-07-16",
+        "2026-07-21",
+        "2026-07-22",
+        "2026-07-23",
+        "2026-07-24",
+        "2026-07-25",
+        "2026-07-26",
+        "2026-07-28",
+        "2026-08-19",
+        "2026-08-21",
+        "2026-08-22",
+        "2026-08-23",
+        "2026-08-24",
+        "2026-08-25",
+        "2026-08-27",
+        "2026-08-28",
+        "2026-08-30",
+        "2026-08-31",
+        "2026-09-01",
+        "2026-09-02",
+        "2026-09-03",
+        "2026-09-04",
+        "2026-09-06",
+        "2026-09-07",
+        "2026-09-08",
+        "2026-09-09",
+        "2026-09-10",
+        "2026-09-11",
+        "2026-09-12",
+        "2026-09-13",
+        "2026-09-15",
+        "2026-09-16",
+        "2026-09-18",
+        "2026-09-19",
+        "2026-09-20",
+        "2026-09-21",
+        "2026-09-22",
+        "2026-09-23",
+        "2026-09-24",
+        "2026-09-25",
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "merged_pr_details": [
+        [
+          "78",
+          "2026-09-30T01:38:24Z",
+          "bfa6438879c26318e7e2d2795121f09cd921ca47",
+          "chore(release): harden 1.0 and add App Store listing content"
+        ],
+        [
+          "77",
+          "2026-09-26T00:57:10Z",
+          "03e8040f57a3634163bb1c11a81765a1de125dbb",
+          "docs(specs): move shipped specs to built/ and refresh roadmap and backlog"
+        ],
+        [
+          "76",
+          "2026-09-25T22:34:13Z",
+          "1afe95ceb3be1c3ee19e746dca112fb60bef7042",
+          "chore(release): bump build number to 14"
+        ],
+        [
+          "75",
+          "2026-09-25T22:31:24Z",
+          "7d34ef77a4d5d89d8b8455b9d54dfa725a327c27",
+          "feat(route-data): self-hosted elevation with gap interpolation"
+        ],
+        [
+          "74",
+          "2026-09-25T02:40:00Z",
+          "1825296d7cf8aa883c3a0331fcac9e7d85d23e3b",
+          "perf(app): open trips and featured routes on the tap"
+        ],
+        [
+          "73",
+          "2026-09-24T04:20:18Z",
+          "665c1fc74d469c7191be9b86864d4b1e2cf2bcc3",
+          "chore(release): prepare the app for TestFlight"
+        ],
+        [
+          "72",
+          "2026-09-23T23:36:03Z",
+          "21776d00497d495b582392aaf2040989d15708f9",
+          "Surface coverage: rebuilt caches (bridging + access fallback)"
+        ],
+        [
+          "70",
+          "2026-09-23T20:35:32Z",
+          "2a4de83f3dbc83fd67f6862fa73c72c0ce277508",
+          "Bundle MTBDR enrichment on the August 2026 edition"
+        ],
+        [
+          "69",
+          "2026-09-24T00:46:38Z",
+          "f0f06f7ae87949df22b70778475b24ac6927348d",
+          "feat(premium): add Premium entitlement, upgrade half-sheets and guided track, and deferred plan access routing"
+        ],
+        [
+          "68",
+          "2026-09-20T18:28:27Z",
+          "ab83136a80367a4c12405b65ada3020638d4dd67",
+          "feat(rideplan): keep a Day's own end, and frame the route on open"
+        ],
+        [
+          "67",
+          "2026-09-19T15:54:24Z",
+          "a1dcb60a62c6f312f136e91b004957f7cb3ffd1f",
+          "feat(views): make the first route useful, and introduce the app on first launch"
+        ],
+        [
+          "66",
+          "2026-09-15T15:49:37Z",
+          "02395a49980675236130aa8bd8667fbffdf70584",
+          "feat(rideplan): set a source trim by tapping the route"
+        ],
+        [
+          "65",
+          "2026-09-12T23:36:55Z",
+          "86597819af2d662e33a3b44971f44340189abbc5",
+          "feat(rideplan): start a plan where you mean to, read the Route as one ride, and stop the stalls"
+        ],
+        [
+          "63",
+          "2026-09-10T16:41:58Z",
+          "4c2cdb2a0811a0211984e8655726261b18b54f46",
+          "feat(views): assemble a Ride Plan from more than one route (iOS v1, entry hidden)"
+        ],
+        [
+          "62",
+          "2026-09-09T22:29:27Z",
+          "948df9e511b192824389b60016b3ae20bb50d9f4",
+          "feat(app): make the shell Explore / Routes / Trips"
+        ],
+        [
+          "61",
+          "2026-09-07T13:58:06Z",
+          "d25a7da60aea30ca032a4ebdc6f39f1285a1a9fd",
+          "fix(build): keep the previews out of Release, which could not compile"
+        ],
+        [
+          "60",
+          "2026-09-07T14:02:54Z",
+          "ac4e2055b637787623ec1ab8199c0bb73715629e",
+          "feat(explore): draw the map's tracks on the road, not near it"
+        ],
+        [
+          "59",
+          "2026-09-09T23:07:51Z",
+          "007024ccc7f329ebb6002b4056a81515b2ad7a70",
+          "feat(import): open plain GPX as a Route Library source"
+        ],
+        [
+          "52",
+          "2026-09-02T13:43:09Z",
+          "4b0ef0964325633b3166dbca8fc78e3295e7d8e8",
+          "feat(app): read the published route profile offline, on a tappable Explore"
+        ],
+        [
+          "51",
+          "2026-09-01T03:28:57Z",
+          "2f0b9958147c1b9409f61011a53b105e7af296b2",
+          "refactor(rideplan): rebuild Ride Plan on native structure (sofa structure)"
+        ],
+        [
+          "50",
+          "2026-09-01T03:28:59Z",
+          "5730c45e6fd0403a6dc966ab1f1fbc40022e9853",
+          "feat(rideplan): build the single-file Ride Plan journey"
+        ],
+        [
+          "49",
+          "2026-08-19T19:14:52Z",
+          "80b3c2780d6813542b8a917ff752cd3600ae91c3",
+          "data: refresh campground snapshot (2026-08-19) with Texas state parks"
+        ],
+        [
+          "48",
+          "2026-08-19T19:03:48Z",
+          "b1282d17ee5be1ad9b978cce4faec31f6cc0dae9",
+          "docs(specs): archive shipped specs and repoint docs at BDR builder work"
+        ],
+        [
+          "46",
+          "2026-07-28T17:53:39Z",
+          "e80c57c005ec8ef5f759f4e2070c8c6ef09ac818",
+          "Add sources-and-credits spec, backlog notes for pipeline-built trip templates"
+        ],
+        [
+          "31",
+          "2026-07-26T17:12:39Z",
+          "a7603fdb90bb726682c7ffbc66d7b1d0e3b2f9bc",
+          "feat(enrichment): unify route data enrichment across trips and routes (PR-A\u2192E)"
+        ],
+        [
+          "30",
+          "2026-07-23T21:21:22Z",
+          "3ea59697436baa3fa167db52f7afb8c2e0c20f8f",
+          "feat(surface): rider surface ribbon, condition shading, and route-profile polish"
+        ],
+        [
+          "29",
+          "2026-07-22T21:24:48Z",
+          "fc2bb0cf6a771efc0e8435ba5fae09b32aa53e90",
+          "feat(surface): road-surface visualization (trips + standalone routes)"
+        ],
+        [
+          "28",
+          "2026-07-16T20:22:55Z",
+          "b43b40c1340341c676e3fed0c7b5b833853c3618",
+          "feat(narratives): add source-grounded day narratives"
+        ],
+        [
+          "25",
+          "2026-07-06T22:06:06Z",
+          "1721d7610a2141623e6dfc2a4a70f0782dc8a18d",
+          "feat(maps): add reference POI map layer and trip place support"
+        ],
+        [
+          "23",
+          "2026-07-04T15:13:24Z",
+          "d6827f0a86e17970168e3793cb20a682942b578c",
+          "feat(maps): wildfire detection cloud + containment-tinted perimeters"
+        ],
+        [
+          "22",
+          "2026-07-03T21:08:18Z",
+          "0e98ccaaf82d7b7e84dc21576519872673c6ff64",
+          "Update campgrounds data (2026-07-03 v2)"
+        ],
+        [
+          "21",
+          "2026-07-03T21:03:28Z",
+          "b280883e03e0b168f66cf8d268d24440defab8de",
+          "docs(specs): add day narratives spec, orchestrator, and ADR-0027"
+        ],
+        [
+          "20",
+          "2026-07-03T20:19:33Z",
+          "d4096e21bd48b2ff6b513fbf2666c3eb5aba66b0",
+          "Update campgrounds data (2026-07-03)"
+        ],
+        [
+          "19",
+          "2026-07-03T19:26:30Z",
+          "2d7616939d0273182725d9760c62a1827445c8fa",
+          "refactor(ios): companion consolidation refactors (A\u2013G) + field map modal & pan perf"
+        ],
+        [
+          "18",
+          "2026-07-03T20:08:18Z",
+          "116dd32d47d75c039b4509b33b5fe65f89bce11d",
+          "feat(routes): add combined home and standalone routes"
+        ],
+        [
+          "17",
+          "2026-07-01T21:21:26Z",
+          "14c7f70d0e92bf1f20e2b4692a736cadaac9ba62",
+          "data: refresh campground snapshot (2026-07-01)"
+        ],
+        [
+          "16",
+          "2026-07-01T20:09:08Z",
+          "ddce09d98c7cfa576918bf3fe59b1c2b89443489",
+          "docs(specs): add combined home + standalone routes planning docs"
+        ],
+        [
+          "15",
+          "2026-06-30T23:09:08Z",
+          "7e1594eaa98fd63f17bf020b9baa89340b191f58",
+          "feat(edit): add iOS trip editing"
+        ],
+        [
+          "14",
+          "2026-06-29T18:22:44Z",
+          "5d51076e6f694b79c04f55199319e27facf56359",
+          "feat(views): refine trip overview motion"
+        ],
+        [
+          "13",
+          "2026-06-29T00:31:36Z",
+          "e90b6fe5464315a1958c57ef87ec08066e06ce90",
+          "feat(profile): consume switchback curviness labels"
+        ],
+        [
+          "12",
+          "2026-06-28T16:10:00Z",
+          "3c16953fee4ab1136883a861475a79831ed40540",
+          "feat(maps): unify campground detail into rich Place view"
+        ],
+        [
+          "11",
+          "2026-06-28T16:06:22Z",
+          "58310fd3c95eec97e6bd4cb0e6eac605131e014b",
+          "perf(day): deepen route profile series derived data"
+        ],
+        [
+          "10",
+          "2026-06-28T16:02:52Z",
+          "ba21cebc11fcd369c555763d860f5fcd7c4c932f",
+          "perf(day): cache Day Summary route preview geometry"
+        ],
+        [
+          "9",
+          "2026-06-28T15:56:16Z",
+          "fb1019887ff9624653f2ed65268103a2630f2ad7",
+          "refactor(maps): move campground query off the main actor"
+        ],
+        [
+          "8",
+          "2026-06-28T15:50:41Z",
+          "afbb66ce005fd4119f41b94e0afaff3baa15b85a",
+          "refactor(maps): deepen Field Map render plan"
+        ],
+        [
+          "7",
+          "2026-06-28T15:46:20Z",
+          "8a9119153b0fb691fadf010f722727901596f2ae",
+          "feat(views): polish day summary field map"
+        ],
+        [
+          "6",
+          "2026-06-22T03:26:04Z",
+          "9676de6da618c35c48626799345bc38611a1c003",
+          "fix(maps): require locate intent before centering user location"
+        ],
+        [
+          "5",
+          "2026-06-22T02:34:21Z",
+          "4b9bee7cc93e396912bb5a41578c02feb3a44c48",
+          "feat(maps): iOS companion Field Map with campground & wildfire layers"
+        ],
+        [
+          "4",
+          "2026-06-21T00:16:24Z",
+          "80640200823c758781006a165df572bb22dbbf90",
+          "feat(views): render rich place details"
+        ],
+        [
+          "3",
+          "2026-06-20T21:13:46Z",
+          "c23494f231516e8dac10e694882741c7dd399412",
+          "feat(library): add durable trip storage"
+        ],
+        [
+          "2",
+          "2026-06-20T21:14:15Z",
+          "e19fe873bf90b9a7439326b44a3548cbaf7450a6",
+          "refactor(architecture): deepen companion app structure"
+        ],
+        [
+          "1",
+          "2026-06-19T15:10:52Z",
+          "cc1c716d5b778e4e4d3e800e1e27a86414c44517",
+          "feat: iOS companion V1 \u2014 day surfaces, GPX share, and WindowGroup home"
+        ]
+      ],
+      "github_merged_prs": 52
+    }
+  },
+  "combined": {
+    "commits": 1821,
+    "merged_prs": 201,
+    "active_days": 100,
+    "app_lines": 148894,
+    "test_lines": 78917,
+    "dates": [
+      "2026-05-20",
+      "2026-05-21",
+      "2026-05-22",
+      "2026-05-23",
+      "2026-05-24",
+      "2026-05-25",
+      "2026-05-26",
+      "2026-05-27",
+      "2026-05-28",
+      "2026-05-29",
+      "2026-05-30",
+      "2026-05-31",
+      "2026-06-01",
+      "2026-06-02",
+      "2026-06-03",
+      "2026-06-04",
+      "2026-06-06",
+      "2026-06-07",
+      "2026-06-08",
+      "2026-06-09",
+      "2026-06-10",
+      "2026-06-11",
+      "2026-06-12",
+      "2026-06-13",
+      "2026-06-14",
+      "2026-06-15",
+      "2026-06-16",
+      "2026-06-17",
+      "2026-06-18",
+      "2026-06-19",
+      "2026-06-20",
+      "2026-06-21",
+      "2026-06-27",
+      "2026-06-28",
+      "2026-06-29",
+      "2026-06-30",
+      "2026-07-01",
+      "2026-07-02",
+      "2026-07-03",
+      "2026-07-04",
+      "2026-07-05",
+      "2026-07-06",
+      "2026-07-07",
+      "2026-07-10",
+      "2026-07-11",
+      "2026-07-12",
+      "2026-07-16",
+      "2026-07-17",
+      "2026-07-18",
+      "2026-07-20",
+      "2026-07-21",
+      "2026-07-22",
+      "2026-07-23",
+      "2026-07-24",
+      "2026-07-25",
+      "2026-07-26",
+      "2026-07-28",
+      "2026-08-04",
+      "2026-08-05",
+      "2026-08-09",
+      "2026-08-15",
+      "2026-08-16",
+      "2026-08-17",
+      "2026-08-19",
+      "2026-08-20",
+      "2026-08-21",
+      "2026-08-22",
+      "2026-08-23",
+      "2026-08-24",
+      "2026-08-25",
+      "2026-08-27",
+      "2026-08-28",
+      "2026-08-30",
+      "2026-08-31",
+      "2026-09-01",
+      "2026-09-02",
+      "2026-09-03",
+      "2026-09-04",
+      "2026-09-06",
+      "2026-09-07",
+      "2026-09-08",
+      "2026-09-09",
+      "2026-09-10",
+      "2026-09-11",
+      "2026-09-12",
+      "2026-09-13",
+      "2026-09-15",
+      "2026-09-16",
+      "2026-09-18",
+      "2026-09-19",
+      "2026-09-20",
+      "2026-09-21",
+      "2026-09-22",
+      "2026-09-23",
+      "2026-09-24",
+      "2026-09-25",
+      "2026-09-26",
+      "2026-09-28",
+      "2026-09-29",
+      "2026-09-30"
+    ]
+  },
+  "elapsed_days": 134
+}

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2040" viewBox="0 0 1600 2040"><rect width="1600" height="2040" fill="#F8F5EE"/>
+<path d="M0 130 Q320 10 650 150 T1300 90 T1650 190" fill="none" stroke="#DFE1D5" stroke-width="2" stroke-linecap="round" />
+<text x="80" y="70" fill="#365D45" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="600">GPXPLORE / FROM PROTOTYPE TO PRODUCT</text>
+<text x="80" y="170" fill="#26382D" font-family="Helvetica, Arial, sans-serif" font-size="70" font-weight="700">Building and releasing</text>
+<text x="80" y="255" fill="#26382D" font-family="Helvetica, Arial, sans-serif" font-size="70" font-weight="700">an app with agents.</text>
+<text x="80" y="325" fill="#647367" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="400">A Lovable prototype. Three repos. One App Store launch.</text>
+<rect x="80" y="375" width="1440" height="178" rx="18" fill="#365D45"/>
+<text x="115" y="500" fill="#F8F5EE" font-family="Helvetica, Arial, sans-serif" font-size="110" font-weight="700">134</text>
+<text x="380" y="445" fill="#F8F5EE" font-family="Helvetica, Arial, sans-serif" font-size="31" font-weight="500">days from the first documented prototype commits</text>
+<text x="380" y="505" fill="#CEDAC8" font-family="Helvetica, Arial, sans-serif" font-size="34" font-weight="400">May 20 → October 1, 2026</text>
+<rect x="80" y="595" width="450" height="170" rx="18" fill="#E7E9DD"/>
+<text x="110" y="680" fill="#26382D" font-family="Helvetica, Arial, sans-serif" font-size="72" font-weight="700">1,821</text>
+<text x="110" y="731" fill="#647367" font-family="Helvetica, Arial, sans-serif" font-size="27" font-weight="400">commits</text>
+<rect x="575" y="595" width="450" height="170" rx="18" fill="#E7E9DD"/>
+<text x="605" y="680" fill="#26382D" font-family="Helvetica, Arial, sans-serif" font-size="72" font-weight="700">201</text>
+<text x="605" y="731" fill="#647367" font-family="Helvetica, Arial, sans-serif" font-size="27" font-weight="400">merged PRs</text>
+<rect x="1070" y="595" width="450" height="170" rx="18" fill="#E7E9DD"/>
+<text x="1100" y="680" fill="#26382D" font-family="Helvetica, Arial, sans-serif" font-size="72" font-weight="700">100</text>
+<text x="1100" y="731" fill="#647367" font-family="Helvetica, Arial, sans-serif" font-size="27" font-weight="400">active days</text>
+<text x="80" y="835" fill="#365D45" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="600">THE JOURNEY</text>
+<path d="M105 900 L105 1670" fill="none" stroke="#CBD4C4" stroke-width="6" stroke-linecap="round" />
+<circle cx="105" cy="910" r="12" fill="#537A89"/>
+<text x="145" y="920" fill="#537A89" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="600">MAY 20</text>
+<text x="360" y="920" fill="#26382D" font-family="Helvetica, Arial, sans-serif" font-size="31" font-weight="600">Build a GPX trimmer in Lovable</text>
+<text x="360" y="962" fill="#647367" font-family="Helvetica, Arial, sans-serif" font-size="25" font-weight="400">The first prompt: open, map, enrich, trim and export GPX.</text>
+<circle cx="105" cy="1030" r="12" fill="#537A89"/>
+<text x="145" y="1040" fill="#537A89" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="600">MAY 23</text>
+<text x="360" y="1040" fill="#26382D" font-family="Helvetica, Arial, sans-serif" font-size="31" font-weight="600">Make the work repeatable</text>
+<text x="360" y="1082" fill="#647367" font-family="Helvetica, Arial, sans-serif" font-size="25" font-weight="400">Contributor and agent guidance join the web repo.</text>
+<circle cx="105" cy="1150" r="12" fill="#365D45"/>
+<text x="145" y="1160" fill="#365D45" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="600">JUNE 8</text>
+<text x="360" y="1160" fill="#26382D" font-family="Helvetica, Arial, sans-serif" font-size="31" font-weight="600">Start the native iOS app</text>
+<text x="360" y="1202" fill="#647367" font-family="Helvetica, Arial, sans-serif" font-size="25" font-weight="400">The field companion gets its own Swift codebase.</text>
+<circle cx="105" cy="1270" r="12" fill="#365D45"/>
+<text x="145" y="1280" fill="#365D45" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="600">JUNE 16</text>
+<text x="360" y="1280" fill="#26382D" font-family="Helvetica, Arial, sans-serif" font-size="31" font-weight="600">Connect the experiences</text>
+<text x="360" y="1322" fill="#647367" font-family="Helvetica, Arial, sans-serif" font-size="25" font-weight="400">A shared .gpxtrip contract carries plans into iOS.</text>
+<circle cx="105" cy="1390" r="12" fill="#AD6D46"/>
+<text x="145" y="1400" fill="#AD6D46" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="600">JULY 1</text>
+<text x="360" y="1400" fill="#26382D" font-family="Helvetica, Arial, sans-serif" font-size="31" font-weight="600">Give the data its own home</text>
+<text x="360" y="1442" fill="#647367" font-family="Helvetica, Arial, sans-serif" font-size="25" font-weight="400">The pipeline normalizes and publishes campground data.</text>
+<circle cx="105" cy="1510" r="12" fill="#365D45"/>
+<text x="145" y="1520" fill="#365D45" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="600">SEPTEMBER 23</text>
+<text x="360" y="1520" fill="#26382D" font-family="Helvetica, Arial, sans-serif" font-size="31" font-weight="600">Prepare for TestFlight</text>
+<text x="360" y="1562" fill="#647367" font-family="Helvetica, Arial, sans-serif" font-size="25" font-weight="400">Release preparation joins a growing app and service stack.</text>
+<circle cx="105" cy="1630" r="12" fill="#365D45"/>
+<text x="145" y="1640" fill="#365D45" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="600">OCTOBER 1</text>
+<text x="360" y="1640" fill="#26382D" font-family="Helvetica, Arial, sans-serif" font-size="31" font-weight="600">Approved and live</text>
+<text x="360" y="1682" fill="#647367" font-family="Helvetica, Arial, sans-serif" font-size="25" font-weight="400">GPXplore 1.0 reaches the App Store.</text>
+<rect x="80" y="1760" width="1440" height="110" rx="18" fill="#E7E9DD"/>
+<text x="110" y="1806" fill="#26382D" font-family="Helvetica, Arial, sans-serif" font-size="31" font-weight="600">149k lines of product source + 79k lines of tests</text>
+<text x="110" y="1848" fill="#647367" font-family="Helvetica, Arial, sans-serif" font-size="25" font-weight="400">Web: 976 commits  ·  Pipeline: 114  ·  iOS: 731</text>
+<text x="80" y="1932" fill="#647367" font-family="Helvetica, Arial, sans-serif" font-size="19" font-weight="400">Main-branch history; inherited template excluded. PRs: GitHub merged totals. Dates: America/Denver.</text>
+<text x="80" y="1974" fill="#365D45" font-family="Helvetica, Arial, sans-serif" font-size="21" font-weight="600">GPXplore · October 1, 2026 · gpxplore.net</text>
+</svg>

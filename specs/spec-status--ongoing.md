@@ -1,16 +1,18 @@
 # Spec Status
 
-Last updated: 2026-06-06
+Last updated: 2026-10-01
 
 ## Active build-out
 
-None.
+- [GPXplore iOS portfolio feature](gpxplore-ios-portfolio--planned.md): completed: native app featured separately with release screenshots and store links.
+
+- [GPXplore: building and releasing an app with agents](gpxplore-building-with-agents--planned.md): completed: published October 1 with author-supplied illustrations.
 
 ## Built
 
-| Spec | Status | Notes |
-|------|--------|-------|
-| [portfolio-theme-refresh--built.md](built/portfolio-theme-refresh--built.md) | Built | Whole-site portfolio theme refresh shipped on `main`; static Cloudflare Pages deployment |
+| Spec                                                                         | Status | Notes                                                                                    |
+| ---------------------------------------------------------------------------- | ------ | ---------------------------------------------------------------------------------------- |
+| [portfolio-theme-refresh--built.md](built/portfolio-theme-refresh--built.md) | Built  | Whole-site portfolio theme refresh shipped on `main`; static Cloudflare Pages deployment |
 
 ## Follow-ups (not tracked as open spec tasks)
 

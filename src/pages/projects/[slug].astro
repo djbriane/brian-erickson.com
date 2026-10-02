@@ -33,6 +33,7 @@ const { Content } = await render(project);
 
     {Object.values(project.data.links).some(Boolean) && (
       <div class="link-row">
+        {project.data.links.app_store && <a class="button-link button-link--solid" href={project.data.links.app_store} target="_blank" rel="noreferrer">Download on the App Store</a>}
         {project.data.links.live && <a class="button-link" href={project.data.links.live} target="_blank" rel="noreferrer">Live site</a>}
         {project.data.links.github && <a class="button-link" href={project.data.links.github} target="_blank" rel="noreferrer">GitHub</a>}
         {project.data.links.case_study && <a class="button-link" href={project.data.links.case_study} target="_blank" rel="noreferrer">Case study</a>}

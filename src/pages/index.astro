@@ -25,14 +25,15 @@ const featuredProject = (await getCollection("projects")).find((project) => proj
           <h3><a href={`/projects/${featuredProject.id}/`}>{featuredProject.data.title}</a></h3>
           <p class="home-project-panel__summary">{featuredProject.data.summary}</p>
           <ul class="home-project-panel__details">
-            <li>Route planning, library, trip assembly, and field-reference workflows.</li>
-            <li>Local-first data model with GPX parsing, export, backup, and restore.</li>
-            <li>Maps, elevation, campground, wildfire, and day-sheet planning surfaces.</li>
+            {featuredProject.data.highlights.map((highlight) => <li>{highlight}</li>)}
           </ul>
           <div class="link-row">
             <a class="button-link" href={`/projects/${featuredProject.id}/`}>Read case study</a>
+            {featuredProject.data.links.app_store && (
+              <a class="button-link button-link--solid" href={featuredProject.data.links.app_store} target="_blank" rel="noreferrer">Download on the App Store</a>
+            )}
             {featuredProject.data.links.live && (
-              <a class="button-link button-link--solid" href={featuredProject.data.links.live} target="_blank" rel="noreferrer">
+              <a class="button-link" href={featuredProject.data.links.live} target="_blank" rel="noreferrer">
                 Visit GPXplore
               </a>
             )}
@@ -43,8 +44,8 @@ const featuredProject = (await getCollection("projects")).find((project) => proj
             <img
               src={featuredProject.data.cover_image}
               alt={`Screenshot of ${featuredProject.data.title}`}
-              width="2438"
-              height="1850"
+              width="1600"
+              height="1000"
               loading="lazy"
             />
           </a>
@@ -69,8 +70,8 @@ const featuredProject = (await getCollection("projects")).find((project) => proj
   {posts.length > 0 && (
     <section class="home-archive section" aria-labelledby="archive-title">
       <div class="section-heading home-section-heading">
-        <p class="eyebrow">From the Archive</p>
-        <h2 id="archive-title">Past musings, preserved as context.</h2>
+        <p class="eyebrow">Thoughts</p>
+        <h2 id="archive-title">On product, software, and building things.</h2>
       </div>
       <ol class="home-archive-list">
         {posts.map((post) => (

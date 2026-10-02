@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1540" viewBox="0 0 1600 1540"><rect width="1600" height="1540" fill="#F8F5EE"/>
+<text x="80" y="70" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#365D45">GPXPLORE / THE FIRST PROMPT</text>
+<text x="80" y="165" font-family="Helvetica, Arial, sans-serif" font-size="66" font-weight="700" fill="#26382D">It started with a GPX trimmer.</text>
+<text x="80" y="225" font-family="Helvetica, Arial, sans-serif" font-size="29" font-weight="400" fill="#647367">A familiar editing gesture, applied to a backcountry route.</text>
+<rect x="80" y="285" width="1440" height="670" rx="24" fill="#E7E9DD"/>
+<text x="120" y="357" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#365D45">THE ORIGINAL REQUEST</text>
+<text x="120" y="425" font-family="Helvetica, Arial, sans-serif" font-size="34" font-weight="400" fill="#26382D">“Help me build a tool that takes GPX files (with or without elevation</text>
+<text x="120" y="473" font-family="Helvetica, Arial, sans-serif" font-size="34" font-weight="400" fill="#26382D">profiles and waypoints), displays them on a topographical map,</text>
+<text x="120" y="521" font-family="Helvetica, Arial, sans-serif" font-size="34" font-weight="400" fill="#26382D">enriches them with elevation data if its missing and allows me to</text>
+<text x="120" y="569" font-family="Helvetica, Arial, sans-serif" font-size="34" font-weight="400" fill="#26382D">trim the GPX from the start and finish (kind of like you can do in</text>
+<text x="120" y="617" font-family="Helvetica, Arial, sans-serif" font-size="34" font-weight="400" fill="#26382D">the Photos app on iOS or in Quicktime to edit a movie) to create a</text>
+<text x="120" y="665" font-family="Helvetica, Arial, sans-serif" font-size="34" font-weight="400" fill="#26382D">segment of the overall route I can then save as a new GPX file”</text>
+<text x="120" y="908" font-family="Helvetica, Arial, sans-serif" font-size="23" font-weight="400" fill="#647367">Verbatim first prompt · supplied by the creator · date not yet confirmed</text>
+<text x="80" y="1032" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="600" fill="#26382D">The starting scope</text>
+<text x="80" y="1090" font-family="Helvetica, Arial, sans-serif" font-size="23" font-weight="600" fill="#365D45">OPEN</text>
+<text x="330" y="1090" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#26382D">GPX files, with or without elevation and waypoints</text>
+<text x="80" y="1160" font-family="Helvetica, Arial, sans-serif" font-size="23" font-weight="600" fill="#365D45">SEE</text>
+<text x="330" y="1160" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#26382D">Display the route on a topographical map</text>
+<text x="80" y="1230" font-family="Helvetica, Arial, sans-serif" font-size="23" font-weight="600" fill="#365D45">ENRICH</text>
+<text x="330" y="1230" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#26382D">Fill in missing elevation data</text>
+<text x="80" y="1300" font-family="Helvetica, Arial, sans-serif" font-size="23" font-weight="600" fill="#365D45">TRIM &amp; SAVE</text>
+<text x="330" y="1300" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#26382D">Cut the start and finish; export a new GPX segment</text>
+<text x="80" y="1410" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="600" fill="#365D45">From a focused editing tool to a web planner, data pipeline and native app.</text>
+<text x="80" y="1480" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="400" fill="#647367">GPXplore · App Store launch: October 1, 2026 · gpxplore.net</text>
+</svg>
